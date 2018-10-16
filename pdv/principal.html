@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <title>PDV | Photoarts Gallery</title>
+        <link rel="stylesheet" type="text/css" href="../padrao/css/efeitos.css"/>
+        <link rel="stylesheet" type="text/css" href="../padrao/css/componentes.css"/>
+        <link rel="stylesheet" type="text/css" href="../padrao/css/fontes.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/menu.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
+        <script src="../js/jquery-latest.min.js" type="text/javascript"></script>
+        <script src="../js/Chart.min.js"></script>
+        <script type="text/javascript" src="../padrao/json2.js"></script>
+        <script type="text/javascript" src="../padrao/utils.js"></script>
+        <script type="text/javascript" src="./js/photoarts-pdv.js"></script>
+        <script type="text/javascript" src="js/principal.js"></script>
+    </head>
+    <body style="height:100%;">
+        <div id="pagina">
+            <div id="divprincipal" >
+                <div id="cabecalho">
+                    <div id="cabecalho_botao_menu" onclick="window.location = 'principal.html'"><img src="../imagens/galerianome.png" /></div>
+                    <div id="legendaTela">
+                        <div id="nomeGaleria"></div>
+                    </div>
+                    <div id="cabecalho_botoes_principal" style="float:right">
+                        <div id="cabecalho_botao_menu_topo" onclick="window.location = 'index.html'"  ><img src="../imagens/sair.png" /></div>
+                        <div id="cabecalho_botao_menu_topo" onclick="window.location='alterar-senha.html'" title="Alterar Senha"><img src="../imagens/chave.png" style="width:auto; height:25px;"/></div>
+                        <div id="legendaTela" style="float:right; text-align:right; padding-right:10px;">
+                            <div id="nomeUsuario"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--cabecalho-->
+                <div style="height:65px;"> </div>
+                <div style="clear:both"> </div>
+                <div style="width:100%; text-align:center">
+                    <div align="center"   style="max-width:1100px; width:100%; display:inline-block; float:none">
+                        <div id="linha3" align="center">
+                            <div id='divAtalhosPerfil1' class="divlinha2quadro" align="center" >
+                                <div id="linha5quadro1" class="caixabrancajujuba divwidgetprincipal2x2" style="background-color:#5E90AF; background-image:url(../imagens/calc.png); background-position: right; vertical-align:middle" onclick="AdicionarObra(-1);">
+                                    <div  id="linha2quadro1titulo" class="divtitulowidget">Nova Cotação</div>
+                                    <div id="linha2quadro1texto" class="divwidgettexto">Faça uma cotação</div>
+                                </div>
+                                <div id="linha5quadro2" onclick="window.location='propostas.html?novo=true'" class="caixabrancajujuba divwidgetprincipal2x2" style="background-color:#E55E3A; background-image:url(../imagens/novorcamento.png); background-position: right; vertical-align:middle">
+                                    <div id="linha2quadro2titulo" class="divtitulowidget">Novo Orçamento</div>
+                                    <div id="linha2quadro2texto" class="divwidgettexto">Crie ou edite um orçamento</div>
+                                </div>
+                                <div id="linha5quadro3" onclick="window.location='pedidos.html?novo=true'" class="caixabrancajujuba divwidgetprincipal2x2" style="background-color:#4DAF7B; background-image:url(../imagens/pedidos.png);  background-position: right; vertical-align:middle">
+                                    <div  id="linha2quadro3titulo" class="divtitulowidget">Novo Pedido</div>
+                                    <div id="linha2quadro3texto" onclick="" class="divwidgettexto">Crie ou edite um pedido</div>
+                                </div>
+                                <div id="linha5quadro4"   class="caixabrancajujuba divwidgetprincipal2x2" style="background-color:rgb(234, 193, 68); background-image:url(../imagens/estoque.png); background-position: right; vertical-align:middle" onclick="window.location = 'consultar-estoque.html'">
+                                    <div id="linha2quadro4titulo" class="divtitulowidget">Consultar Estoque</div>
+                                    <div id="linha2quadro4texto" class="divwidgettexto">Verificar estoque</div>
+                                </div>
+                                <div id="linha5quadro5" onclick="window.location='propostas.html'" class="caixabrancajujuba divwidgetprincipal2x2" style="background-color:#5E90AF; background-image:url(../imagens/acompanharorcamentos.png); background-position: right; vertical-align:middle">
+                                    <div id="linha2quadro4titulo" class="divtitulowidget">Acompanhar Orçamentos</div>
+                                    <div id="linha2quadro4texto" class="divwidgettexto">Acompanhe seus orçamentos</div>
+                                </div>
+                                <div id="linha5quadro6" onclick="window.location='pedidos.html'" class="caixabrancajujuba divwidgetprincipal2x2" style="background-color:#4DAF7B; background-image:url(../imagens/acompanharpedidos.png); background-position: right; vertical-align:middle">
+                                    <div id="linha2quadro4titulo" class="divtitulowidget">Acompanhar Pedidos</div>
+                                    <div id="linha2quadro4texto" class="divwidgettexto">Acompanhe seus pedidos</div>
+                                </div>
+                                
+                                <div onclick="window.location='cadastro-de-colecionadores.html?novo=true'" id="linha5quadro1" class="caixabrancajujuba divwidgetprincipal2x2" style="background-color:#5E90AF; background-image:url(../imagens/cliente.png); background-position: right; vertical-align:middle" >
+                                    <div  id="linha2quadro1titulo" class="divtitulowidget">Novo Colecionador</div>
+                                    <div id="linha2quadro1texto" class="divwidgettexto">Crie ou edite um colecionador</div>
+                                </div>
+                                <div onclick="window.location='cadastro-de-colecionadores.html'" id="linha5quadro2" class="caixabrancajujuba divwidgetprincipal2x2" style="background-color:#E55E3A; background-image:url(../imagens/consultecolecionador.png); background-position: right; vertical-align:middle">
+                                    <div id="linha2quadro2titulo" class="divtitulowidget">Consultar Colecionador</div>
+                                    <div id="linha2quadro2texto" class="divwidgettexto">Verifique colecionadores</div>
+                                </div>
+                                <div onclick="window.location='cadastro-de-vales-presentes-trocas.html'" id="linha5quadro2" class="caixabrancajujuba divwidgetprincipal2x2" style="background-color:#E55E3A; background-image:url(../imagens/consultecolecionador.png); background-position: right; vertical-align:middle">
+                                    <div id="linha2quadro2titulo" class="divtitulowidget">Vales Presentes/Trocas</div>
+                                    <div id="linha2quadro2texto" class="divwidgettexto">Cadastrar Vales Presentes/Trocas</div>
+                                </div>
+                                <div id="linha5quadro4"   class="caixabrancajujuba divwidgetprincipal2x2" style="background-color:rgb(234, 193, 68); background-image:url(../imagens/estoque.png); background-position: right; vertical-align:middle" onclick="window.location = 'visualizar-ordem-de-producao.html'">
+                                    <div id="linha2quadro4titulo" class="divtitulowidget">Visualizar OP</div>
+                                    <div id="linha2quadro4texto" class="divwidgettexto">Buscar OP's  e editar status das obras</div>
+                                </div>
+                                <div id="linha5quadro2" onclick="window.location='orcamentos-simplificados.html'" class="caixabrancajujuba divwidgetprincipal2x2" style="background-color:#E55E3A; background-image:url(../imagens/novorcamento.png); background-position: right; vertical-align:middle">
+                                    <div id="linha2quadro2titulo" class="divtitulowidget">Orçamentos simplificados</div>
+                                    <div id="linha2quadro2texto" class="divwidgettexto">Gerenciar orçamentos simplificados</div>
+                                </div>
+                            </div>
+                            <div id='divOrdensProducaoWidget' class="divlinha2quadro  caixabrancajujuba">
+                                <div class="divtitulo" style="display:iniline-block; background-image:url(../imagens/avisos.png) ;background-repeat:no-repeat; background-position:right -10px; padding:11px; " align="left">
+                                <span style="vertical-align:middle">Pedidos em Andamento</span>
+                                <select id="lojas" style="width:200px; vertical-align:middle; margin-left:10px;" class="combo_cinzafoco" onchange="MostrarPedidosAndamento();"> </select>
+                                </div>
+                                <div id="tabela" style="margin:0px; overflow:auto; height:89%;  border:none;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--divprincipal--> 
+        </div>
+        <!--pagina-->
+        <div id="divConfiguacoes" class="divConfiguacoes efeito_delay" style="height:0px;"  onclick="mostracaixaconfiguracoes();"> <br />
+            <div class="divconfitens efeito-opacidade-75-03" onclick="window.location = 'alterar-senha.html'"> <img src="../imagens/chave.png" /><br />
+                ALTERAR SENHA</div>
+            <div class="divconfitens efeito-opacidade-75-03"  onclick="suporteTecnico();"> <img src="../imagens/suporte.png" /><br />
+                SUPORTE TÉCNICO</div>
+        </div>
+        <div id="prompt"> </div>
+    </body>
+</html>

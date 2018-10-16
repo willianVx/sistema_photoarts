@@ -1,0 +1,112 @@
+<html xmlns:o = "urn:schemas-microsoft-com:office:office"
+xmlns:x = "urn:schemas-microsoft-com:office:excel"
+xmlns = "http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv = Content-Type content = "text/html; charset=utf-8">
+<meta name = ProgId content = Excel.Sheet>
+<!--[if gte mso 9]><xml>
+<o:DocumentProperties>
+<o:LastAuthor>Sriram</o:LastAuthor>
+<o:LastSaved>2005-01-02T07:46:23Z</o:LastSaved>
+<o:Version>10.2625</o:Version>
+</o:DocumentProperties>
+<o:OfficeDocumentSettings>
+<o:DownloadComponents/>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->
+<style>
+<!--table
+{mso-displayed-decimal-separator:"\.";
+mso-displayed-thousand-separator:"\,";
+}
+@page
+{margin:1.0in .75in 1.0in .75in;
+mso-header-margin:.5in;
+mso-footer-margin:.5in;
+}
+tr
+{mso-height-source:auto;
+}
+col
+{mso-width-source:auto;
+}
+br
+{mso-data-placement:same-cell;
+}
+.style0
+{mso-number-format:General;
+text-align:general;
+vertical-align:bottom;
+white-space:nowrap;
+mso-rotate:0;
+mso-background-source:auto;
+mso-pattern:auto;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+mso-generic-font-family:auto;
+mso-font-charset:0;
+border:none;
+mso-protection:locked visible;
+mso-style-name:Normal;
+mso-style-id:0;
+}
+td
+{mso-style-parent:style0;
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+mso-ignore:padding;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+mso-generic-font-family:auto;
+mso-font-charset:0;
+mso-number-format:General;
+text-align:general;
+vertical-align:bottom;
+border:none;
+mso-background-source:auto;
+mso-pattern:auto;
+mso-protection:locked visible;
+white-space:nowrap;
+mso-rotate:0;
+}
+.xl24
+{mso-style-parent:style0;
+white-space:normal;
+}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>NOME_PLANILHA</x:Name>
+<x:WorksheetOptions>
+<x:Selected/>
+<x:ProtectContents>False</x:ProtectContents>
+<x:ProtectObjects>False</x:ProtectObjects>
+<x:ProtectScenarios>False</x:ProtectScenarios>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+<x:WindowHeight>10005</x:WindowHeight>
+<x:WindowWidth>10005</x:WindowWidth>
+<x:WindowTopX>120</x:WindowTopX>
+<x:WindowTopY>135</x:WindowTopY>
+<x:ProtectStructure>False</x:ProtectStructure>
+<x:ProtectWindows>False</x:ProtectWindows>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+
+<body link = blue vlink = purple>
+<table x:str border = 0 cellpadding = 0 cellspacing = 0 style = 'border-collapse: collapse;table-layout:fixed;'><tr><td class=xl24 width=64 >N°</td><td class=xl24 width=64 >DATA CADASTRO</td><td class=xl24 width=64 >LOJA</td><td class=xl24 width=64 >COLECIONADOR</td><td class=xl24 width=64 >OBRAS</td><td class=xl24 width=64 >VALOR</td><td class=xl24 width=64 >FRETE</td><td class=xl24 width=64 >TOTAL</td><td class=xl24 width=64 >PAGAMENTO</td><td class=xl24 width=64 >MARCHAND</td><td class=xl24 width=64 >STATUS</td></tr><tr><td class=xl24 width=64 >01131</td><td class=xl24 width=64 >09/09/2016 18:01</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >CLARA DE ALMEIDA BREDA</td><td class=xl24 width=64 >InstaArts - (20x30) em DECOR CRISTAL - Mold.: Basel - Bege<br />InstaArts - (20x30) em DECOR CRISTAL - Mold.: Basel - Bege<br />Produtos - Mini Panorâmica 6cm<br />InstaArts - (20x30) em DECOR CRISTAL - Mold.: Basel - Tabaco</td><td class=xl24 width=64 >294,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >294,00</td><td class=xl24 width=64 >R$ 98,00 pago em 3x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >EM PRODUÇÃO</td></tr><tr><td class=xl24 width=64 >01125</td><td class=xl24 width=64 >07/09/2016 19:50</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >RICARDO BENI</td><td class=xl24 width=64 >InstaArts - (30x45) em DECOR CRISTAL - Mold.: Buenos Aires - Branco</td><td class=xl24 width=64 >169,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >254,00</td><td class=xl24 width=64 >R$ 254,00 pago em 1x com CARTÃO DE DÉBITO</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >PRONTA ENTREGA</td></tr><tr><td class=xl24 width=64 >01123</td><td class=xl24 width=64 >07/09/2016 18:34</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >ESTHER BITTENCOURT</td><td class=xl24 width=64 >InstaArts - (22x30) em METACRILATO PS 2 2 ACRILICO<br />InstaArts - (22x30) em METACRILATO PS 2 2 ACRILICO<br />InstaArts - (22x30) em METACRILATO PS 2 2 ACRILICO<br />InstaArts - (22x30) em METACRILATO PS 2 2 ACRILICO<br />InstaArts - (22x30) em METACRILATO PS 2 2 ACRILICO<br />InstaArts - (22x30) em METACRILATO PS 2 2 ACRILICO<br />InstaArts - (22x30) em METACRILATO PS 2 2 ACRILICO<br />InstaArts - (19x19) em DECOR CRISTAL - Mold.: Basel - Tabaco<br />InstaArts - (27x32) em DECOR CRISTAL - Mold.: Berlim - Branco<br />InstaArts - (30x40) em METACRILATO PS 2 2 ACRILICO<br />InstaArts - (40x60) em PAPEL FOSCO<br />InstaArts - (30x60) em METACRILATO PS 2 2 ACRILICO<br />InstaArts - (25x25) em DECOR CRISTAL - Mold.: Berlim - Preto</td><td class=xl24 width=64 >1.979,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >1.781,10</td><td class=xl24 width=64 >R$ 2.065,50 pago em 1x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >PREPARADO P/ ENVIO</td></tr><tr><td class=xl24 width=64 >01122</td><td class=xl24 width=64 >07/09/2016 18:21</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >ROSALIA</td><td class=xl24 width=64 >Produtos - POP 20x20</td><td class=xl24 width=64 >98,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >98,00</td><td class=xl24 width=64 >R$ 98,00 pago em 1x com CARTÃO DE DÉBITO</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >PRONTA ENTREGA</td></tr><tr><td class=xl24 width=64 >01118</td><td class=xl24 width=64 >06/09/2016 17:17</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >FÁBIO OKAMOTO</td><td class=xl24 width=64 >InstaArts - (16x70) em METACRILATO 3 2 ACRÍLICO<br />InstaArts - (15x60) em METACRILATO 3 2 ACRÍLICO<br />InstaArts - (13x60) em METACRILATO 3 2 ACRÍLICO</td><td class=xl24 width=64 >741,30</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >730,90</td><td class=xl24 width=64 >R$ 247,10 pago em 3x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >PRONTA ENTREGA</td></tr><tr><td class=xl24 width=64 >01113</td><td class=xl24 width=64 >03/09/2016 20:37</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >FLÁVIO ACHUR</td><td class=xl24 width=64 >InstaArts - (60x40) em DECOR CRISTAL - Mold.: Basel - Tabaco</td><td class=xl24 width=64 >355,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >355,00</td><td class=xl24 width=64 >R$ 118,34 pago em 3x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >ENTREGUE</td></tr><tr><td class=xl24 width=64 >01112</td><td class=xl24 width=64 >03/09/2016 19:19</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >ROSE PERCETI</td><td class=xl24 width=64 >Nenhuma obra encontrada/cadastrada</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >Nenhum pagamento lançado</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >Pedido cancelado</td></tr><tr><td class=xl24 width=64 >01111</td><td class=xl24 width=64 >03/09/2016 17:47</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >ALEXANDRE MARTINI COSTA</td><td class=xl24 width=64 >InstaArts - (25x94) em METACRILATO 3 2 ACRÍLICO</td><td class=xl24 width=64 >282,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >282,00</td><td class=xl24 width=64 >R$ 282,00 pago em 1x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >PRONTA ENTREGA</td></tr><tr><td class=xl24 width=64 >01107</td><td class=xl24 width=64 >02/09/2016 17:28</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >DANILO OHASHI</td><td class=xl24 width=64 >InstaArts - (30x45) em METACRILATO ACM 2 3 ACRILICO</td><td class=xl24 width=64 >297,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >297,00</td><td class=xl24 width=64 >R$ 148,50 pago em 2x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >ENTREGUE</td></tr><tr><td class=xl24 width=64 >01106</td><td class=xl24 width=64 >02/09/2016 16:44</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >PRISCILA CARVALHO</td><td class=xl24 width=64 >PhotoArts - IMAGIC XXIII (90x135) em DECOR CRISTAL - Mold.: Basel - Preto</td><td class=xl24 width=64 >1.436,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >1.436,00</td><td class=xl24 width=64 >R$ 478,66 pago em 3x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >ENTREGUE</td></tr><tr><td class=xl24 width=64 >01105</td><td class=xl24 width=64 >01/09/2016 16:26</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >LUZ PERALTA</td><td class=xl24 width=64 >PhotoArts - BLACK FACES II (30x45) em METACRILATO 3 2 ACRÍLICO</td><td class=xl24 width=64 >429,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >429,00</td><td class=xl24 width=64 >R$ 429,00 pago em 1x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >ENTREGUE</td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >TOTAL</td><td class=xl24 width=64 >6.080,30</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >5.957,00</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr></table></body></html>

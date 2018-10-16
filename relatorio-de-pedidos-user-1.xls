@@ -1,0 +1,112 @@
+<html xmlns:o = "urn:schemas-microsoft-com:office:office"
+xmlns:x = "urn:schemas-microsoft-com:office:excel"
+xmlns = "http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv = Content-Type content = "text/html; charset=utf-8">
+<meta name = ProgId content = Excel.Sheet>
+<!--[if gte mso 9]><xml>
+<o:DocumentProperties>
+<o:LastAuthor>Sriram</o:LastAuthor>
+<o:LastSaved>2005-01-02T07:46:23Z</o:LastSaved>
+<o:Version>10.2625</o:Version>
+</o:DocumentProperties>
+<o:OfficeDocumentSettings>
+<o:DownloadComponents/>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->
+<style>
+<!--table
+{mso-displayed-decimal-separator:"\.";
+mso-displayed-thousand-separator:"\,";
+}
+@page
+{margin:1.0in .75in 1.0in .75in;
+mso-header-margin:.5in;
+mso-footer-margin:.5in;
+}
+tr
+{mso-height-source:auto;
+}
+col
+{mso-width-source:auto;
+}
+br
+{mso-data-placement:same-cell;
+}
+.style0
+{mso-number-format:General;
+text-align:general;
+vertical-align:bottom;
+white-space:nowrap;
+mso-rotate:0;
+mso-background-source:auto;
+mso-pattern:auto;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+mso-generic-font-family:auto;
+mso-font-charset:0;
+border:none;
+mso-protection:locked visible;
+mso-style-name:Normal;
+mso-style-id:0;
+}
+td
+{mso-style-parent:style0;
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+mso-ignore:padding;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+mso-generic-font-family:auto;
+mso-font-charset:0;
+mso-number-format:General;
+text-align:general;
+vertical-align:bottom;
+border:none;
+mso-background-source:auto;
+mso-pattern:auto;
+mso-protection:locked visible;
+white-space:nowrap;
+mso-rotate:0;
+}
+.xl24
+{mso-style-parent:style0;
+white-space:normal;
+}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>NOME_PLANILHA</x:Name>
+<x:WorksheetOptions>
+<x:Selected/>
+<x:ProtectContents>False</x:ProtectContents>
+<x:ProtectObjects>False</x:ProtectObjects>
+<x:ProtectScenarios>False</x:ProtectScenarios>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+<x:WindowHeight>10005</x:WindowHeight>
+<x:WindowWidth>10005</x:WindowWidth>
+<x:WindowTopX>120</x:WindowTopX>
+<x:WindowTopY>135</x:WindowTopY>
+<x:ProtectStructure>False</x:ProtectStructure>
+<x:ProtectWindows>False</x:ProtectWindows>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+
+<body link = blue vlink = purple>
+<table x:str border = 0 cellpadding = 0 cellspacing = 0 style = 'border-collapse: collapse;table-layout:fixed;'><tr><td class=xl24 width=64 >N°</td><td class=xl24 width=64 >DATA CADASTRO</td><td class=xl24 width=64 >LOJA</td><td class=xl24 width=64 >COLECIONADOR</td><td class=xl24 width=64 >OBRAS</td><td class=xl24 width=64 >VALOR</td><td class=xl24 width=64 >FRETE</td><td class=xl24 width=64 >TOTAL</td><td class=xl24 width=64 >PAGAMENTO</td><td class=xl24 width=64 >MARCHAND</td><td class=xl24 width=64 >STATUS</td></tr><tr><td class=xl24 width=64 >01641</td><td class=xl24 width=64 >07/03/2017 15:45:28</td><td class=xl24 width=64 >MOBLY</td><td class=xl24 width=64 >CEZAR AUGUSTO</td><td class=xl24 width=64 >InstaArts - (15,00x40,00) em METACRILATO ACM 2 3 ACRILICO - Mold.: Instambul</td><td class=xl24 width=64 >168,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >168,00</td><td class=xl24 width=64 >R$ 168,00 pago em 1x com DINHEIRO</td><td class=xl24 width=64 >JAIRO BIRMAN</td><td class=xl24 width=64 >PEDIDO REALIZADO</td></tr><tr><td class=xl24 width=64 >01639</td><td class=xl24 width=64 >06/03/2017 16:53:11</td><td class=xl24 width=64 >SITE INSTAARTS</td><td class=xl24 width=64 >EDUARDO ALMEIDA</td><td class=xl24 width=64 >InstaArts - (12,00x18,00) em DECOR CRISTAL</td><td class=xl24 width=64 >23,00</td><td class=xl24 width=64 >27,10</td><td class=xl24 width=64 >50,10</td><td class=xl24 width=64 >R$ 50,10 pago em 1x com CARTÃO DE CRÉDITO CIELO</td><td class=xl24 width=64 >JAIRO BIRMAN</td><td class=xl24 width=64 >PREPARADO P/ ENVIO</td></tr><tr><td class=xl24 width=64 >01638</td><td class=xl24 width=64 >06/03/2017 15:20:38</td><td class=xl24 width=64 >PHOTOARTS - ESTÚDIO</td><td class=xl24 width=64 >Mila Mayer</td><td class=xl24 width=64 >InstaArts - (60,00x90,00) em METACRILATO 3 2 ACRÍLICO<br />InstaArts - (60,00x90,00) em METACRILATO 3 2 ACRÍLICO<br />InstaArts - (100,00x150,00) em METACRILATO 3 2 ACRÍLICO</td><td class=xl24 width=64 >5.211,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >5.211,00</td><td class=xl24 width=64 >Nenhum pagamento lançado</td><td class=xl24 width=64 >PAULO SERGIO VARELLA</td><td class=xl24 width=64 >EM PRODUÇÃO</td></tr><tr><td class=xl24 width=64 >01637</td><td class=xl24 width=64 >06/03/2017 14:50:29</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >MARINA ROSSI</td><td class=xl24 width=64 >InstaArts - (29,00x42,00) em METACRILATO PS 2 2 ACRILICO - Mold.: Buenos Aires - Branco</td><td class=xl24 width=64 >267,49</td><td class=xl24 width=64 >16,00</td><td class=xl24 width=64 >283,49</td><td class=xl24 width=64 >R$ 267,49 pago em 1x com DEPÓSITO</td><td class=xl24 width=64 >CIRCÁSSIA DE LEMOS</td><td class=xl24 width=64 >EM PRODUÇÃO</td></tr><tr><td class=xl24 width=64 >01636</td><td class=xl24 width=64 >06/03/2017 13:39:51</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >NEY DUARTE</td><td class=xl24 width=64 >PhotoArts - HONG KONG NATHAN ROAD (30,00x38,00) em DECOR CRISTAL - Mold.: Basel - Bege</td><td class=xl24 width=64 >280,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >280,00</td><td class=xl24 width=64 >R$ 280,00 pago em 1x com CARTÃO DE DÉBITO</td><td class=xl24 width=64 >CIRCÁSSIA DE LEMOS</td><td class=xl24 width=64 >PRONTA ENTREGA</td></tr><tr><td class=xl24 width=64 >01635</td><td class=xl24 width=64 >05/03/2017 20:12:54</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >SINJIN YANO</td><td class=xl24 width=64 >InstaArts - (20,00x30,00) em METACRILATO 3 2 ACRÍLICO<br />InstaArts - (20,00x20,00) em METACRILATO 3 2 ACRÍLICO<br />InstaArts - (20,00x30,00) em METACRILATO 3 2 ACRÍLICO<br />InstaArts - (20,00x30,00) em METACRILATO 3 2 ACRÍLICO<br />InstaArts - (20,00x20,00) em METACRILATO 3 2 ACRÍLICO</td><td class=xl24 width=64 >709,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >988,00</td><td class=xl24 width=64 >R$ 329,34 pago em 3x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >ERICA VARELLA</td><td class=xl24 width=64 >PEDIDO REALIZADO</td></tr><tr><td class=xl24 width=64 >01634</td><td class=xl24 width=64 >05/03/2017 17:27:46</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >THALITA COSTA</td><td class=xl24 width=64 >PhotoArts - UNDERLINE VIEWS II (30,00x45,00) em METACRILATO PS 2 2 ACRILICO<br />PhotoArts - UNDERLINE VIEWS III (30,00x45,00) em METACRILATO PS 2 2 ACRILICO<br />PhotoArts - UNDERLINE VIEWS V (30,00x45,00) em METACRILATO PS 2 2 ACRILICO</td><td class=xl24 width=64 >591,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >591,00</td><td class=xl24 width=64 >R$ 591,00 pago em 1x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >CIRCÁSSIA DE LEMOS</td><td class=xl24 width=64 >EM PRODUÇÃO</td></tr><tr><td class=xl24 width=64 >01633</td><td class=xl24 width=64 >05/03/2017 16:20:28</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >ALAN DANILO CASALI DIAS</td><td class=xl24 width=64 >PhotoArts - IMAGIC XXIX (60,00x85,00) em METACRILATO PS 2 2 ACRILICO<br />PhotoArts - MEU CARNAVAL 5 (60,00x90,00) em METACRILATO PS 2 2 ACRILICO</td><td class=xl24 width=64 >1.502,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >1.426,90</td><td class=xl24 width=64 >R$ 1.426,90 pago em 1x com CARTÃO DE DÉBITO</td><td class=xl24 width=64 >CIRCÁSSIA DE LEMOS</td><td class=xl24 width=64 >EM PRODUÇÃO</td></tr><tr><td class=xl24 width=64 >01632</td><td class=xl24 width=64 >04/03/2017 19:37:03</td><td class=xl24 width=64 >VENDAS EXTERNAS</td><td class=xl24 width=64 >MARCELO FONSECA</td><td class=xl24 width=64 >InstaArts - (100,00x100,00) em METACRILATO 3 2 ACRÍLICO</td><td class=xl24 width=64 >3.542,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >3.542,00</td><td class=xl24 width=64 >Nenhum pagamento lançado</td><td class=xl24 width=64 >ERICA VARELLA</td><td class=xl24 width=64 >PEDIDO REALIZADO</td></tr><tr><td class=xl24 width=64 >01631</td><td class=xl24 width=64 >04/03/2017 17:52:43</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >ADRIANO PECHIO</td><td class=xl24 width=64 >PhotoArts - SÃO PAULO AZUL III (30,00x45,00) em METACRILATO 3 2 ACRÍLICO<br />InstaArts - (42,00x42,00) em DECOR CRISTAL - Mold.: Buenos Aires - Preto</td><td class=xl24 width=64 >846,87</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >804,53</td><td class=xl24 width=64 >Nenhum pagamento lançado</td><td class=xl24 width=64 >CAROLINE SIMÕES SANTOS</td><td class=xl24 width=64 >PRONTA ENTREGA</td></tr><tr><td class=xl24 width=64 >01630</td><td class=xl24 width=64 >04/03/2017 13:40:45</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >CLAUDIA SAVOY</td><td class=xl24 width=64 >InstaArts - (70,00x70,00) em DECOR CRISTAL - Mold.: Basel - Preto</td><td class=xl24 width=64 >736,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >645,00</td><td class=xl24 width=64 >Nenhum pagamento lançado</td><td class=xl24 width=64 >CIRCÁSSIA DE LEMOS</td><td class=xl24 width=64 >PRONTA ENTREGA</td></tr><tr><td class=xl24 width=64 >01629</td><td class=xl24 width=64 >04/03/2017 13:39:44</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >MARIA APARECIDA CORDEIRO KATSURAYAMA</td><td class=xl24 width=64 >InstaArts - (80,00x90,00) em METACRILATO 3 2 ACRÍLICO</td><td class=xl24 width=64 >1.335,10</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >1.201,59</td><td class=xl24 width=64 >R$ 600,00 pago em 1x com DEPÓSITO</td><td class=xl24 width=64 >ERICA VARELLA</td><td class=xl24 width=64 >PEDIDO REALIZADO</td></tr><tr><td class=xl24 width=64 >01628</td><td class=xl24 width=64 >04/03/2017 13:03:49</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >CLÁUDIO GIOVANOLLI</td><td class=xl24 width=64 >InstaArts - (30,00x42,00) em METACRILATO 3 2 ACRÍLICO</td><td class=xl24 width=64 >375,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >348,75</td><td class=xl24 width=64 >Nenhum pagamento lançado</td><td class=xl24 width=64 >ERICA VARELLA</td><td class=xl24 width=64 >PEDIDO REALIZADO</td></tr><tr><td class=xl24 width=64 >01627</td><td class=xl24 width=64 >03/03/2017 18:42:52</td><td class=xl24 width=64 >PHOTOARTS - ESTÚDIO</td><td class=xl24 width=64 >DANIEL RAMALHO</td><td class=xl24 width=64 >InstaArts - (40,00x60,00) em DECOR CRISTAL</td><td class=xl24 width=64 >317,00</td><td class=xl24 width=64 >40,00</td><td class=xl24 width=64 >357,00</td><td class=xl24 width=64 >Nenhum pagamento lançado</td><td class=xl24 width=64 >JAIRO BIRMAN</td><td class=xl24 width=64 >AGUARDAR - FALTA PAGAMENTO</td></tr><tr><td class=xl24 width=64 >01626</td><td class=xl24 width=64 >03/03/2017 15:21:31</td><td class=xl24 width=64 >PHOTOARTS - ESTÚDIO</td><td class=xl24 width=64 >EDUARDO COLESI</td><td class=xl24 width=64 >InstaArts - (29,00x45,00) em UV EM ALUCOBOND (ACM)<br />InstaArts - (25,00x60,00) em UV EM ALUCOBOND (ACM)</td><td class=xl24 width=64 >629,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >597,55</td><td class=xl24 width=64 >R$ 597,55 pago em 1x com DEPÓSITO</td><td class=xl24 width=64 >JAIRO BIRMAN</td><td class=xl24 width=64 >EM PRODUÇÃO</td></tr><tr><td class=xl24 width=64 >01625</td><td class=xl24 width=64 >02/03/2017 18:51:02</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >MARCOS GRASSO</td><td class=xl24 width=64 >InstaArts - (90,00x135,00) em METACRILATO ACM 2 3 ACRILICO<br />InstaArts - (40,00x165,00) em METACRILATO ACM 2 3 ACRILICO</td><td class=xl24 width=64 >2.967,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >2.940,30</td><td class=xl24 width=64 >R$ 1.470,15 pago em 1x com CARTÃO DE DÉBITO</td><td class=xl24 width=64 >CIRCÁSSIA DE LEMOS</td><td class=xl24 width=64 >EM PRODUÇÃO</td></tr><tr><td class=xl24 width=64 >01624</td><td class=xl24 width=64 >02/03/2017 17:51:50</td><td class=xl24 width=64 >PHOTOARTS - ESTÚDIO</td><td class=xl24 width=64 >Music-se - Daniel Zito</td><td class=xl24 width=64 >InstaArts - (20,00x140,00) em METACRILATO 3 2 ACRÍLICO</td><td class=xl24 width=64 >650,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >650,00</td><td class=xl24 width=64 >R$ 650,00 pago em 1x com DEPÓSITO</td><td class=xl24 width=64 >JAIRO BIRMAN</td><td class=xl24 width=64 >EM PRODUÇÃO</td></tr><tr><td class=xl24 width=64 >01623</td><td class=xl24 width=64 >02/03/2017 15:50:19</td><td class=xl24 width=64 >MOBLY</td><td class=xl24 width=64 >GUSTAVO MACIEL</td><td class=xl24 width=64 >InstaArts - (45,00x45,00) em DECOR CRISTAL - Mold.: Londres - Preto<br />InstaArts - (60,00x90,00) em DECOR CRISTAL - Mold.: Londres - Preto</td><td class=xl24 width=64 >398,00</td><td class=xl24 width=64 >74,26</td><td class=xl24 width=64 >472,26</td><td class=xl24 width=64 >R$ 472,26 pago em 1x com BOLETO BANCÁRIO</td><td class=xl24 width=64 >JAIRO BIRMAN</td><td class=xl24 width=64 >EM PRODUÇÃO</td></tr><tr><td class=xl24 width=64 >01622</td><td class=xl24 width=64 >02/03/2017 13:35:10</td><td class=xl24 width=64 >SITE INSTAARTS</td><td class=xl24 width=64 >ENEIAS DA CRUZ SOUSA</td><td class=xl24 width=64 >InstaArts - (34,00x34,00) em PAPEL FOSCO<br />InstaArts - (18,00x28,00) em PAPEL FOSCO<br />InstaArts - (7,00x32,00) em PAPEL FOSCO<br />InstaArts - (34,00x24,00) em PAPEL FOSCO</td><td class=xl24 width=64 >167,94</td><td class=xl24 width=64 >26,10</td><td class=xl24 width=64 >194,04</td><td class=xl24 width=64 >R$ 194,04 pago em 1x com CARTÃO DE CRÉDITO CIELO</td><td class=xl24 width=64 >JAIRO BIRMAN</td><td class=xl24 width=64 >PREPARADO P/ ENVIO</td></tr><tr><td class=xl24 width=64 >01621</td><td class=xl24 width=64 >02/03/2017 13:11:07</td><td class=xl24 width=64 >SITE INSTAARTS</td><td class=xl24 width=64 >ADRIANA SOUTO FIORILLO</td><td class=xl24 width=64 >InstaArts - (67,00x100,00) em METACRILATO ACM 2 3 ACRILICO</td><td class=xl24 width=64 >1.076,38</td><td class=xl24 width=64 >46,90</td><td class=xl24 width=64 >1.123,28</td><td class=xl24 width=64 >R$ 1.123,28 pago em 1x com CARTÃO DE CRÉDITO CIELO</td><td class=xl24 width=64 >JAIRO BIRMAN</td><td class=xl24 width=64 >EM PRODUÇÃO</td></tr><tr><td class=xl24 width=64 >01619</td><td class=xl24 width=64 >02/03/2017 11:24:19</td><td class=xl24 width=64 >MOBLY</td><td class=xl24 width=64 >FLAVIA RIBEIRO</td><td class=xl24 width=64 >InstaArts - (30,00x30,00) em DECOR CRISTAL - Mold.: Londres - Preto</td><td class=xl24 width=64 >48,00</td><td class=xl24 width=64 >11,91</td><td class=xl24 width=64 >59,91</td><td class=xl24 width=64 >Nenhum pagamento lançado</td><td class=xl24 width=64 >JAIRO BIRMAN</td><td class=xl24 width=64 >EM PRODUÇÃO</td></tr><tr><td class=xl24 width=64 >01618</td><td class=xl24 width=64 >02/03/2017 08:43:08</td><td class=xl24 width=64 >PHOTOARTS - ESTÚDIO</td><td class=xl24 width=64 >Music-se - Daniel Zito</td><td class=xl24 width=64 >InstaArts - (25,00x200,00) em METACRILATO PS 2 2 ACRILICO</td><td class=xl24 width=64 >800,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >800,00</td><td class=xl24 width=64 >Nenhum pagamento lançado</td><td class=xl24 width=64 >JAIRO BIRMAN</td><td class=xl24 width=64 >EM PRODUÇÃO</td></tr><tr><td class=xl24 width=64 >01617</td><td class=xl24 width=64 >01/03/2017 21:37:19</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >LUCIANA CAROLI </td><td class=xl24 width=64 >Produtos - Museu Magnético - cartela</td><td class=xl24 width=64 >39,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >39,00</td><td class=xl24 width=64 >Nenhum pagamento lançado</td><td class=xl24 width=64 >CAROLINE SIMÕES SANTOS</td><td class=xl24 width=64 >PRONTA ENTREGA</td></tr><tr><td class=xl24 width=64 >01616</td><td class=xl24 width=64 >01/03/2017 16:09:29</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >JUBA IBUTI</td><td class=xl24 width=64 >InstaArts - (20,00x30,00) em METACRILATO PS 2 2 ACRILICO<br />InstaArts - (20,00x30,00) em METACRILATO PS 2 2 ACRILICO<br />InstaArts - (20,00x30,00) em METACRILATO PS 2 2 ACRILICO<br />InstaArts - (40,00x13,00) em METACRILATO PS 2 2 ACRILICO<br />InstaArts - (20,00x30,00) em METACRILATO PS 2 2 ACRILICO</td><td class=xl24 width=64 >623,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >623,00</td><td class=xl24 width=64 >R$ 207,66 pago em 3x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >ERICA VARELLA</td><td class=xl24 width=64 >EM PRODUÇÃO</td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >TOTAL</td><td class=xl24 width=64 >23.301,78</td><td class=xl24 width=64 >242,27</td><td class=xl24 width=64 >23.396,70</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr></table></body></html>

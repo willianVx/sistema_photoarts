@@ -1,0 +1,112 @@
+<html xmlns:o = "urn:schemas-microsoft-com:office:office"
+xmlns:x = "urn:schemas-microsoft-com:office:excel"
+xmlns = "http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv = Content-Type content = "text/html; charset=utf-8">
+<meta name = ProgId content = Excel.Sheet>
+<!--[if gte mso 9]><xml>
+<o:DocumentProperties>
+<o:LastAuthor>Sriram</o:LastAuthor>
+<o:LastSaved>2005-01-02T07:46:23Z</o:LastSaved>
+<o:Version>10.2625</o:Version>
+</o:DocumentProperties>
+<o:OfficeDocumentSettings>
+<o:DownloadComponents/>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->
+<style>
+<!--table
+{mso-displayed-decimal-separator:"\.";
+mso-displayed-thousand-separator:"\,";
+}
+@page
+{margin:1.0in .75in 1.0in .75in;
+mso-header-margin:.5in;
+mso-footer-margin:.5in;
+}
+tr
+{mso-height-source:auto;
+}
+col
+{mso-width-source:auto;
+}
+br
+{mso-data-placement:same-cell;
+}
+.style0
+{mso-number-format:General;
+text-align:general;
+vertical-align:bottom;
+white-space:nowrap;
+mso-rotate:0;
+mso-background-source:auto;
+mso-pattern:auto;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+mso-generic-font-family:auto;
+mso-font-charset:0;
+border:none;
+mso-protection:locked visible;
+mso-style-name:Normal;
+mso-style-id:0;
+}
+td
+{mso-style-parent:style0;
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+mso-ignore:padding;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+mso-generic-font-family:auto;
+mso-font-charset:0;
+mso-number-format:General;
+text-align:general;
+vertical-align:bottom;
+border:none;
+mso-background-source:auto;
+mso-pattern:auto;
+mso-protection:locked visible;
+white-space:nowrap;
+mso-rotate:0;
+}
+.xl24
+{mso-style-parent:style0;
+white-space:normal;
+}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>NOME_PLANILHA</x:Name>
+<x:WorksheetOptions>
+<x:Selected/>
+<x:ProtectContents>False</x:ProtectContents>
+<x:ProtectObjects>False</x:ProtectObjects>
+<x:ProtectScenarios>False</x:ProtectScenarios>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+<x:WindowHeight>10005</x:WindowHeight>
+<x:WindowWidth>10005</x:WindowWidth>
+<x:WindowTopX>120</x:WindowTopX>
+<x:WindowTopY>135</x:WindowTopY>
+<x:ProtectStructure>False</x:ProtectStructure>
+<x:ProtectWindows>False</x:ProtectWindows>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+
+<body link = blue vlink = purple>
+<table x:str border = 0 cellpadding = 0 cellspacing = 0 style = 'border-collapse: collapse;table-layout:fixed;'><tr><td class=xl24 width=64 >N°</td><td class=xl24 width=64 >DATA CADASTRO</td><td class=xl24 width=64 >LOJA</td><td class=xl24 width=64 >COLECIONADOR</td><td class=xl24 width=64 >OBRAS</td><td class=xl24 width=64 >VALOR</td><td class=xl24 width=64 >FRETE</td><td class=xl24 width=64 >TOTAL</td><td class=xl24 width=64 >PAGAMENTO</td><td class=xl24 width=64 >MARCHAND</td><td class=xl24 width=64 >STATUS</td></tr><tr><td class=xl24 width=64 >02082</td><td class=xl24 width=64 >31/08/2017 14:47:27</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >RICARDO GALANTINI</td><td class=xl24 width=64 >InstaArts - (20,00x30,00) em 02. METACRILATO 3 2 ACRÍLICO<br />InstaArts - (20,00x30,00) em 02. METACRILATO 3 2 ACRÍLICO</td><td class=xl24 width=64 >326,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >260,80</td><td class=xl24 width=64 >R$ 130,40 pago em 2x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >LEONARDO ZAMBELLI CAPUTO VIEIRA GOMES</td><td class=xl24 width=64 >PEDIDO REALIZADO</td></tr><tr><td class=xl24 width=64 >02069</td><td class=xl24 width=64 >28/08/2017 19:53:54</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >CESAR AUGUSTO CHAMON BOLTANA MUÑOZ</td><td class=xl24 width=64 >InstaArts - (20,00x30,00) em 05. PAPEL ALGODAO</td><td class=xl24 width=64 >51,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >51,00</td><td class=xl24 width=64 >R$ 51,00 pago em 1x com CARTÃO DE DÉBITO</td><td class=xl24 width=64 >LEONARDO ZAMBELLI CAPUTO VIEIRA GOMES</td><td class=xl24 width=64 >ENTREGUE</td></tr><tr><td class=xl24 width=64 >02067</td><td class=xl24 width=64 >28/08/2017 14:45:16</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >IZILDINHA CLEMENTE</td><td class=xl24 width=64 >InstaArts - (70,00x70,00) em 12. DECOR CRISTAL - Mold.: Nova Iorque - Preto</td><td class=xl24 width=64 >873,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >690,02</td><td class=xl24 width=64 >R$ 690,02 pago em 1x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >LEONARDO ZAMBELLI CAPUTO VIEIRA GOMES</td><td class=xl24 width=64 >PRONTA ENTREGA</td></tr><tr><td class=xl24 width=64 >02062</td><td class=xl24 width=64 >24/08/2017 19:20:04</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >IZILDINHA CLEMENTE</td><td class=xl24 width=64 >InstaArts - (60,00x40,00) em 12. DECOR CRISTAL - Mold.: Basel - Preto</td><td class=xl24 width=64 >486,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >529,08</td><td class=xl24 width=64 >R$ 529,08 pago em 1x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >LEONARDO ZAMBELLI CAPUTO VIEIRA GOMES</td><td class=xl24 width=64 >PEDIDO REALIZADO</td></tr><tr><td class=xl24 width=64 >02057</td><td class=xl24 width=64 >23/08/2017 19:09:47</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >IZILDINHA CLEMENTE</td><td class=xl24 width=64 >PhotoArts - MEU CARNAVAL 9 (40,00x60,00) em 12. DECOR CRISTAL - Mold.: Basel - Preto<br />PhotoArts - JESUS CHRIST  (40,00x60,00) em 02. METACRILATO 3 2 ACRÍLICO<br />PhotoArts - MEU CARNAVAL 5 (60,00x90,00) em 02. METACRILATO 3 2 ACRÍLICO<br />PhotoArts - Skaftarjokull Glacier II (60,00x90,00) em 02. METACRILATO 3 2 ACRÍLICO<br />PhotoArts - Body Painting (30,00x30,00) em 02. METACRILATO 3 2 ACRÍLICO<br />PhotoArts - Body Painting (30,00x30,00) em 02. METACRILATO 3 2 ACRÍLICO<br />InstaArts - (70,00x70,00) em 12. DECOR CRISTAL - Mold.: Nova Iorque - Preto</td><td class=xl24 width=64 >5.945,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >4.688,00</td><td class=xl24 width=64 >Nenhum pagamento lançado</td><td class=xl24 width=64 >LEONARDO ZAMBELLI CAPUTO VIEIRA GOMES</td><td class=xl24 width=64 >PEDIDO REALIZADO</td></tr><tr><td class=xl24 width=64 >02050</td><td class=xl24 width=64 >19/08/2017 22:06:47</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >JORGE MANOEL PEREIRA DIAS</td><td class=xl24 width=64 >PhotoArts - GOTHAM CITY XIV (20,00x30,00) em 02. METACRILATO 3 2 ACRÍLICO</td><td class=xl24 width=64 >175,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >175,00</td><td class=xl24 width=64 >R$ 175,00 pago em 1x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >LEONARDO ZAMBELLI CAPUTO VIEIRA GOMES</td><td class=xl24 width=64 >PRONTA ENTREGA</td></tr><tr><td class=xl24 width=64 >02044</td><td class=xl24 width=64 >17/08/2017 18:17:09</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >GUSTAVO NOVAES GUIMARAES RANCEVAS</td><td class=xl24 width=64 >PhotoArts - NEW YORK (60,00x90,00) em 02. METACRILATO 3 2 ACRÍLICO</td><td class=xl24 width=64 >1.100,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >1.100,00</td><td class=xl24 width=64 >R$ 550,00 pago em 2x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >LEONARDO ZAMBELLI CAPUTO VIEIRA GOMES</td><td class=xl24 width=64 >PRONTA ENTREGA</td></tr><tr><td class=xl24 width=64 >02043</td><td class=xl24 width=64 >17/08/2017 18:04:12</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >GUILHERME BECHELLI</td><td class=xl24 width=64 >InstaArts - (40,00x60,00) em 12. DECOR CRISTAL</td><td class=xl24 width=64 >280,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >280,00</td><td class=xl24 width=64 >R$ 280,00 pago em 1x com DEPÓSITO</td><td class=xl24 width=64 >LEONARDO ZAMBELLI CAPUTO VIEIRA GOMES</td><td class=xl24 width=64 >ENTREGUE</td></tr><tr><td class=xl24 width=64 >02036</td><td class=xl24 width=64 >15/08/2017 15:44:50</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >IZILDINHA CLEMENTE</td><td class=xl24 width=64 >Produtos - Op Art Moldura 23x23cm<br />Produtos - Op Art Moldura 25x25cm</td><td class=xl24 width=64 >187,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >149,60</td><td class=xl24 width=64 >R$ 149,60 pago em 1x com CARTÃO DE DÉBITO</td><td class=xl24 width=64 >LEONARDO ZAMBELLI CAPUTO VIEIRA GOMES</td><td class=xl24 width=64 >PRONTA ENTREGA</td></tr><tr><td class=xl24 width=64 >02033</td><td class=xl24 width=64 >14/08/2017 18:48:14</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >MARIANE MARTINS BENETTI</td><td class=xl24 width=64 >InstaArts - (50,00x75,00) em 03. METACRILATO 4 mm PS</td><td class=xl24 width=64 >670,00</td><td class=xl24 width=64 >50,00</td><td class=xl24 width=64 >720,00</td><td class=xl24 width=64 >R$ 240,00 pago em 3x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >LEONARDO ZAMBELLI CAPUTO VIEIRA GOMES</td><td class=xl24 width=64 >ENTREGUE</td></tr><tr><td class=xl24 width=64 >02032</td><td class=xl24 width=64 >13/08/2017 16:16:19</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >LEONARDO ZAMBELLI</td><td class=xl24 width=64 >Produtos - Bloco 10x15 cm</td><td class=xl24 width=64 >149,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >104,30</td><td class=xl24 width=64 >R$ 104,30 pago em 1x com CARTÃO DE DÉBITO</td><td class=xl24 width=64 >LEONARDO ZAMBELLI CAPUTO VIEIRA GOMES</td><td class=xl24 width=64 >ENTREGUE</td></tr><tr><td class=xl24 width=64 >02031</td><td class=xl24 width=64 >12/08/2017 20:42:27</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >JOSÉ CARLOS FERNANDES</td><td class=xl24 width=64 >PhotoArts - Nova York em Paz (30,00x45,00) em 02. METACRILATO 3 2 ACRÍLICO<br />PhotoArts - THE PYRAMID I (30,00x30,00) em 02. METACRILATO 3 2 ACRÍLICO<br />PhotoArts - O ÊXODO DE MANHATTAN (30,00x45,00) em 02. METACRILATO 3 2 ACRÍLICO<br />InstaArts - (55,00x55,00) em 12. DECOR CRISTAL - Mold.: Basel - Tabaco<br />InstaArts - (55,00x55,00) em 12. DECOR CRISTAL - Mold.: Basel - Tabaco<br />InstaArts - (120,00x41,00) em 12. DECOR CRISTAL - Mold.: Basel - Tabaco</td><td class=xl24 width=64 >3.061,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >2.295,75</td><td class=xl24 width=64 >R$ 2.295,75 pago em 1x com CARTÃO DE DÉBITO</td><td class=xl24 width=64 >LEONARDO ZAMBELLI CAPUTO VIEIRA GOMES</td><td class=xl24 width=64 >ENTREGUE</td></tr><tr><td class=xl24 width=64 >02030</td><td class=xl24 width=64 >12/08/2017 20:18:54</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >PEDRO DA ROCHA LIMA</td><td class=xl24 width=64 >PhotoArts - THE PYRAMID II (60,00x60,00) em 02. METACRILATO 3 2 ACRÍLICO</td><td class=xl24 width=64 >952,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >761,60</td><td class=xl24 width=64 >R$ 253,86 pago em 3x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >LEONARDO ZAMBELLI CAPUTO VIEIRA GOMES</td><td class=xl24 width=64 >DISPONÍVEL P/ RETIRAR</td></tr><tr><td class=xl24 width=64 >02029</td><td class=xl24 width=64 >12/08/2017 19:50:27</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >BRUNO YOSHIDA TOMASELLI</td><td class=xl24 width=64 >InstaArts - (60,00x90,00) em 04. METACRILATO ACM 2 3 ACRILICO<br />InstaArts - (47,00x160,00) em 04. METACRILATO ACM 2 3 ACRILICO<br />InstaArts - (50,00x50,00) em 04. METACRILATO ACM 2 3 ACRILICO<br />InstaArts - (40,00x60,00) em 04. METACRILATO ACM 2 3 ACRILICO<br />InstaArts - (20,00x13,00) em 03. METACRILATO 4 mm PS<br />InstaArts - (20,00x13,00) em 03. METACRILATO 4 mm PS<br />InstaArts - (20,00x13,00) em 03. METACRILATO 4 mm PS</td><td class=xl24 width=64 >3.281,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >2.636,28</td><td class=xl24 width=64 >R$ 878,76 pago em 3x com CARTÃO DE CRÉDITO AMEX</td><td class=xl24 width=64 >LEONARDO ZAMBELLI CAPUTO VIEIRA GOMES</td><td class=xl24 width=64 >PREPARADO P/ ENVIO</td></tr><tr><td class=xl24 width=64 >02012</td><td class=xl24 width=64 >05/08/2017 21:59:27</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >ANA MARIA COSTA MARTIN</td><td class=xl24 width=64 >Produtos - Op Art Moldura 23x23cm</td><td class=xl24 width=64 >177,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >177,00</td><td class=xl24 width=64 >R$ 177,00 pago em 1x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >LEONARDO ZAMBELLI CAPUTO VIEIRA GOMES</td><td class=xl24 width=64 >PRONTA ENTREGA</td></tr><tr><td class=xl24 width=64 >02006</td><td class=xl24 width=64 >04/08/2017 16:45:57</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >SÔNIA ROMEIRO</td><td class=xl24 width=64 >PhotoArts - BLACK FACES II (60,00x90,00) em 02. METACRILATO 3 2 ACRÍLICO</td><td class=xl24 width=64 >1.400,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >1.400,00</td><td class=xl24 width=64 >R$ 466,66 pago em 3x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >LEONARDO ZAMBELLI CAPUTO VIEIRA GOMES</td><td class=xl24 width=64 >PRONTA ENTREGA</td></tr><tr><td class=xl24 width=64 >01997</td><td class=xl24 width=64 >01/08/2017 20:57:55</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >FREDERICO DUPIM</td><td class=xl24 width=64 >PhotoArts - BLACK FACES II (20,00x30,00) em 02. METACRILATO 3 2 ACRÍLICO</td><td class=xl24 width=64 >219,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >219,00</td><td class=xl24 width=64 >R$ 219,00 pago em 1x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >LEONARDO ZAMBELLI CAPUTO VIEIRA GOMES</td><td class=xl24 width=64 >PRONTA ENTREGA</td></tr><tr><td class=xl24 width=64 >01996</td><td class=xl24 width=64 >01/08/2017 20:28:47</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >LUCIANA BRACALE BRANDESPIM</td><td class=xl24 width=64 >PhotoArts - TANTAS CORES, TANTO MAR IX (30,00x45,00) em 02. METACRILATO 3 2 ACRÍLICO</td><td class=xl24 width=64 >357,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >349,86</td><td class=xl24 width=64 >R$ 116,62 pago em 3x com CARTÃO DE CRÉDITO REDE</td><td class=xl24 width=64 >LEONARDO ZAMBELLI CAPUTO VIEIRA GOMES</td><td class=xl24 width=64 >PRONTA ENTREGA</td></tr><tr><td class=xl24 width=64 >01993</td><td class=xl24 width=64 >01/08/2017 14:59:30</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >IZILDINHA CLEMENTE</td><td class=xl24 width=64 >Produtos - Op Art Moldura 23x23cm</td><td class=xl24 width=64 >177,00</td><td class=xl24 width=64 >0,00</td><td class=xl24 width=64 >177,00</td><td class=xl24 width=64 >R$ 177,00 pago em 1x com CARTÃO DE DÉBITO</td><td class=xl24 width=64 >LEONARDO ZAMBELLI CAPUTO VIEIRA GOMES</td><td class=xl24 width=64 >PRONTA ENTREGA</td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >TOTAL</td><td class=xl24 width=64 >19.866,00</td><td class=xl24 width=64 >50,00</td><td class=xl24 width=64 >16.764,29</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr></table></body></html>

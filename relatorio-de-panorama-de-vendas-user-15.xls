@@ -1,0 +1,112 @@
+<html xmlns:o = "urn:schemas-microsoft-com:office:office"
+xmlns:x = "urn:schemas-microsoft-com:office:excel"
+xmlns = "http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv = Content-Type content = "text/html; charset=utf-8">
+<meta name = ProgId content = Excel.Sheet>
+<!--[if gte mso 9]><xml>
+<o:DocumentProperties>
+<o:LastAuthor>Sriram</o:LastAuthor>
+<o:LastSaved>2005-01-02T07:46:23Z</o:LastSaved>
+<o:Version>10.2625</o:Version>
+</o:DocumentProperties>
+<o:OfficeDocumentSettings>
+<o:DownloadComponents/>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->
+<style>
+<!--table
+{mso-displayed-decimal-separator:"\.";
+mso-displayed-thousand-separator:"\,";
+}
+@page
+{margin:1.0in .75in 1.0in .75in;
+mso-header-margin:.5in;
+mso-footer-margin:.5in;
+}
+tr
+{mso-height-source:auto;
+}
+col
+{mso-width-source:auto;
+}
+br
+{mso-data-placement:same-cell;
+}
+.style0
+{mso-number-format:General;
+text-align:general;
+vertical-align:bottom;
+white-space:nowrap;
+mso-rotate:0;
+mso-background-source:auto;
+mso-pattern:auto;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+mso-generic-font-family:auto;
+mso-font-charset:0;
+border:none;
+mso-protection:locked visible;
+mso-style-name:Normal;
+mso-style-id:0;
+}
+td
+{mso-style-parent:style0;
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+mso-ignore:padding;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+mso-generic-font-family:auto;
+mso-font-charset:0;
+mso-number-format:General;
+text-align:general;
+vertical-align:bottom;
+border:none;
+mso-background-source:auto;
+mso-pattern:auto;
+mso-protection:locked visible;
+white-space:nowrap;
+mso-rotate:0;
+}
+.xl24
+{mso-style-parent:style0;
+white-space:normal;
+}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>NOME_PLANILHA</x:Name>
+<x:WorksheetOptions>
+<x:Selected/>
+<x:ProtectContents>False</x:ProtectContents>
+<x:ProtectObjects>False</x:ProtectObjects>
+<x:ProtectScenarios>False</x:ProtectScenarios>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+<x:WindowHeight>10005</x:WindowHeight>
+<x:WindowWidth>10005</x:WindowWidth>
+<x:WindowTopX>120</x:WindowTopX>
+<x:WindowTopY>135</x:WindowTopY>
+<x:ProtectStructure>False</x:ProtectStructure>
+<x:ProtectWindows>False</x:ProtectWindows>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+
+<body link = blue vlink = purple>
+<table x:str border = 0 cellpadding = 0 cellspacing = 0 style = 'border-collapse: collapse;table-layout:fixed;'><tr><td class=xl24 width=64 >N° PEDIDO</td><td class=xl24 width=64 >COLECIONADOR</td><td class=xl24 width=64 >DATA PEDIDO</td><td class=xl24 width=64 >STATUS</td><td class=xl24 width=64 >VALOR</td><td class=xl24 width=64 >OBS</td><td class=xl24 width=64 >OBRAS</td></tr><tr><td class=xl24 width=64 >00040</td><td class=xl24 width=64 >SANDRA BITTAR </td><td class=xl24 width=64 >01/11/2015 (Entrega 11/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >221,16</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts(25.00 x 43.00 - METACRILATO PS 2 2 ACRILICO)</td></tr><tr><td class=xl24 width=64 >00041</td><td class=xl24 width=64 >EMILIA</td><td class=xl24 width=64 >01/11/2015 (Entrega 11/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >524,58</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts(60.00 x 90.00 - DECOR CRISTAL)</td></tr><tr><td class=xl24 width=64 >00042</td><td class=xl24 width=64 >ROSI AMARAL CORDEIRO</td><td class=xl24 width=64 >03/11/2015 (Entrega 13/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >255,30</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >Imagic VIII(60.00 x 90.00 - METACRILATO 3 2 ACRÍLICO)</td></tr><tr><td class=xl24 width=64 >00043</td><td class=xl24 width=64 >SILVIO FAZOLLI</td><td class=xl24 width=64 >03/11/2015 (Entrega 13/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >190,21</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts(30.00 x 45.00 - DECOR CRISTAL)</td></tr><tr><td class=xl24 width=64 >00044</td><td class=xl24 width=64 >FELIPE FELICIO</td><td class=xl24 width=64 >03/11/2015 (Entrega 13/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >5.800,00</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts( ---  x  ---  -  --- )</td></tr><tr><td class=xl24 width=64 >00045</td><td class=xl24 width=64 >PATRICIA PASQUALI</td><td class=xl24 width=64 >05/11/2015 (Entrega 15/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >762,40</td><td class=xl24 width=64 >Se possível, entregar a encomenda na galeria até quinta feira 12/11</td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts(60.00 x 90.00 - METACRILATO PS 2 2 ACRILICO)</td></tr><tr><td class=xl24 width=64 >00046</td><td class=xl24 width=64 >CHRISTIAN MARKAKIS</td><td class=xl24 width=64 >05/11/2015 (Entrega 15/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >126,50</td><td class=xl24 width=64 >50% na encomenda R$63,25 e 50% na retirada R$63,25 </td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >00046</td><td class=xl24 width=64 >CHRISTIAN MARKAKIS</td><td class=xl24 width=64 >05/11/2015 (Entrega 15/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >126,50</td><td class=xl24 width=64 >50% na encomenda R$63,25 e 50% na retirada R$63,25 </td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >00047</td><td class=xl24 width=64 >CAROLINA TAROUCO ALVARES SOARES</td><td class=xl24 width=64 >06/11/2015 (Entrega 16/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >1.347,84</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >00047</td><td class=xl24 width=64 >CAROLINA TAROUCO ALVARES SOARES</td><td class=xl24 width=64 >06/11/2015 (Entrega 16/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >1.347,84</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >00047</td><td class=xl24 width=64 >CAROLINA TAROUCO ALVARES SOARES</td><td class=xl24 width=64 >06/11/2015 (Entrega 16/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >1.347,84</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >00047</td><td class=xl24 width=64 >CAROLINA TAROUCO ALVARES SOARES</td><td class=xl24 width=64 >06/11/2015 (Entrega 16/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >1.347,84</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >00048</td><td class=xl24 width=64 >LUCIANA MARQUÊS</td><td class=xl24 width=64 >06/11/2015 (Entrega 16/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >317,40</td><td class=xl24 width=64 >OBRA DO SORTEIO DO MES!!!!!!!!!!!!!!!!! </td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >Imagery #2: Vicissitude of Life(30.00 x 40.00 - METACRILATO 3 2 ACRÍLICO)</td></tr><tr><td class=xl24 width=64 >00049</td><td class=xl24 width=64 >NATHALY PRIEBE</td><td class=xl24 width=64 >06/11/2015 (Entrega 16/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >1.333,80</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts( ---  x  ---  -  --- )</td></tr><tr><td class=xl24 width=64 >00050</td><td class=xl24 width=64 >WASHINGTON LUIZ ELEOTERIO</td><td class=xl24 width=64 >07/11/2015 (Entrega 17/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >313,27</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts(20.00 x 20.00 - METACRILATO PS 2 2 ACRILICO)</td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts(20.00 x 20.00 - METACRILATO PS 2 2 ACRILICO)</td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts(0.00 x 0.00 -  --- )</td></tr><tr><td class=xl24 width=64 >00051</td><td class=xl24 width=64 >NELSON COELHO</td><td class=xl24 width=64 >08/11/2015 (Entrega 18/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >86,47</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts(20.00 x 20.00 - METACRILATO PS 2 2 ACRILICO)</td></tr><tr><td class=xl24 width=64 >00052</td><td class=xl24 width=64 >MARCO ANTONIO</td><td class=xl24 width=64 >08/11/2015 (Entrega 18/11/2015)</td><td class=xl24 width=64 >ENTREGUE</td><td class=xl24 width=64 >110,00</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts( ---  x  ---  -  --- )</td></tr><tr><td class=xl24 width=64 >00054</td><td class=xl24 width=64 >DENIS MUNHOZ</td><td class=xl24 width=64 >09/11/2015 (Entrega 19/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >272,28</td><td class=xl24 width=64 >272,00</td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts(30.00 x 45.00 - METACRILATO PS 2 2 ACRILICO)</td></tr><tr><td class=xl24 width=64 >00055</td><td class=xl24 width=64 >LEONARDO SIQUEIRA RODRIGUES</td><td class=xl24 width=64 >09/11/2015 (Entrega 19/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >520,00</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >00055</td><td class=xl24 width=64 >LEONARDO SIQUEIRA RODRIGUES</td><td class=xl24 width=64 >09/11/2015 (Entrega 19/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >520,00</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts(0.00 x 0.00 -  --- )</td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts(0.00 x 0.00 -  --- )</td></tr><tr><td class=xl24 width=64 >00053</td><td class=xl24 width=64 >NADJA LAURELLI</td><td class=xl24 width=64 >10/11/2015 (Entrega 19/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >357,08</td><td class=xl24 width=64 >Por favor entregar a encomenda até dia 18/11 na Galeria. O cliente viajará para a Espanha no dia seguinte.</td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >The Marvelous City(30.00 x 45.00 - METACRILATO 3 2 ACRÍLICO)</td></tr><tr><td class=xl24 width=64 >00057</td><td class=xl24 width=64 >VIVIANE DE SOUZA BRITO</td><td class=xl24 width=64 >10/11/2015 (Entrega 20/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >3.280,02</td><td class=xl24 width=64 >FAZER TODAS AS FOTOS EM PRETO E BRANCOOOOOO!!!! ELA MUDOU DE IDEIA NA ULTIMA HORA... FOTOS EM PB PLZZ!!!</td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts(50.00 x 50.00 - METACRILATO 3 2 ACRÍLICO)</td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts(50.00 x 50.00 - METACRILATO 3 2 ACRÍLICO)</td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts(50.00 x 50.00 - METACRILATO 3 2 ACRÍLICO)</td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts(50.00 x 50.00 - METACRILATO 3 2 ACRÍLICO)</td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts(50.00 x 50.00 - METACRILATO 3 2 ACRÍLICO)</td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts(50.00 x 50.00 - METACRILATO 3 2 ACRÍLICO)</td></tr><tr><td class=xl24 width=64 >00059</td><td class=xl24 width=64 >Telma Ramos Trigo</td><td class=xl24 width=64 >10/11/2015 (Entrega 20/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >1.059,93</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts(60.00 x 42.00 - METACRILATO PS 2 2 ACRILICO)</td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts(60.00 x 42.00 - METACRILATO PS 2 2 ACRILICO)</td></tr><tr><td class=xl24 width=64 >00061</td><td class=xl24 width=64 >RENATO SORVILO</td><td class=xl24 width=64 >10/11/2015 (Entrega 20/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >1.929,26</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts(102.00 x 74.00 - METACRILATO 5 2 ACRÍLICO)</td></tr><tr><td class=xl24 width=64 >00056</td><td class=xl24 width=64 >PATRICIA BORGES</td><td class=xl24 width=64 >10/11/2015 (Entrega 20/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >543,00</td><td class=xl24 width=64 >Este desconto de 40% foi um desconto combinado por conta de um erro no pedido anterior (foi inclusive assunto de reunião)</td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >InstaArts( ---  x  ---  -  --- )</td></tr><tr><td class=xl24 width=64 >00058</td><td class=xl24 width=64 >FELIPE FELICIO</td><td class=xl24 width=64 >10/11/2015 (Entrega 20/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >3.032,73</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >00058</td><td class=xl24 width=64 >FELIPE FELICIO</td><td class=xl24 width=64 >10/11/2015 (Entrega 20/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >3.032,73</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >00060</td><td class=xl24 width=64 >LUIS PAULO ANDRADE</td><td class=xl24 width=64 >10/11/2015 (Entrega 20/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >349,00</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >00060</td><td class=xl24 width=64 >LUIS PAULO ANDRADE</td><td class=xl24 width=64 >10/11/2015 (Entrega 20/11/2015)</td><td class=xl24 width=64 >REALIZADO</td><td class=xl24 width=64 >349,00</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr></table></body></html>

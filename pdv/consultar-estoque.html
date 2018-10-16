@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <title>PDV | Consultar Estoque | Photoarts Gallery</title>
+        <link rel="stylesheet" type="text/css" href="../padrao/css/efeitos.css"/>
+        <link rel="stylesheet" type="text/css" href="../padrao/css/componentes.css"/>
+        <link rel="stylesheet" type="text/css" href="../padrao/css/fontes.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/menu.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
+        <script src="../js/jquery-latest.min.js" type="text/javascript"></script>
+        <script src="../js/Chart.min.js"></script>
+        <script type="text/javascript" src="../padrao/json2.js"></script>
+        <script type="text/javascript" src="../padrao/utils.js"></script>
+        <script type="text/javascript" src="./js/photoarts-pdv.js"></script>
+        <script type="text/javascript" src="js/consultar-estoque.js"></script>
+    </head>
+    <body style="height:100%;">
+        <div id="pagina">
+            <div id="divprincipal" >
+                <div id="cabecalho">
+                    <div id="cabecalho_botao_menu" onclick="window.location = 'principal.html'"><img src="../imagens/galerianome.png" /></div>
+                    <div id="legendaTela">
+                        <div id="nomeGaleria"></div>
+                    </div>
+                    <div id="cabecalho_botoes_principal" style="float:right">
+                        <div id="cabecalho_botao_menu_topo" onclick="window.location = 'index.html'"  ><img src="../imagens/sair.png" /></div>
+                        <div id="cabecalho_botao_menu_topo" onclick="window.location='alterar-senha.html'" title="Alterar Senha"><img src="../imagens/chave.png" style="width:auto; height:25px;"/></div>
+                        <div id="legendaTela" style="float:right; text-align:right; padding-right:10px;">
+                            <div id="nomeUsuario"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--cabecalho-->
+                <div style="height:65px;"> </div>
+                <div style="clear:both"> </div>
+                <div style="width:100%; text-align:center">
+                    <div align="center" style="max-width:90%; width:100%; display:inline-block; float:none">
+                        <div style="padding-left:5px; margin-right:5px;" align="center">
+                            <div class="quadrosimples efeito_delay" style=" clear:both; min-width:100%; width:95%; max-width:1000px; min-height:238px; display:block;" align="left">
+                                <div class="quadrosimplestitulo">
+                                    <select id="galerias" style="width:220px; float:left; margin-top:-2px; margin-right:10px" class="textbox_cinzafoco textbox_cinzafocoefeito"> 
+                                        <option>Selecione uma galeria</option>
+                                    </select>
+                                    <input type="text" id="busca" onkeyup="Pesquisar();" style="width:220px; float:left; margin-top:-2px; margin-right:10px" class="textbox_cinzafoco textbox_cinzafocoefeito" placeholder="Filtre por Artista ou Obra"  /> 
+                                    <div class="botaotitulosimples" onclick="Pesquisar();"> <img src="../imagens/pesquisar.png" /></div>
+                                </div>
+                                <div class="divformulario" id="tabela" style="height:auto; min-height:400px"></div>
+                                <div id="msgNaturezas" align="center" class="divformulario" style="display:none;"><label>Nenhuma natureza encontrada </label></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--divprincipal--> 
+        </div>
+        <!--pagina-->
+        <div id="divConfiguacoes" class="divConfiguacoes efeito_delay" style="height:0px;"  onclick="mostracaixaconfiguracoes();"> <br />
+            <div class="divconfitens efeito-opacidade-75-03" onclick="window.location = 'alterar-senha.html'"> <img src="../imagens/chave.png" /><br />
+                ALTERAR SENHA</div>
+            <div class="divconfitens efeito-opacidade-75-03"  onclick="suporteTecnico();"> <img src="../imagens/suporte.png" /><br />
+                SUPORTE TÉCNICO</div>
+        </div>
+        <div id="prompt"> </div>
+    </body>
+</html>

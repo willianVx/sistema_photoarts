@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Photoarts Gallery - Impressão Ordem de Compra</title>
+        <link rel="stylesheet" type="text/css" href="css/impressao-proposta.css"/>
+        <script type="text/javascript" src="padrao/json2.js"></script>
+        <script type="text/javascript" src="padrao/utils.js"></script>        
+        <script type="text/javascript" src="js/foco.js"></script>
+        <script type="text/javascript" src="js/impressao-ordem-de-compra.js"></script>
+    </head>
+    <body>
+        <div id="quadro1" class="bordaprincipal">
+            <div id="linha1">
+                <div id="cabecalho" >Ordem de Compra</div>
+                <div id="cabecalho2" >Nº Ordem: <span id="numero"></span><br />
+                    <span id="tipo">PHOTOARTS</span> </div>
+            </div>
+            <!--linha1-->
+            <div id="linha2" style="background:#6FAEE3; padding:4px; margin-bottom:10px;"> </div>
+            <div class="divDados">
+                <div  class="enderecoA" style="width:auto">Loja: </div>
+                <div class="enderecoB" id="loja" style=" width:315px;"></div>
+                <div  class="enderecoA" style="width:auto">Fornecedor:</div>
+                <div class="enderecoB" id="fornecedor" style=" width:270px;"></div>
+                <div  class="enderecoA" style="width:auto; float:left">Previsão: </div>
+                 <div class="enderecoB" id="previsao" style="padding-left:4px;"></div>
+               
+      
+            </div>
+            <div class="divDados">
+                <div  class="enderecoA" style="width:auto">Emissão:</div>
+                <div class="enderecoB" id="dataemissao" style=" width:150px;"> </div>
+                <br />
+                <!--<div  class="enderecoA" style="width:auto; text-align:left;">Validade:</div>-->
+                <div class="enderecoB" id="validade"></div>
+                <img src="imagens/Logopronto_fundo_branco.jpeg" style="width:150px; height:140px; float:right; margin-top:-30px;"  /> </div>
+            <div id="linha3" style="margin-top:15px;" ></div>
+            <div id="linhatotal" style="border:solid 2px #6FAEE3; background:#6FAEE3; padding:5px; padding-top:3px; padding-bottom:3px; padding-left:3px; margin-top:5px;">
+                <h1 style="display:inline-block; margin:0px; padding:0px; font-size:16px; font-weight:bold; vertical-align:middle">Itens</h1>
+            </div>
+            <div id="tabela" style="border:solid 2px #6FAEE3;  border-top:none; height:430px; padding:0px; padding-top:3px; padding-bottom:3px;" > </div>
+            <div style="min-height:10px;"> </div>
+            <div align="right">
+    <div class="umterco" style="width:25%;">Qtde. <span id="qtd">0</span></div>
+                <div class="umterco" style="border:solid 2px #6FAEE3; width:25%;">Total R$ <span id="total"  >0,00</span></div>   
+            </div>
+            <div style="min-height:10px;"> </div>
+            <div id="texto" style="border:solid 2px #6FAEE3;  height:auto; padding:5px; padding-top:3px; padding-bottom:3px;" >
+                Observações:<br /><br />
+                <span id="obs"></span>
+            </div>
+            <br>
+          <div style="min-height:10px;"> </div>
+            <span id="diaatual"  class="data"></span>
+            <div style="min-height:50px;"> </div>
+            <div  class="data" id="galeriaAssinatura" style="width:300px; border-top:2px solid #000; vertical-align:top; display:inline-block; text-align:center">Photoarts Gallery</div>   
+            <div id="nomeUsuarioAssinatura"  class="data"   style="width:300px; border-top:2px solid #000; vertical-align:top; float:right; display:inline-block; text-align:center">Usuário</div>   
+            <div style="min-height:10px;"> </div>
+            <div id="divRodape" style="margin-top:30px;">
+                <span id="cnpj">Photoarts Online Gallery - CNPJ: 00.934.702/0001-42</span>
+                <br />
+                <b id="site">www.photoarts.com.br</b>
+                <br />
+            </div>
+        </div>
+    </body>
+</html>

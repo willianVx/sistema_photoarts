@@ -1,0 +1,112 @@
+<html xmlns:o = "urn:schemas-microsoft-com:office:office"
+xmlns:x = "urn:schemas-microsoft-com:office:excel"
+xmlns = "http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv = Content-Type content = "text/html; charset=utf-8">
+<meta name = ProgId content = Excel.Sheet>
+<!--[if gte mso 9]><xml>
+<o:DocumentProperties>
+<o:LastAuthor>Sriram</o:LastAuthor>
+<o:LastSaved>2005-01-02T07:46:23Z</o:LastSaved>
+<o:Version>10.2625</o:Version>
+</o:DocumentProperties>
+<o:OfficeDocumentSettings>
+<o:DownloadComponents/>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->
+<style>
+<!--table
+{mso-displayed-decimal-separator:"\.";
+mso-displayed-thousand-separator:"\,";
+}
+@page
+{margin:1.0in .75in 1.0in .75in;
+mso-header-margin:.5in;
+mso-footer-margin:.5in;
+}
+tr
+{mso-height-source:auto;
+}
+col
+{mso-width-source:auto;
+}
+br
+{mso-data-placement:same-cell;
+}
+.style0
+{mso-number-format:General;
+text-align:general;
+vertical-align:bottom;
+white-space:nowrap;
+mso-rotate:0;
+mso-background-source:auto;
+mso-pattern:auto;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+mso-generic-font-family:auto;
+mso-font-charset:0;
+border:none;
+mso-protection:locked visible;
+mso-style-name:Normal;
+mso-style-id:0;
+}
+td
+{mso-style-parent:style0;
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+mso-ignore:padding;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+mso-generic-font-family:auto;
+mso-font-charset:0;
+mso-number-format:General;
+text-align:general;
+vertical-align:bottom;
+border:none;
+mso-background-source:auto;
+mso-pattern:auto;
+mso-protection:locked visible;
+white-space:nowrap;
+mso-rotate:0;
+}
+.xl24
+{mso-style-parent:style0;
+white-space:normal;
+}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>NOME_PLANILHA</x:Name>
+<x:WorksheetOptions>
+<x:Selected/>
+<x:ProtectContents>False</x:ProtectContents>
+<x:ProtectObjects>False</x:ProtectObjects>
+<x:ProtectScenarios>False</x:ProtectScenarios>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+<x:WindowHeight>10005</x:WindowHeight>
+<x:WindowWidth>10005</x:WindowWidth>
+<x:WindowTopX>120</x:WindowTopX>
+<x:WindowTopY>135</x:WindowTopY>
+<x:ProtectStructure>False</x:ProtectStructure>
+<x:ProtectWindows>False</x:ProtectWindows>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+
+<body link = blue vlink = purple>
+<table x:str border = 0 cellpadding = 0 cellspacing = 0 style = 'border-collapse: collapse;table-layout:fixed;'><tr><td class=xl24 width=64 >DATA</td><td class=xl24 width=64 >LOJA</td><td class=xl24 width=64 >DESCRIÇÃO</td><td class=xl24 width=64 >VALOR</td><td class=xl24 width=64 >SALDO</td></tr><tr><td class=xl24 width=64 >31/03/2018</td><td class=xl24 width=64 ></td><td class=xl24 width=64 >SALDO ANTERIOR</td><td class=xl24 width=64 ></td><td class=xl24 width=64 >0,00</td></tr><tr><td class=xl24 width=64 >02/04/2018</td><td class=xl24 width=64 >PHOTOARTS - ESTÚDIO</td><td class=xl24 width=64 >Recebimento da Venda N° 02434 | Colecionador: PATRICIA BORGES</td><td class=xl24 width=64 >319,00</td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >02/04/2018</td><td class=xl24 width=64 >PHOTOARTS - ESTÚDIO</td><td class=xl24 width=64 >Recebimento da Venda N° 02482 | Colecionador: PATRICIA BORGES</td><td class=xl24 width=64 >1.661,00</td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >09/04/2018</td><td class=xl24 width=64 >PHOTOARTS - ESTÚDIO</td><td class=xl24 width=64 >Recebimento da Venda N° 02433 | Colecionador: PATRICIA BORGES</td><td class=xl24 width=64 >770,00</td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >09/04/2018</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >Recebimento da Venda N° 02432 | Colecionador: LUCAS MUSSI</td><td class=xl24 width=64 >1.152,55</td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >16/04/2018</td><td class=xl24 width=64 >PHOTOARTS - ESTÚDIO</td><td class=xl24 width=64 >Recebimento da Venda N° 02507 | Colecionador: LUIS DE FREITAS</td><td class=xl24 width=64 >454,00</td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >16/04/2018</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >Recebimento da Venda N° 02504 | Colecionador: TOMZE FONSECA</td><td class=xl24 width=64 >177,33</td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >17/04/2018</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >Recebimento da Venda N° 02505 | Colecionador: ERIKA SANTANA</td><td class=xl24 width=64 >340,00</td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >20/04/2018</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >Recebimento da Venda N° 02456 | Colecionador: NICOLE GIORGI PROSCURCHIN</td><td class=xl24 width=64 >211,33</td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >23/04/2018</td><td class=xl24 width=64 >PHOTOARTS - ESTÚDIO</td><td class=xl24 width=64 >Recebimento da Venda N° 02413 | Colecionador: PATRICIA BORGES</td><td class=xl24 width=64 >1.220,00</td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >23/04/2018</td><td class=xl24 width=64 >PHOTOARTS - ESTÚDIO</td><td class=xl24 width=64 >Recebimento da Venda N° 02467 | Colecionador: SERGIO GIESTAS</td><td class=xl24 width=64 >851,67</td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >23/04/2018</td><td class=xl24 width=64 >SITE PHOTOARTS</td><td class=xl24 width=64 >Recebimento da Venda N° 02519 | Colecionador: MARIA MORENO</td><td class=xl24 width=64 >357,34</td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >30/04/2018</td><td class=xl24 width=64 >PHOTOARTS - ESTÚDIO</td><td class=xl24 width=64 >Recebimento da Venda N° 02424 | Colecionador: PATRICIA BORGES</td><td class=xl24 width=64 >184,33</td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >SALDO FINAL</td><td class=xl24 width=64 ></td><td class=xl24 width=64 >7.698,55</td></tr></table></body></html>

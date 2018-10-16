@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <title>Cadastro de Reservas | Jujuba</title>
+        <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="padrao/css/efeitos.css"/>
+        <link rel="stylesheet" type="text/css" href="padrao/css/componentes.css"/>
+        <link rel="stylesheet" type="text/css" href="padrao/css/fontes.css"/>
+        <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+        <link rel="stylesheet" href="css/menu.css" />
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css"/>
+        <script src="js/jquery-latest.min.js" type="text/javascript"></script>
+        <script src="js/jquery-ui.js" type="text/javascript"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/Chart.min.js"></script>
+        <script type="text/javascript" src="padrao/json2.js"></script>
+        <script type="text/javascript" src="padrao/utils.js"></script>
+        <script type="text/javascript" src="js/jujuba.js"></script>
+        <script type="text/javascript" src="js/cadastro-de-cotacoes.js"></script>
+    </head>
+    <body style="height:100%;">
+        <div id="pagina">
+            <img src="imagens/marcadagua.png" style="position:absolute; bottom:0; right:0; margin-top:2px; margin-right:20px; z-index:200; display:none" />
+            <div id="divmenu" >
+                <div id="cabecalho_usuario">
+                    <div id="foto_menu"> </div>
+                    <div id="nome_menu"><span id="nome_user" >Usuário não logado</span><br />
+                        <span id="email_user"><a href="index.html">Clique aqui</a></span> </div>
+                    <div id="menu_esquerda_ocultar" onclick="oculta_menu(1)"><img  src="imagens/3pontos.png" /> </div>
+                </div>
+                <div id="menu"  >
+                    <div id='cssmenu'>
+                        <ul>
+                            <li><a href='principal.html' title="Home" ><img src="imagens/home.png" /> <span>Home</span></a></li>
+                            <li class='has-sub'><a href='#' title="Cadastros"><img src="imagens/cadastro.png" /> <span>Cadastros</span></a>
+                                <ul>
+                                    <li class='last'><a href='cadastro-de-clientes.html' title="Cadastro de Clientes"><img src="imagens/clientes.png"><span>Clientes</span></a></li><li id="menu_1" class='last'><a href='cadastro-de-contatos-e-parceiros.html' title="Cadastro de Contatos e Parceiros"><img src="imagens/contatosparceiros.png"><span>Contatos e Parceiros</span></a></li>
+                                    <li class='last'><a href='cadastro-de-decoracoes.html' title="Cadastro de Decorações"><img src="imagens/decoracao.png"><span>Decorações</span></a></li>
+                                    <li class='last'><a href='cadastro-de-fornecedores.html' title="Cadastro de Fornecedores"><img src="imagens/fornecedores.png"> <span>Fornecedores</span></a></li><li class='last'><a href='cadastro-de-funcionarios.html' title="Cadastro de Funcionários"><img src="imagens/funcionarios.png"> <span>Funcionários</span></a></li>
+                                    <li class='last'><a href='cadastro-de-grupos.html' title="Cadastro de Grupos de Cardápio"><img src="imagens/cardapios.png"><span>Grupos - Cardápio</span></a></li>
+                                    <li class='last'><a href='cadastro-de-itens.html' title="Cadastro de Itens de Cardápio"><img src="imagens/cardapiositens.png"> <span>Itens - Cardápio</span></a></li>
+                                    <li class='last'><a href='cadastro-de-locais.html' title="Cadastro de Locais"><img src="imagens/locais.png"> <span>Locais</span></a></li>
+                                    <li class='last'><a href='cadastro-de-pacotes.html' title="Cadastro de Pacotes"><img src="imagens/pacotes.png"> <span>Pacotes</span></a></li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#' title="Vendas"><img src="imagens/venda.png" > <span>Vendas</span></a>
+                                <ul>
+                                    <li class='has-sub'><a href='#' title="Cadastro"><img src="imagens/cadastro.png" ><span>Cadastros</span></a>
+                                        <ul>
+                                            <li><a href='cadastro-de-contratos.html' title="Cadastro de Contratos"><span><img src="imagens/os.png">Contratos</span></a></li><li><a href='cadastro-de-reservas.html' title="Cadastro de Reservas"><span><img src="imagens/proposta.png">Reservas</span></a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li class='has-sub'><a href='#' title="Relatórios"><img src="imagens/relatorio.png"><span>Relatórios</span></a>
+                                        <ul>
+                                            <li><a href='relatorio-de-acompanhamento-de-reservas.html' title="Acompanhamento de Reservas"><span><img src="imagens/proposta.png">Acompanhamento de reservas</span></a></li>
+                                            <li><a href='relatorio-de-contratos.html' title="Acompanhamento de contratos"><span><img src="imagens/os.png">Acompanhamento de contratos</span></a></li>
+                                            <li><a href='relatorio-de-contratos-com-pendencias.html' title="Contratos com pendências"><span><img src="imagens/pendencias.png">Contratos com pendências</span></a></li>
+                                            <li><a href='relatorio-panorama-de-festas.html' title="Panorama de festas"><span><img src="imagens/festas.png">Panorama de festas</span></a></li>
+                                            <li><a href='relatorio-de-situacoes-financeiras.html' title="Situação financeira - contratos"><span><img src="imagens/situacao.png">Situação financeira - contratos</span></a></li>  <li><a href='relatorio-de-solicitacoes-externas.html' title="Solicitações Externas"><span><img src="imagens/solicitacoesexternas.png">Solicitações Externas</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#'  title="Financeiro"><img src="imagens/financeiro.png"> <span>Financeiro</span></a>
+                                <ul>
+                                    <li class='has-sub'><a href='#'  title="Contas a Pagar"><img src="imagens/porco.png"><span>Contas a Pagar</span></a>
+                                        <ul>
+                                            <li><a href='cadastro-de-contas-a-pagar.html'  title="Cadastro de Contas"><span><img src="imagens/cadastro.png">Cadastro de Contas</span></a></li>
+                                            <li><a href='diarios-de-contas.html'  title="Diário de Contas"><span><img src="imagens/relatorio.png">Diário de Contas</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class='has-sub'><a href='#'  title="Contas a Receber"><img src="imagens/areceber.png"><span>Contas a Receber</span></a>
+                                        <ul>
+                                            <li><a href='receitas-avulsas.html'  title="Receitas Avulsas"><span><img src="imagens/avulsos.png">Receitas Avulsas</span></a></li>
+                                            <li><a href='relatorio-de-contas-a-receber.html'  title="Relatório de Contas"><span><img src="imagens/relatorio.png">Relatório de Contas</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href='fluxo-de-caixa.html'  title="Fluxo de Caixa"><img src="imagens/fluxocaixa.png"><span>Fluxo de Caixa</span></a> </li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#'  title="Configuração"><img src="imagens/engrenagem.png"> <span>Configurações</span></a>
+                                <ul>
+                                    <li class='has-sub'><a href='#'  title="Contas a Pagar"><img src="imagens/porco.png"><span>Contas a Pagar</span></a>
+                                        <ul>
+                                            <li><a href='cadastro-de-centro-de-custos.html' title="Cadastro de Centro de Custos"><img src="imagens/centrocusto.png"> <span>Centro de Custos</span></a></li>
+                                            <li><a href='cadastro-de-contas-bancarias.html' title="Cadastro de Contas Bancárias"><img src="imagens/financeiros.png"> <span>Contas Bancárias</span></a></li>
+                                            <li class='last'><a href='cadastro-de-formas-de-pagamentos.html' title="Cadastro de Fomas de Pagamentos"><img src="imagens/pagamentos.png"> <span>Formas de Pagamentos</span></a></li>
+                                            <li class='last'><a href='cadastro-de-naturezas-de-gastos.html' title="Cadastro de Naturezas"><img src="imagens/naturezas.png"> <span>Naturezas</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href='cadastro-de-cargos.html' title="Cadastro de Cargos"><img src="imagens/cargos.png"> <span>Cargos</span></a></li>
+                                    <li class='last'><a href='cadastro-de-departamentos.html' title="Cadastro de Departamentos"><img src="imagens/deptos.png"> <span>Departamentos</span></a></li>
+                                    <li class='last'><a href='cadastro-de-feriados.html' title="Cadastro de Feriados"><img src="imagens/feriados.png"> <span>Feriados</span></a></li>
+                                    <li class='last'><a href='cadastro-de-tipos-de-contatos.html' title="Cadastro de Tipos de Contatos"><img src="imagens/contatos.png"> <span>Tipos de Contatos (Follow-up)</span></a></li>
+                                    <li class='last'><a href='cadastro-de-itens-opcionais.html' title="Cadastro de itens Opcionais"><img src="imagens/opcionais.png"> <span>Opcionais</span></a></li>
+                                    <li class='last'><a href='cadastro-de-tipos-de-convidados.html' title="Cadastro de Tipos de Convidados"><img src="imagens/convidados.png"> <span>Tipos de Convidados </span></a></li>
+                                    <li class='last'><a href='cadastro-de-tipos-de-festas.html' title="Cadastro de Tipos de Festas"><img src="imagens/tiposdefestas.png"> <span>Tipos de Festas</span></a></li>
+                                </ul>
+                            </li>
+                            <li class='last'><a onclick="SairDoSistema(false)"  title="Sair"><img src="imagens/sair2.png"> <span>Sair</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--menu-->  
+                <div align="center" style="padding-bottom:30px; width:320px; bottom:0px; margin-top:30px; "><img src="imagens/focomenu.png" /> </div>
+            </div>
+            <!--divmenu-->
+            <div id="divprincipal" style="height:100%; overflow:scroll; ">
+                <div id="cabecalho" >
+                    <div id="cabecalho_botao_menu" onclick="oculta_menu(2)"><img src="imagens/menu.png" /></div>
+                    <div id="legendaTela" ></div>
+                    <div id="cabecalho_botoes_principal" style="float:right">
+                        <div id="cabecalho_botao_menu_topo" onclick="SairDoSistema(false)"  ><img src="imagens/sair.png" /></div>
+                        <div id="cabecalho_botao_menu_topo"  onclick="mostracaixaconfiguracoes()"   ><img src="imagens/config.png" /></div>
+                        <div id="cabecalho_botao_menu_topo_msgm" onclick="NotificacaoDePendencias(true)" class="notif"><img class="notif" id="notificacao" src="imagens/email.png" /></div>
+                    </div>
+                </div>
+                <!--cabecalho-->
+                <div style="height:75px; width:100%;" align="center"> </div>
+                <div style="width:100%; text-align:center" align="center">
+                    <div id='conteudo' class="caixabrancajujuba efeito_delay" style="width: 98%; overflow: hidden; min-height: 70px; padding: 0px; text-align: center; max-width: 1150px;" align="center">
+                        <div id="divRelatorio" style="overflow:hidden">
+                            <div id='relatorio' class="efeito_delay" align="left" style="padding: 0px; width: 100%; min-height: 100px;">
+                                <div  id="barraEdicao" class="divtitulo" style=" padding-top:10px; background:#FFF; font-size:14px; margin-bottom:2px; color:#626161; padding-bottom:5px; background-position:right -10px">
+                                    <input type="text" onkeyup='ListarReservas();' class="textboxJujubaTitulo"  id="busca" placeHolder="Pesquise por cliente, email, data da festa ou codigo" style="max-width:330px;"/>
+                                    <select id="situacao" class="combo_cinzafoco" style="width:180px;" onchange="ListarReservas();">
+                                        <option value="0">Selecione uma situação</option>
+                                        <option value="1">Em aberto</option>
+                                        <option value="2">Gerou Contrato</option>
+                                        <option value="3">Vencida</option>
+                                        <option value="4">Cancelada</option>
+                                    </select>
+                                    <div onclick="ListarReservas();" class="botaoRedondoJujubaPesquisar"></div>
+                                    <div class="botaoRedondoJujuba" onclick="Novo('0');"> </div>
+                                </div>
+                                <div id="relatoriotabela" class="divformulario" style="margin-left:5px;  text-align: center; overflow: auto;"> </div>
+                                <div align="center">
+                                    <div id="contador" align="center" class="rotulototal" style="font-size: 14px; width:100%; margin:0px; text-align:center"></div></div>    <div id="msgCotacoes" align="center" class="divformulario" style="display:none;"><label>Nenhuma reserva encontrada </label></div>
+                            </div>
+                        </div>
+                        <div id="divCadastro" style="height: auto; width: 100%; overflow: hidden; min-height: 700px;"    align="center"> 
+                            <div style="padding:20px;">
+                                <div style="padding-top:10px;">
+                                    <div class="botaoRedondoJujubaCancelar" onclick="Cancelar();"> </div>                               
+                                    <div class="botaoRedondoJujubaGravar" id="confirmar"> </div>    
+                                </div>
+                                <!--abas-->
+                                <div id="divabacontainner" style="text-align:left; padding-left:20px; min-height:50px">
+                                    <div class="divabas"  id="aba0" onclick="SelecionaAbas(0)">Cadastro</div>  
+                                    <div class="divabas2" id="aba1" onclick="SelecionaAbas(1)">Follow-Up</div>
+                                    <!-- <div style="display:inline-block; margin-left:320px; margin-top:10px; vertical-align:top;">
+                                         <label id="avisoCodigoCotacao" style="font-size:15px; font-weight:bold; color:black"></label>
+                                         <a id="avisoCodigoContrato" style="font-size:13px; color:black; "> </a>
+                                         <br/>
+                                         <label id="avisoDataFesta" style="font-weight: bold; color:#C90E0E; font-size:12px;"></label> 
+                                     </div> -->
+                                </div>
+                                <!--abas-->
+                                <!--divsAbas-->
+                                <div class="caixabrancajujuba" style="width:100%; margin-left:0px; text-align:left;">
+                                    <div id="div0" class="divformulario rotulotitulos" style="margin-top:0px; border:none; width:100%; height:0px; padding:0px; padding-left:10px; overflow:hidden;">
+                                        <div style="padding-left:25px;">
+                                            <br />
+                                            <span style="font-size:9px; float:right; margin-right: 25px;" class="fonte_Roboto_titulo_normal"> 
+                                                <span style="color:red;">*</span> Campos obrigatórios
+                                            </span>
+                                            <br /><br />
+                                            <div style="width:100%;">
+                                                <div class="divcontainer" style="max-width: 850px;">
+                                                    <label>Cliente</label> 
+                                                    <label style="color:red;">*</label>
+                                                    <br />
+                                                    <select id="cliente" class="combo_cinzafoco" style="width:80%" onchange="AlteraCliente(); SelecionaProximoCampo(event);"></select>
+                                                    <div class="botaotitulocomum" id="botImprimir" onclick="VerEditarCliente();" title="Cadastrar novo cliente">
+                                                        <img src="imagens/cadastro.png" border="0" align="absmiddle" class="efeito-opacidade-75-03" style="margin-right:7px;"/>
+                                                    </div>
+                                                </div>
+                                                <!--<div class="divcontainer" style="width:10%; text-align:center;">
+                                                     <div class="botaotitulocomum" style="padding-left:0px; display:inline-block" title="Pesquisar cliente" onclick="VerEditarCliente();">     
+                                                         <img src="imagens/pesquisar.png" border="0" align="absmiddle" class="efeito-opacidade-75-03" style="margin-right:7px;"/>
+                                                     </div>
+                                                 </div>-->
+                                            </div>
+                                            <div class="divcontainer" style="max-width: 350px;">
+                                                <label>Contatos</label>
+                                                <br />
+                                                <input type="text" style="max-width:100%; background-color:#F5F5F5" id="contatos" class="textbox_cinzafoco" readonly="readonly"/>
+                                            </div>
+                                            <div class="divcontainer" style="max-width: 300px;">
+                                                <label>E-mail</label> 
+                                                <br />
+                                                <input type="text" style="max-width:100%; background-color:#F5F5F5" id="email" class="textbox_cinzafoco" readonly="readonly"/>
+                                            </div>
+                                            <div class="divcontainer" id="situacao_caixa" style="max-width: 175px;">
+                                                <label>Situação</label> 
+                                                <br />
+                                                <input type="text" style="text-align: center; max-width:100%; font-weight:bold" id="situacao_form" class="textbox_cinzafoco" readonly="readonly"/>
+                                            </div>
+                                            <br/>
+                                            <div class="divcontainer" style="max-width: 195px;">
+                                                <label>Local</label>
+                                                <label style="color:red;">*</label> 
+                                                <select onchange="SelecionaProximoCampo(event);" id="local" class="combo_cinzafoco" style="width:100%" onchange="Selector.$('avisoDataFesta').innerHTML = '';"></select>
+                                            </div>                                            
+                                            <div class="divcontainer" style="max-width: 85px;">
+                                                <label>Data Festa</label> 
+                                                <label style="color:red;">*</label> 
+                                                <input onkeyup="SelecionaProximoCampo(event);" id="dataFesta" type="text" style="width:100%" class="textbox_cinzafoco"/> 
+                                            </div>
+                                            <div class="divcontainer" style="max-width: 50px;">
+                                                <label>Horário</label> 
+                                                <label style="color:red;">*</label>
+                                                <input onkeyup="SelecionaProximoCampo(event);" onblur="setaHoraAutomaticamente();" id="horario1" type="text" style="width:100%" class="textbox_cinzafoco"/>
+                                            </div>
+                                            <label>às</label> 
+                                            <div class="divcontainer" style="max-width: 50px;">
+                                                <input onkeyup="SelecionaProximoCampo(event);" id="horario2" onkeypress="VarreCampoHora('horario2')" type="text" style="width:100%" class="textbox_cinzafoco"/>    
+                                            </div> 
+                                            <div class="divcontainer" style="max-width: 85px;">
+                                                <label>Valido Até</label> 
+                                                <input onkeyup="SelecionaProximoCampo(event);" type="text" id="dataValidade" style="width:100%; background-color:#F5F5F5;" class="textbox_cinzafoco" readonly/>
+                                            </div>
+                                            <div class="botaotitulocomum" style="display:inline-block; margin-left:15px; margin-top:-6px;" id="btGerarContrato" onclick="RedirecionaParaContratos(codigoAtual, 0, true);" title="Contrato">
+                                                <img src="imagens/historico.png" border="0" align="absmiddle" class="efeito-opacidade-75-03" style="margin-right:7px;"/>
+                                            </div>
+                                            <div class="botaotitulocomum" style="display:inline-block; margin-left:5px; margin-top:-6px;" id="btCancelarReserva" onclick="CancelarReserva(true);" title="Cancelar Reserva">
+                                                <img src="imagens/cancelar.png" width:="17" height="17" border="0" align="absmiddle" class="efeito-opacidade-75-03" style="margin-right:8px;"/>
+                                            </div>  
+                                            <br/>
+                                            <div class="divcontainer" style="max-width: 90%; ">
+                                                <label>Observação</label>
+                                                <textarea id="obs" class="textbox_cinzafoco" style="width:100%; height:150px;"></textarea>                                            
+                                            </div>
+                                            <input type="hidden" id="idCotacao" value="0"/>
+                                        </div>  
+                                    </div> 
+                                    <div id="div1" class="divformulario" style="margin-top:0px; border-top:1px solid; border-color:#D7D7D7; overflow:hidden; width:100%;">
+                                        <br/> 
+                                        <div class="botaoRedondoJujuba" onclick="PromptFollowUp(0);" style="margin-right:25px;"></div>
+
+                                        <br/> <br/>
+                                        <br/>
+                                        <div id="followtabela" style="text-align: center; height:430px; overflow:auto;"> </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--divsAbas-->
+                            <!--divCadastro-->
+
+                        </div>
+                    </div><!--conteudo--> 
+                </div>
+
+            </div><!--divprincipal--> 
+        </div><!--pagina-->
+        <div id="prompt"></div>
+        <div id="prompt2"></div>
+          <div id="divConfiguacoes" class="divConfiguacoes efeito_delay" style="height:0px;"  onclick="mostracaixaconfiguracoes();"> 
+            <br />
+
+            <div class="divconfitens efeito-opacidade-75-03" onclick="window.location = 'alterar-senha.html'"> <img src="imagens/chave.png" /><br />ALTERAR SENHA</div>
+            <div class="divconfitens efeito-opacidade-75-03"  onclick="suporteTecnico();"> <img src="imagens/setup.png" /><br />SETUP</div>
+
+        </div>
+    </body>
+
+</html>
+

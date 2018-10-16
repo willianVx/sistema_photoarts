@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Photoarts Gallery - Impressão Ordem de Compra</title>
+        <link rel="stylesheet" type="text/css" href="../css/impressao-proposta.css"/>
+        <link rel="stylesheet" type="text/css" href="../padrao/css/efeitos.css"/>
+        <link rel="stylesheet" type="text/css" href="../padrao/css/componentes.css"/>
+        <link rel="stylesheet" type="text/css" href="../padrao/css/fontes.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/menu.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
+        <script type="text/javascript" src="../padrao/json2.js"></script>
+        <script type="text/javascript" src="../padrao/utils.js"></script>        
+        <script type="text/javascript" src="js/photoarts-pdv.js"></script>
+        <script type="text/javascript" src="js/visualizar-ordem-de-producao.js"></script>
+    </head>
+    <body>
+        <div id="cabecalho" style="width:100%; padding-top: 0px;">
+            <div id="cabecalho_botao_menu" onclick="window.location = 'principal.html'">
+            <img src="../imagens/galerianome.png" /></div>
+            <div id="legendaTela">
+                <div id="nomeGaleria"></div>
+            </div>
+            <div id="cabecalho_botoes_principal" style="float:right">
+                <div id="cabecalho_botao_menu_topo" onclick="window.location = 'index.html'"  ><img src="../imagens/sair.png" /></div>
+                <div id="cabecalho_botao_menu_topo" onclick="window.location='alterar-senha.html'" title="Alterar Senha"><img src="../imagens/chave.png" style="width:auto; height:25px;"/></div>
+                <div id="legendaTela" style="float:right; text-align:right; padding-right:10px;">
+                    <div id="nomeUsuario"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="quadro1" class="bordaprincipal" style="background-color: white; margin: 0px auto; border: 1px solid #EEEEEE; font-family:Arial, Helvetica, sans-serif; font-size:12px; width:735px; padding-left:15px; padding-right:15px;">
+            <div id="linha1" style="height:90px;">
+                <br>
+                <label>Buscar OP</label>
+                <br>
+                <input type="text" id="ordemProducao" class="textbox_cinzafoco" style="width:120px;" placeholder="Digite o n° da OP" onkeydown="MostrarOnKeyDown(event);" />
+                <label>ou</label>
+                <input type="text" id="pedido" class="textbox_cinzafoco" style="width:130px;" placeholder="Digite o n° do Pedido" onkeydown="MostrarOnKeyDown(event);" />
+                <input type="button" value="Pesquisar" class="botaosimplesfoco" onclick="Mostrar();"/>
+                <h1 style="float:right;">PHOTOARTS</h1> 
+                <!--<img id='logo' src="../imagens/Logopronto_fundo_branco.jpeg" style="width:auto; height:80px; float:right; margin-top:-20px;"/>-->
+            </div>
+            <!--linha1-->
+            <div id="linha2" style="background:#6FAEE3; padding:4px;"></div>
+            <div class="divDados" id="dados" style="display: none;">
+                <div class="enderecoA" style="width:auto">Loja: </div>
+                <div class="enderecoB" id="loja" style=" width:auto;"></div>
+                <br>
+                <div class="enderecoA" style="width:auto; float:left">Previsão: </div>
+                <div class="enderecoB" id="previsao" style="padding-left:4px;"></div>
+                <br>
+                <div class="enderecoA" id="lblNumeroPedido" style="width:auto; float:left">N° Pedido: </div>
+                <div class="enderecoB" id="numeroPedido" style="padding-left:4px;"></div>
+                <br>
+                <div class="enderecoA" id="lblCliente" style="width:auto; float:left">Cliente: </div>
+                <div class="enderecoB" id="cliente" style="padding-left:4px;"></div>
+            </div>
+            <div class="divDados" id="dados2" style="display: none;">
+                <div class="enderecoA" style="width:auto">Emissão:</div>
+                <div class="enderecoB" id="dataemissao" style=" width:auto;"> </div>
+                <br/>
+                <div class="enderecoA" id="lblFormaPagamento" style="width:auto">Pagamento:</div>
+                <div class="enderecoB" id="formaPagamento" style=" width:auto;"> </div>
+                <img id="logo" src="../imagens/Logopronto_fundo_branco.jpeg" style="width:250px; height:auto; float:right; margin-top:30px;"/>
+            </div>
+            <div id="linha3" style="margin-top:15px;" ></div>
+            <div id="linhatotal" style="border:solid 2px #6FAEE3; background:#6FAEE3; padding:5px; padding-top:3px; padding-bottom:3px; padding-left:3px; margin-top:5px; display: none;">
+                <h1 style="display:inline-block; margin:0px; padding:0px; font-size:16px; font-weight:bold; vertical-align:middle">Obras</h1>
+            </div>
+            <div id="tabela" style="border:solid 2px #6FAEE3; border-top:none; height:auto; padding:5px; display: none;"></div>
+            <div style="min-height:10px;"> </div>
+            <div align="right" id="divqtde" style="display: none;">
+                <div class="umterco" style="border: solid 4px #FFF; text-align:center; width:23.5%; display:inline-block;
+        vertical-align:top; font-weight:bold; font-size:14px;">Qtde. <span id="qtd">0</span></div>
+            </div>
+            <div style="min-height:10px;"> </div>
+            <div id="texto" style="border:solid 2px #6FAEE3; height:auto; padding:5px; padding-top:3px; padding-bottom:3px; display: none;">
+                Observações:<br /><br />
+                <span id="obs"></span>
+            </div>
+            <br>
+            <input type="button" value="Gerar PDF" id="imprimir" class="botaosimplesfoco" style="display: none; float:right;" onclick="GerarPdfOrdemProducao();" />
+            <input type="button" value="Gravar" id="gravar" class="botaosimplesfoco" style="display: none; float:right; margin-right:10px;" onclick="Gravar();"/>
+        </div>
+        <div id="prompt"></div>
+    </body>
+</html>

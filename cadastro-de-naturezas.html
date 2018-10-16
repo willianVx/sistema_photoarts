@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <title>Cadastro de Naturezas | Photoarts Gallery</title>
+        <link rel="stylesheet" type="text/css" href="padrao/css/efeitos.css"/>
+        <link rel="stylesheet" type="text/css" href="padrao/css/componentes.css"/>
+        <link rel="stylesheet" type="text/css" href="padrao/css/fontes.css"/>
+        <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+        <link rel="stylesheet" type="text/css" href="padrao/css/fontes.css"/>
+        <link rel="stylesheet" href="css/menu.css">
+            <script src="js/jquery-latest.min.js" type="text/javascript"></script>
+            <script src="js/menu.js"></script>
+            <script src="js/Chart.min.js"></script>
+            <script type="text/javascript" src="padrao/json2.js"></script>
+            <script type="text/javascript" src="padrao/utils.js"></script>
+            <script type="text/javascript" src="js/photoarts.js"></script>
+            <script type="text/javascript" src="js/cadastro-de-naturezas.js"></script>
+
+
+    </head>
+
+    <body style="height:100%;">
+        <div id="pagina">
+            <div id="divmenu" >
+                <div id="cabecalho_usuario">
+                    <div id="foto_menu"> </div>
+                    <div id="nome_menu"><span id="nome_user" >Usuário não logado</span><br />
+                        <span id="email_user"><a href="index.html">Clique aqui</a></span> </div>
+                    <div id="menu_esquerda_ocultar" onclick="oculta_menu(1)"><img  src="imagens/3pontos.png" /> </div>
+                </div>
+                <div id="menu">
+                    <div id='cssmenu'>
+                        <ul>
+                            <li><a href='principal.html' title="Home" ><img src="imagens/home.png"> <span>Home</span></a></li>
+                            <li class='has-sub'><a href='#' title="Cadastros"><img src="imagens/cadastro.png"> <span>Cadastros</span></a>
+                                <ul>
+                                    <li><a href='cadastro-de-artistas.html' title="Cadastro de Artistas"><img src="imagens/artistas.png"> <span>Artistas</span></a></li>
+                                    <li><a href='cadastro-de-colecionadores.html' title="Cadastro de Colecionadores"><img src="imagens/clientes.png"> <span>Colecionadores</span></a></li>
+
+                                    <li class='last'><a href='cadastro-de-fornecedores.html' title="Cadastro de Fornecedores"><img src="imagens/fornecedores.png"> <span>Fornecedores</span></a></li>
+                                    <li class='last'><a href='cadastro-de-funcionarios.html' title="Cadastro de Funcionários"><img src="imagens/funcionarios.png"> <span>Funcionários</span></a></li>
+
+                                    <li class='last'><a href='cadastro-de-lojas.html' title="Cadastro de Lojas"><img src="imagens/locais.png"> <span>Lojas</span></a></li><li class='last'><a href='cadastro-de-marchands.html' title="Cadastro de Marchands"><img src="imagens/vendedores.png"> <span>Marchands</span></a></li>
+
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#' title="Compras"><img src="imagens/menucompras.png"> <span>Compras</span></a>
+                                <ul>
+                                    <li><a href='ordem-de-compras.html' title="Ordem de Compras"><img src="imagens/menuordemcompra.png"><span>Ordem de Compras</span></a></li>
+                                    <li><a href='ordem-de-compras.html?situacao=todas' title="Relatório de ordem de compras"><img src="imagens/menurelordemcompras.png"><span>Relatório de Ordem de Compras</span></a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class='has-sub'><a href='#' title="Estoque"><img src="imagens/menuestoque.png"> <span>Estoque</span></a>
+                                <ul>
+                                    <li><a href='estoque-de-materiais.html' title="Estoque de Materiais"><img src="imagens/menuestoquemateriais.png"><span>Estoque de Materiais</span></a></li>
+                                    <li><a href='estoque-de-produtos.html' title="Estoque de Produtos"><img src="imagens/menuestoqueprodutos.png"><span>Estoque de Produtos</span></a></li>
+
+                                </ul>
+                            </li><li class='has-sub'><a href='#' title="Vendas"><img src="imagens/venda.png" > <span>Vendas</span></a>
+                                <ul>
+                                    <li class='has-sub'><a href='#' title="Cadastro"><img src="imagens/cadastro.png" ><span>Cadastros</span></a>
+                                        <ul>
+                                            <!--<li><a href='orcamentos-simplificados.html' title="Cadastro de Orçamentos Simplificados"><span><img src="imagens/proposta.png">Orçamentos Simplificados</span></a></li>-->
+<li style="margin-left:35px;"><a href='propostas.html' title="Cadastro de Orçamentos"><span><img src="imagens/proposta.png">Orçamentos</span></a></li>
+                                            <li style="margin-left:35px;"><a href='pedidos.html' title="Cadastro de Pedidos"><span><img src="imagens/os.png">Pedidos</span></a></li><li style="margin-left:35px;"><a href='cadastro-de-vales-presentes-trocas.html' title="Cadastro de Vales Presentes"><span><img src="imagens/presente.png">Vales Presentes</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class='has-sub'><a href='#' title="Relatórios"><img src="imagens/relatorio.png"><span>Relatórios</span></a>
+                                        <ul>
+                                            <li style="margin-left:35px;"><a href='relatorio-de-encomendas.html' title="Relatório de Encomendas"><span><img src="imagens/materiais.png">Encomendas</span></a></li>
+<!--<li><a href='relatorio-de-orcamentos-simplificados.html' title="Relatório de Orçamentos Simplificados"><span><img src="imagens/proposta.png">Orçamentos Simplificados</span></a></li>-->
+<li style="margin-left:35px;"><a href='relatorio-de-propostas.html' title="Relatório de Orçamentos"><span><img src="imagens/proposta.png">Orçamentos</span></a></li>
+                                            <li style="margin-left:35px;"><a href='relatorio-de-pedidos.html'  title="Relatório de Pedidos"><span><img src="imagens/os.png">Pedidos</span></a></li><li style="margin-left:35px;"><a href='relatorio-de-panorama-de-vendas.html'  title="Relatório de Panorama de vendas"><span><img src="imagens/panoramavenda.png">Panorama de Vendas</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#'  title="Financeiro"><img src="imagens/financeiro.png"> <span>Financeiro</span></a>
+                                <ul>
+                                    <li class='has-sub'><a href='#'  title="Contas a Pagar"><img src="imagens/porco.png"><span>Contas à Pagar</span></a>
+                                        <ul>
+                                            <li style="margin-left:35px;"><a href='cadastro-de-contas-a-pagar.html'  title="Cadastro de Contas"><span><img src="imagens/cadastro.png">Cadastro de Contas</span></a></li>
+                                            <li style="margin-left:35px;"><a href='relatorio-de-contas-a-pagar.html'  title="Relatório de Contas à Pagar"><span><img src="imagens/relatorio.png">Relatório de Contas</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class='has-sub'><a href='#'  title="Contas à Receber"><img src="imagens/areceber.png"><span>Contas à Receber</span></a>
+                                        <ul>
+                                            <li style="margin-left:35px;"><a href='receitas-avulsas.html'  title="Receitas Avulsas"><span><img src="imagens/avulsos.png">Receitas Avulsas</span></a></li><li style="margin-left:35px;"><a href='relatorio-de-antecipacoes.html'  title="Relatório de Antecipações"><span><img src="imagens/relatorio.png">Relatório de Antecipações</span></a></li>
+                                            <li style="margin-left:35px;"><a href='relatorio-de-contas-a-receber.html'  title="Relatório de Contas"><span><img src="imagens/relatorio.png">Relatório de Contas</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href='fluxo-de-caixa.html'  title="Fluxo de Caixa"><img src="imagens/fluxocaixa.png"><span>Fluxo de Caixa</span></a> </li><li><a href='repasses-de-artistas.html'  title="Repasses de Artistas"><img src="imagens/artistas.png"><span>Repasses de Artistas</span></a> </li><li><a href='repasses-de-marchands.html'  title="Repasses de Marchands"><img src="imagens/vendedores.png"><span>Repasses de Marchands</span></a> </li><li><a href='repasses-de-marchands-gerentes.html'  title="Repasses de Marchands Gerentes"><img src="imagens/vendedores.png"><span>Repasses de Marchands Ger.</span></a> </li>
+<li><a href='repasses-de-arquitetos.html'  title="Repasses de Arquitetos"><img src="imagens/molduras.png"><span>Repasses de Arquitetos</span></a> </li>
+                                </ul>
+                            </li><li class='has-sub'><a href='#' title="Produção"><img src="imagens/menuproducao.png"> <span>Produção</span></a>
+                                <ul>
+                                    <li><a href='ordem-de-producao.html' title="Ordem de Produção"><img src="imagens/producao.png"><span>Ordem de Produção</span></a></li>
+
+                                    <li><a href='acompanhar-ops.html' title="Acompanhar OP's"><img src="imagens/acompanharops.png"><span>Acompanhar OP's</span></a></li>
+
+                                    <li class='last'><a href='ordem-de-producao.html?relatorio=true' title="Relatório de OP's"><img src="imagens/relops.png"><span>Relatório de OP's</span></a></li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#' title="Relatórios Gerais"><img src="imagens/menurelordemcompras.png"> <span>Relatórios</span></a>
+                                <ul><li><a href='relatorio-de-aniversariantes.html' title="Relatório de Aniversáriantes"><img src="imagens/festas.png"> <span>Aniversáriantes</span></a></li>
+<li><a href='relatorio-de-rt.html' title="Relatório de RT's"><img src="imagens/acabamento.png"> <span>RT's</span></a></li></ul></li><li class='has-sub'>
+                                <a href='#'  title="Configuração"><img src="imagens/engrenagem.png"> <span>Configurações</span></a>
+                                <ul>
+                                    <li><a href='cadastro-de-acabamentos.html' title="Cadastro de Acabamentos"><img src="imagens/acabamento.png"> <span>Acabamentos</span></a></li>
+                                    <li><a href='cadastro-de-cargos.html' title="Cadastro de Cargos"><img src="imagens/cargos.png"> <span>Cargos</span></a></li><li><a href='cadastro-de-contas.html' title="Cadastro de Contas"><img src="imagens/financeiros.png"> <span>Contas</span></a></li>
+                                    <li><a href='cadastro-de-centro-de-custos.html' title="Cadastro de Centro de Custos"><img src="imagens/centrocusto.png"> <span>Centro de Custos</span></a></li>
+                                    <li class='last'><a href='cadastro-de-departamentos.html' title="Cadastro de Departamentos"><img src="imagens/deptos.png"> <span>Departamentos</span></a></li>
+                                    <li class='last'><a href='cadastro-de-estilos.html' title="Cadastro de Estilos"><img src="imagens/estilo.png"> <span>Estilos</span></a></li>
+                                    <li class='last'><a href='cadastro-de-estrelas.html' title="Cadastro de Estrelas"><img src="imagens/estrela.png"> <span>Estrelas</span></a></li>
+
+                                    <li class='last'><a href='cadastro-de-etapas-de-producao.html' title="Cadastro de Etapas de Produção"><img src="imagens/equipamento.png"> <span>Etapas de Produção</span></a></li>
+                                    <li class='last'><a href='cadastro-de-feriados.html' title="Cadastro de Feriados"><img src="imagens/feriados.png"> <span>Feriados</span></a></li>
+                                    <li class='last'><a href='cadastro-de-formas-de-pagamentos.html' title="Cadastro de Fomas de Pagamentos"><img src="imagens/pagamentos.png"> <span>Formas de Pagamentos</span></a></li>
+                                    <li class='last'><a href='cadastro-de-tamanhos.html' title="Cadastro de Tamanhos"><img src="imagens/logistica.png"> <span>Tamanhos</span></a></li><li class='last'><a href='cadastro-de-produtos.html' title="Cadastro de Produtos"><img src="imagens/logistica.png"> <span>Produtos à venda</span></a></li>
+                                    <li class='last'><a href='cadastro-de-materiais.html' title="Cadastro de Materiais"><img src="imagens/materiais.png"> <span>Materiais</span></a></li> <li class='last'><a href='cadastro-de-molduras.html' title="Cadastro de Molduras"><img src="imagens/molduras.png"> <span>Molduras</span></a></li><li class='last'><a href='cadastro-de-naturezas.html' title="Cadastro de Naturezas"><img src="imagens/naturezas.png"> <span>Naturezas</span></a></li>
+                                    <li class='last'><a href='cadastro-de-status-de-vendas.html' title="Cadastro de Status de Vendas"><img src="imagens/statusvenda.png"> <span>Status de Vendas</span></a></li>
+                                    <li class='last'><a href='cadastro-de-tipos-de-contatos.html' title="Cadastro de Tipos de Contatos"><img src="imagens/contatos.png"> <span>Tipos de Contatos</span></a></li>
+                                    <li class='last'><a href='cadastro-de-tipos-de-transportes.html' title="Cadastro de Tipos de Transporte"><img src="imagens/transporte.png"> <span>Tipos de Transportes</span></a></li>                                    
+                                </ul>
+                            </li>
+                            <li class='last'><a href='index.html' title="Sair"><img src="imagens/sair2.png"> <span>Sair</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--menu-->
+
+                <div align="center" style="padding-bottom:30px; width:320px; overflow:hidden; bottom:0px; margin-top:30px; "><img src="imagens/focomenu.png" /> </div>
+            </div>
+            <!--divmenu-->
+
+            <div id="divprincipal"  style="height:auto" >
+                <div id="cabecalho" >
+                    <div id="cabecalho_botao_menu" onclick="oculta_menu(2)"><img src="imagens/menu.png" /></div>
+                    <div id="legendaTela" ></div>
+                    <div id="cabecalho_botoes_principal" style="float:right">
+                        <div id="cabecalho_botao_menu_topo" onclick="window.location = 'index.html'"  ><img src="imagens/sair.png" /></div>
+                        <div id="cabecalho_botao_menu_topo"  onclick="mostracaixaconfiguracoes()"   ><img src="imagens/config.png" /></div>
+                        <div id="cabecalho_botao_menu_topo" onclick="abrecaixaemail()" title="Lembretes"><img src="imagens/email.png" /></div>
+                        <div id="cabecalho_botao_menu_topo" onclick="abrecaixaaniversariantes()" title="Aniversariantes">
+                            <img src="imagens/bolo.png" />
+                        </div>
+                        <div id="cabecalho_botao_menu_topo" onclick="window.location='cadastro-de-colecionadores.html'" title="Cadastro de Colecionadores">
+                            <img src="imagens/clientes.png" />
+                        </div>
+                        <div id="cabecalho_botao_menu_topo" onclick="window.location='propostas.html'" title="Orçamentos">
+                            <img src="imagens/proposta.png" />
+                        </div>
+                        <div id="cabecalho_botao_menu_topo" onclick="window.location='pedidos.html'" title="Pedidos">
+                            <img src="imagens/os.png" />
+                        </div>
+                    </div>
+                </div>
+                <!--cabecalho-->
+
+
+                <div style="height:65px;"> </div>
+
+                <div style="padding-left:5px;	margin-right:5px;" align="center">  
+
+                    <div class="quadrosimples efeito_delay" style=" clear:both; ; width:98%; max-width:1000px;   display:block;" align="left">
+                        <div class="quadrosimplestitulo" id="divtitulotopo" > 
+
+
+                            <div class="botaotituloultimo" onclick="window.location = 'index.html'"> <img src="imagens/sair3.png" /></div>  
+                            <div class="botaotituloultimo" onclick="promptCadastro(0)"> <img src="imagens/novo.png" /></div>  
+
+
+
+
+                            <input type="text" id="busca" onkeyup="Mostra();" onkeydown="buscar_onkeydown(event, Mostra)" style="width:220px; float:left; margin-top:-2px; margin-right:10px" class="textbox_cinzafoco textbox_cinzafocoefeito"  placeholder="Pesquise as naturezas por nome"  /> 
+
+                            <div class="botaotitulosimples" onclick="Mostra();"> <img src="imagens/pesquisar.png" /></div>
+
+
+
+
+                        </div>
+
+                        <div class="divformulario" id="divTabela" style="min-height:400px">
+
+
+                        </div>
+
+                        <div id="msgNaturezas" align="center" class="divformulario" style="display:none;"><label>Nenhuma natureza encontrada </label></div>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <!--divprincipal--> 
+
+        </div>
+        <!--pagina-->
+        <div id="prompt"></div>
+
+        <div id="divConfiguacoes" class="divConfiguacoes efeito_delay" style="height:0px;"  onclick="mostracaixaconfiguracoes();"> 
+            <br />
+
+            <div class="divconfitens efeito-opacidade-75-03" onclick="window.location = 'alterar-senha.html'"> <img src="imagens/chave.png" /><br />ALTERAR SENHA</div>
+            <div class="divconfitens efeito-opacidade-75-03"  onclick="suporteTecnico();"> <img src="imagens/suporte.png" /><br />SUPORTE TÉCNICO</div>
+
+        </div></body>
+</html>

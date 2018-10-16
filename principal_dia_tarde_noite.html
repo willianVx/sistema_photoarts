@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <title>Painel</title>
+        <link rel="stylesheet" type="text/css" href="padrao/css/efeitos.css"/>
+        <link rel="stylesheet" type="text/css" href="padrao/css/componentes.css"/>
+        <link rel="stylesheet" type="text/css" href="padrao/css/fontes.css"/>
+        <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+        <link rel="stylesheet" href="css/menu.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.ico"/>
+        <script src="js/jquery-latest.min.js" type="text/javascript"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/Chart.min.js"></script>
+        <script type="text/javascript" src="padrao/json2.js"></script>
+        <script type="text/javascript" src="padrao/utils.js"></script>
+        <script type="text/javascript" src="js/jujuba.js"></script>
+        <script type="text/javascript" src="js/principal.js"></script>
+    </head>
+    <body style="height:100%;">
+        <div id="pagina"> <img src="imagens/marcadagua.png" style="position:absolute;  bottom:0; right:0; margin-top:2px; margin-right:20px; z-index:200" />
+            <div id="divmenu" >
+                <div id="cabecalho_usuario">
+                    <div id="foto_menu"> </div>
+                    <div id="nome_menu"><span id="nome_user" >Usuário não logado</span><br />
+                        <span id="email_user"><a href="index.html">Clique aqui</a></span> </div>
+                    <div id="menu_esquerda_ocultar" onclick="oculta_menu(1)"><img  src="imagens/3pontos.png" /> </div>
+                </div>
+                <div id="menu">
+                    <div id='cssmenu'>
+                        <ul>
+                            <li><a href='principal.html' title="Home" ><img src="imagens/home.png" /> <span>Home</span></a></li>
+                            <li class='has-sub'><a href='#' title="Cadastros"><img src="imagens/cadastro.png" /> <span>Cadastros</span></a>
+                                <ul>
+                                    <li id="menu_1" class='last'><a href='cadastro-de-clientes.html' title="Cadastro de Clientes"><img src="imagens/clientes.png"><span>Clientes</span></a></li><li id="menu_1" class='last'><a href='cadastro-de-contatos-e-parceiros.html' title="Cadastro de Contatos e Parceiros"><img src="imagens/contatosparceiros.png"><span>Contatos e Parceiros</span></a></li>
+                                    <li id="menu_2" class='last'><a href='cadastro-de-decoracoes.html' title="Cadastro de Decorações"><img src="imagens/decoracao.png"><span>Decorações</span></a></li>
+                                    <li class='last'><a href='cadastro-de-fornecedores.html' title="Cadastro de Fornecedores"><img src="imagens/fornecedores.png"> <span>Fornecedores</span></a></li><li class='last'><a href='cadastro-de-funcionarios.html' title="Cadastro de Funcionários"><img src="imagens/funcionarios.png"> <span>Funcionários</span></a></li>
+                                    <li class='last'><a href='cadastro-de-grupos.html' title="Cadastro de Grupos de Cardápio"><img src="imagens/cardapios.png"><span>Grupos - Cardápio</span></a></li>
+                                    <li class='last'><a href='cadastro-de-itens.html' title="Cadastro de Itens de Cardápio"><img src="imagens/cardapiositens.png"> <span>Itens - Cardápio</span></a></li>
+                                    <li class='last'><a href='cadastro-de-locais.html' title="Cadastro de Locais"><img src="imagens/locais.png"> <span>Locais</span></a></li>
+                                    <li class='last'><a href='cadastro-de-pacotes.html' title="Cadastro de Pacotes"><img src="imagens/pacotes.png"> <span>Pacotes</span></a></li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#' title="Vendas"><img src="imagens/venda.png" > <span>Vendas</span></a>
+                                <ul>
+                                    <li class='has-sub'><a href='#' title="Cadastro"><img src="imagens/cadastro.png" ><span>Cadastros</span></a>
+                                        <ul>
+                                            <li><a href='cadastro-de-contratos.html' title="Cadastro de Contratos"><span><img src="imagens/os.png">Contratos</span></a></li>
+                                            <li><a href='cadastro-de-reservas.html' title="Cadastro de Reservas"><span><img src="imagens/proposta.png">Reservas</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class='has-sub'><a href='#' title="Relatórios"><img src="imagens/relatorio.png"><span>Relatórios</span></a>
+                                        <ul>
+                                            <li><a href='relatorio-de-acompanhamento-de-reservas.html' title="Acompanhamento de Reservas"><span><img src="imagens/proposta.png">Acompanhamento de Reservas</span></a></li>
+                                            <li><a href='relatorio-de-contratos.html' title="Acompanhamento de contratos"><span><img src="imagens/os.png">Acompanhamento de contratos</span></a></li>
+                                            <li><a href='relatorio-de-contratos-com-pendencias.html' title="Contratos com pendências"><span><img src="imagens/pendencias.png">Contratos com pendências</span></a></li>
+                                            <li><a href='relatorio-panorama-de-festas.html' title="Panorama de festas"><span><img src="imagens/festas.png">Panorama de festas</span></a></li>
+                                            <li><a href='relatorio-de-situacoes-financeiras.html' title="Situação financeira - contratos"><span><img src="imagens/situacao.png">Situação financeira - contratos</span></a></li>  <li><a href='relatorio-de-solicitacoes-externas.html' title="Solicitações Externas"><span><img src="imagens/solicitacoesexternas.png">Solicitações Externas</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#'  title="Financeiro"><img src="imagens/financeiro.png"> <span>Financeiro</span></a>
+                                <ul>
+                                    <li class='has-sub'><a href='#'  title="Contas a Pagar"><img src="imagens/porco.png"><span>Contas a Pagar</span></a>
+                                        <ul>
+                                            <li><a href='cadastro-de-contas-a-pagar.html'  title="Cadastro de Contas"><span><img src="imagens/cadastro.png">Cadastro de Contas</span></a></li>
+                                            <li><a href='diarios-de-contas.html'  title="Diário de Contas"><span><img src="imagens/relatorio.png">Diário de Contas</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class='has-sub'><a href='#'  title="Contas a Receber"><img src="imagens/areceber.png"><span>Contas a Receber</span></a>
+                                        <ul>
+                                            <li><a href='receitas-avulsas.html'  title="Receitas Avulsas"><span><img src="imagens/avulsos.png">Receitas Avulsas</span></a></li>
+                                            <li><a href='relatorio-de-contas-a-receber.html'  title="Relatório de Contas"><span><img src="imagens/relatorio.png">Relatório de Contas</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href='fluxo-de-caixa.html'  title="Fluxo de Caixa"><img src="imagens/fluxocaixa.png"><span>Fluxo de Caixa</span></a> </li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#'  title="Configuração"><img src="imagens/engrenagem.png"> <span>Configurações</span></a>
+                                <ul>
+                                    <li class='has-sub'><a href='#'  title="Contas a Pagar"><img src="imagens/porco.png"><span>Contas a Pagar</span></a>
+                                        <ul>
+                                            <li><a href='cadastro-de-centro-de-custos.html' title="Cadastro de Centro de Custos"><img src="imagens/centrocusto.png"> <span>Centro de Custos</span></a></li>
+                                            <li><a href='cadastro-de-contas-bancarias.html' title="Cadastro de Contas Bancárias"><img src="imagens/financeiros.png"> <span>Contas Bancárias</span></a></li>
+                                            <li class='last'><a href='cadastro-de-formas-de-pagamentos.html' title="Cadastro de Fomas de Pagamentos"><img src="imagens/pagamentos.png"> <span>Formas de Pagamentos</span></a></li>
+                                            <li class='last'><a href='cadastro-de-naturezas-de-gastos.html' title="Cadastro de Naturezas"><img src="imagens/naturezas.png"> <span>Naturezas</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href='cadastro-de-cargos.html' title="Cadastro de Cargos"><img src="imagens/cargos.png"> <span>Cargos</span></a></li>
+                                    <li class='last'><a href='cadastro-de-departamentos.html' title="Cadastro de Departamentos"><img src="imagens/deptos.png"> <span>Departamentos</span></a></li>
+                                    <li class='last'><a href='cadastro-de-feriados.html' title="Cadastro de Feriados"><img src="imagens/feriados.png"> <span>Feriados</span></a></li>
+                                    <li class='last'><a href='cadastro-de-tipos-de-contatos.html' title="Cadastro de Tipos de Contatos"><img src="imagens/contatos.png"> <span>Tipos de Contatos (Follow-up)</span></a></li>
+                                    <li class='last'><a href='cadastro-de-itens-opcionais.html' title="Cadastro de itens Opcionais"><img src="imagens/opcionais.png"> <span>Opcionais</span></a></li>
+                                    <li class='last'><a href='cadastro-de-tipos-de-convidados.html' title="Cadastro de Tipos de Convidados"><img src="imagens/convidados.png"> <span>Tipos de Convidados </span></a></li>
+                                    <li class='last'><a href='cadastro-de-tipos-de-festas.html' title="Cadastro de Tipos de Festas"><img src="imagens/tiposdefestas.png"> <span>Tipos de Festas</span></a></li>
+                                </ul>
+                            </li>
+                            <li class='last'><a onclick="SairDoSistema(false)"  title="Sair"><img src="imagens/sair2.png"> <span>Sair</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--menu--> 
+            </div>
+            <!--divmenu-->
+            <div id="divprincipal">
+                <div id="cabecalho" style="z-index:100">
+                    <div id="cabecalho_botao_menu" onclick="oculta_menu(2)"><img src="imagens/menu.png" /></div>
+                    <div id="legendaTela" ></div>	
+                    <div id="cabecalho_botoes_principal" style="float:right">
+                        <div id="cabecalho_botao_menu_topo" onclick="SairDoSistema(false)"  ><img src="imagens/sair.png" /></div>
+                        <div id="cabecalho_botao_menu_topo"  onclick="mostracaixaconfiguracoes()" class="config"  ><img class="config" src="imagens/config.png" /></div>
+                        <div id="cabecalho_botao_menu_topo_msgm" onclick="NotificacaoDePendencias(true)" class="notif"><img class="notif" id="notificacao" src="imagens/email.png" /></div>
+                    </div>
+                </div>
+                <!--cabecalho-->
+                <div style="height:70px; width:100%"></div>
+                <div style="clear:both"></div>
+                <div align="center">
+                    <div id="divlinha1">
+                        <div id='divCalendario' class="divlinha2quadro caixabrancajujuba" align="left">
+                            <div class="divtitulo" style="background:#E55E3A; padding:4px; background-image:url(imagens/calendariotopo.png) ;background-repeat:no-repeat; background-position: right bottom -20px">
+                                <div style="min-width:250px; height:40px;  display:inline-block; vertical-align:middle">
+                                    <input type="button"  style="font-weight:bold;float:left;  vertical-align:middle " onclick="mesAnterior()" class="botaosimplesvermelhoCalendario" value="<"/> 
+                                    <div id="rotulomes" style="padding-top:11px; width:130px; text-align:center;  padding-left:11px; padding-right:11px; float:left"></div>
+                                    <input type="button"  style="font-weight:bold;float:left;vertical-align:middle " onclick="mesProximo()" class="botaosimplesvermelhoCalendario" value=">"/>
+                                </div>
+                                <select name="0" id="cmb_local" style="max-width:200px;  margin-bottom:0px;" class="combo_cinzafoco" onclick="cmb_local_click()"></select>
+                            </div>
+                            <div id="divtabelacalendario"></div>
+                            <div id="divtabelacalendariolinha"></div>
+                            <div style="font-size:10px; color:#333; text-align:center"> <img style='vertical-align:middle' src='imagens/circulovermelho.png' /> Contrato <img style='vertical-align:middle' src='imagens/circuloamarelo.png' /> Reserva </div>
+                        </div>
+                        <div id='divAvisosWidget' class="divlinha2quadro  caixabrancajujuba">
+                            <div class="divtitulo" style="display:iniline-block; background-image:url(imagens/avisos.png) ;background-repeat:no-repeat; background-position:right -10px" align="left"> Avisos
+                                <select onchange="LoadAvisos()" class="combo_cinzafoco"  id="cmb_aviso" style=" display:iniline-block; max-width:200px;"> </select>
+                            </div>
+                            <div id="tabelaAviso" style="margin:0px; overflow:auto; max-height:80%; border:none;"></div>
+                            <div id='divlinha2quadro2tabela' style="margin:0px"></div>
+                        </div>
+                    </div>
+                    <!--linha1-->
+                    <div id="linha2">
+                        <div id="linha2quadro1" class="caixabrancajujuba divwidgetprincipal" style="background-color:#5E90AF; background-image:url(imagens/cotacao.png); background-position: right" onclick="window.location = 'cadastro-de-reservas.html?c=0'">
+                            <div  id="linha2quadro1titulo" class="divtitulowidget">Nova Reserva</div>
+                            <div id="linha2quadro1texto" class="divwidgettexto">Clique aqui para fazer uma nova reserva ou editar uma já existente</div>
+                        </div>
+                        <div id="linha2quadro2" class="caixabrancajujuba divwidgetprincipal" style="background-color:#E55E3A; background-image:url(imagens/contratos.png); background-position: right"  onclick="window.location = 'cadastro-de-contratos.html?c=0'">
+                            <div id="linha2quadro2titulo" class="divtitulowidget">Novo Contrato</div>
+                            <div id="linha2quadro2texto" class="divwidgettexto">Clique aqui para fazer um novo contrato ou editar um já existente</div>
+                        </div>
+                        <div id="linha2quadro3" class="caixabrancajujuba divwidgetprincipal" style="background-color:#4DAF7B; background-image:url(imagens/panorama-de-festas.png);  background-position: right">
+                            <div  id="linha2quadro3titulo" class="divtitulowidget">Panorama de Festas</div>
+                            <div id="linha2quadro3texto"    onclick="window.location = 'relatorio-panorama-de-festas.html'" class="divwidgettexto" >Veja as festas da semana, valores, pendências, etc.</div>
+                        </div>
+                        <div id="linha2quadro4" onclick="window.location = 'cadastro-de-contas-a-pagar.html'"  class="caixabrancajujuba divwidgetprincipal" style="background-color:rgb(234, 193, 68); background-image:url(imagens/contasapagar.png);   background-position: right">
+                            <div id="linha2quadro4titulo" class="divtitulowidget">Cadastrar Contas a Pagar</div>
+                            <div id="linha2quadro4texto" class="divwidgettexto">Clique aqui para cadastrar despesas ou editar contas a pagar</div>
+                        </div>
+                    </div>
+                    <!--linha2-->
+                    <div id="linha3">
+                        <div  id="divCotacoesWidget"  class="caixabrancajujuba"  >
+                            <div class="divtitulo" style="text-align: left; background-color:#406983; width:100%; padding: 8px 0px; background-image:url(imagens/contrato.png) ;background-repeat:no-repeat; background-position:right -10px">
+                                <label style="margin-left:10px; color:#fff; display:inline-block;">Últimas Reservas</label>
+                                <select id="situacao" onchange="MostraCotacoes()" style="  max-width:200px; margin-left:10px; display:inline-block " class="combo_cinzafoco"  >
+                                    <option value="0">SITUAÇAO</option>
+                                    <option value="1">RESERVAS CANCELADAS</option>
+                                    <option value="2">CONTRATOS GERADOS</option>
+                                    <!--<option  value="3">RESERVAS VENCIDAS</option>-->
+                                    <option value="4">RESERVAS EM ABERTO</option>
+                                </select>
+                            </div>
+                            <div id="tabelacotacoes" style=" height:180px; overflow-x: hidden; overflow:auto"> </div>
+                            <!--<div id="load1" style="margin-top:50px; display:none;"> <img src="/padrao/gifs/loader_light_blue.gif"/> </div>-->
+                            <div id="load1" style="display:none;"> </div>
+                        </div>
+                        <div id="divContratosVencidosWidget" class="caixabrancajujuba" >
+                            <!-- <div class="divtitulo" style="text-align: left;  background-color:#406983; width:100%; padding: 8px 0px;  background-image:url(imagens/contrato.png) ;background-repeat:no-repeat; background-position:right -20px">
+                                 <div style="width:100%; height: 100%; display:inline-block;">
+                                     <label style="margin-left:10px; color:#fff;">Contratos com Pendências</label>
+                                 </div>
+                             </div>-->
+                            <div class="divtitulo" style="text-align: left;  background-color:#406983; width:100%; padding: 8px 0px;  background-image:url(imagens/contrato.png) ;background-repeat:no-repeat; background-position:right -20px">
+                                <label style="margin-left:10px; color:#fff;">Pendências</label>
+                                <select id="festaDias" class="combo_cinzafoco" style="max-width:80px; display:inline-block" onchange="MostraPendencias();">
+                                    <option value="0">Selecione...</option>
+                                    <option value="7">7 Dias</option>
+                                    <option value="15">15 Dias</option>
+                                    <option value="30">30 Dias</option>
+                                    <option value="90">3 Meses</option>
+                                    <option value="180">6 Meses</option>
+                                    <option value="365">12 Meses</option>
+                                </select>
+                                <select name="cmbcliente" class="combo_cinzafoco" id="cmbcliente" style="max-width:170px; display:inline-block"  onchange="MostraPendencias();">
+                                </select>
+                                <select id="cmblocal" class="combo_cinzafoco" style="max-width:170px; display:inline-block"  onchange="MostraPendencias();"></select>
+                            </div>
+                            <div id="tabelapendencias"  style="height:180px; overflow-x: hidden; overflow:auto"> </div>
+                            <!--<div id="load2" style="margin-top:50px; display:none;"> <img src="/padrao/gifs/loader_light_blue.gif"/> </div> -->
+                            <div id="load2" style="display:none;"> </div> 
+                        </div>
+                    </div>
+                    <div id="linha4">
+                        <div class="caixabrancajujuba" id="divTitulosVencidosWidgets" >
+                            <div class="divtitulo" style="text-align: left;  background-color:#406983; width:100%; padding: 8px 0px; background-image:url(imagens/titulosvencidos.png) ;background-repeat:no-repeat; background-position:right -10px ">
+                                <label style="margin-left:10px; color:#fff;  display:inline-block;">Títulos Vencidos | Vencendo</label>
+                                <select id="periodo" onchange="MostraVencimentos()" style=" max-width:200px; margin-left:10px; display:inline-block "  class="combo_cinzafoco" >
+                                    <option value="0">HOJE</option>
+                                    <option value="3">PRÓXIMOS 3 DIAS</option>
+                                    <option value="5">PRÓXIMOS 5 DIAS</option>
+                                    <option value="7">PRÓXIMOS 7 DIAS</option>
+                                    <option value="30">PRÓXIMOS 30 DIAS</option>
+                                </select>
+                            </div>
+                            <div id="tabelavencimentos" style=" height:200px; overflow-x: hidden; overflow:auto"> </div>
+                            <!--<div id="load3" style="margin-top:50px; display:none;"> <img src="/padrao/gifs/loader_light_blue.gif"/> </div> -->
+                            <div id="load3" style="display:none;"> </div>
+                        </div>
+                        <div id="divFestasWidget" class="caixabrancajujuba"  align="left" >
+                            <div class="divtitulo" style="text-align: left; background-color:#406983;  width:100%; padding: 8px 0px;  background-image:url(imagens/titulografico.png) ;background-repeat:no-repeat; background-position:right -10px">
+                                <img src="imagens/grafico.png" style="margin-left:15px;display:inline-block;"></img>
+                                <label style="margin-left:10px; color:#fff;">Festas - Próximos meses</label>
+                                <select id="localFestas" onchange="GraficoFestas()" style="  max-width:200px; margin-left:10px  "  class="combo_cinzafoco" >
+                                </select>
+                            </div>
+                            <div align="center" id="divGraficoFestas" style="margin:5px 10px; max-height:100%; width:100%;"> 
+                            </div>
+                            <div id="LegendaGraficoFestas" style="margin:20px 0px; text-align:center;" align="center"> </div>
+                        </div>
+                        <div align="left">
+                            <div id="widgetUltimos6Meses" class="caixabrancajujuba" align="left">
+                                <div class="divtitulo" style="text-align: left; background-color:#406983;  width:100%; padding: 8px 0px;  background-image:url(imagens/titulografico.png) ;background-repeat:no-repeat; background-position:right -10px">
+                                    <img src="imagens/grafico.png" style="margin-left:15px;  display:inline-block;"></img>
+                                    <label style="margin-left:10px; color:#fff;">Reservas -  Próximos meses</label>
+                                    <select id="localCotacoes"  onchange="GraficoCotacoes()" class="combo_cinzafoco" style="margin-left:10px; display:inline-block; max-width:200px" >
+                                    </select>
+                                </div>
+                                <div align="center" id="divGraficoCotacoes" style="margin:5px 10px; max-height:100%; width:100%;"> 
+                                    <!--<canvas id="GraficoCotacoes" style="max-width: 90%; max-height: 100%;" height="190" width="380"></canvas>--> 
+                                </div>
+                                <div id="LegendaGraficoCotacoes" style="margin:20px 0px; text-align:center;" align="center"> </div>
+                            </div>
+                        </div>	
+                    </div>
+                    <!--linha3-->
+                </div>
+            </div>
+            <!--divprincipal--> 
+        </div>
+        <!--pagina-->
+        <div id="prompt"></div>
+        <div id="divConfiguacoes" class="divConfiguacoes efeito_delay" style="height:0px;"  onclick="mostracaixaconfiguracoes();"> <br />
+            <div class="divconfitens efeito-opacidade-75-03" onclick="window.location = 'alterar-senha.html'"> <img src="imagens/chave.png" /><br />
+                ALTERAR SENHA</div>
+            <div class="divconfitens efeito-opacidade-75-03"  onclick="suporteTecnico();"> <img src="imagens/setup.png" /><br />SETUP</div>
+        </div>
+    </body>
+</html>

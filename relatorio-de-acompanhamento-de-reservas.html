@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <title>Relatório de Acompanhamento de Reservas | Jujuba</title>
+        <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="padrao/css/efeitos.css"/>
+        <link rel="stylesheet" type="text/css" href="padrao/css/componentes.css"/>
+        <link rel="stylesheet" type="text/css" href="padrao/css/fontes.css"/>
+        <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+        <link rel="stylesheet" href="css/menu.css" />
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css"/>
+        <script src="js/jquery-latest.min.js" type="text/javascript"></script>
+        <script src="js/jquery-ui.js" type="text/javascript"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/Chart.min.js"></script>
+        <script type="text/javascript" src="padrao/json2.js"></script>
+        <script type="text/javascript" src="padrao/utils.js"></script>
+        <script type="text/javascript" src="js/jujuba.js"></script>
+        <script type="text/javascript" src="js/relatorio-de-acompanhamento-de-cotacoes.js"></script>
+    </head>
+    <body style="height:100%;">
+        <div id="pagina">
+            <img src="imagens/marcadagua.png" style="position:absolute; bottom:0; right:0; margin-top:2px; margin-right:20px; z-index:200; display:none" />
+            <div id="divmenu" >
+                <div id="cabecalho_usuario">
+                    <div id="foto_menu"> </div>
+                    <div id="nome_menu"><span id="nome_user" >Usuário não logado</span><br />
+                        <span id="email_user"><a href="index.html">Clique aqui</a></span> </div>
+                    <div id="menu_esquerda_ocultar" onclick="oculta_menu(1)"><img  src="imagens/3pontos.png" /> </div>
+                </div>
+                <div id="menu"  >
+                    <div id='cssmenu'>
+                        <ul>
+                            <li><a href='principal.html' title="Home" ><img src="imagens/home.png" /> <span>Home</span></a></li>
+                            <li class='has-sub'><a href='#' title="Cadastros"><img src="imagens/cadastro.png" /> <span>Cadastros</span></a>
+                                <ul>
+                                    <li class='last'><a href='cadastro-de-clientes.html' title="Cadastro de Clientes"><img src="imagens/clientes.png"><spam>Clientes</span></a></li>
+                                                  <li id="menu_1" class='last'><a href='cadastro-de-contatos-e-parceiros.html' title="Cadastro de Contatos e Parceiros"><img src="imagens/contatosparceiros.png"><span>Contatos e Parceiros</span></a></li>  <li class='last'><a href='cadastro-de-decoracoes.html' title="Cadastro de Decorações"><img src="imagens/decoracao.png"><span>Decorações</span></a></li>
+                                                    <li class='last'><a href='cadastro-de-fornecedores.html' title="Cadastro de Fornecedores"><img src="imagens/fornecedores.png"> <span>Fornecedores</span></a></li><li class='last'><a href='cadastro-de-funcionarios.html' title="Cadastro de Funcionários"><img src="imagens/funcionarios.png"> <span>Funcionários</span></a></li>
+                                                    <li class='last'><a href='cadastro-de-grupos.html' title="Cadastro de Grupos de Cardápio"><img src="imagens/cardapios.png"><span>Grupos - Cardápio</span></a></li>
+                                                    <li class='last'><a href='cadastro-de-itens.html' title="Cadastro de Itens de Cardápio"><img src="imagens/cardapiositens.png"> <span>Itens - Cardápio</span></a></li>
+                                                    <li class='last'><a href='cadastro-de-locais.html' title="Cadastro de Locais"><img src="imagens/locais.png"> <span>Locais</span></a></li>
+                                                    <li class='last'><a href='cadastro-de-pacotes.html' title="Cadastro de Pacotes"><img src="imagens/pacotes.png"> <span>Pacotes</span></a></li>
+                                                    </ul>
+                                                    </li>
+                                                    <li class='has-sub'><a href='#' title="Vendas"><img src="imagens/venda.png" > <span>Vendas</span></a>
+                                                        <ul>
+                                                            <li class='has-sub'><a href='#' title="Cadastro"><img src="imagens/cadastro.png" ><span>Cadastros</span></a>
+                                                                <ul>
+                                                                    <li><a href='cadastro-de-contratos.html' title="Cadastro de Contratos"><span><img src="imagens/os.png">Contratos</span></a></li><li><a href='cadastro-de-reservas.html' title="Cadastro de Reservas"><span><img src="imagens/proposta.png">Reservas</span></a></li>
+
+                                                                </ul>
+                                                            </li>
+                                                            <li class='has-sub'><a href='#' title="Relatórios"><img src="imagens/relatorio.png"><span>Relatórios</span></a>
+                                                                <ul>
+                                                                    <li><a href='relatorio-de-acompanhamento-de-reservas.html' title="Acompanhamento de Reservas"><span><img src="imagens/proposta.png">Acompanhamento de Reservas</span></a></li>
+                                                                    <li><a href='relatorio-de-contratos.html' title="Acompanhamento de contratos"><span><img src="imagens/os.png">Acompanhamento de contratos</span></a></li>
+                                                                    <li><a href='relatorio-de-contratos-com-pendencias.html' title="Contratos com pendências"><span><img src="imagens/pendencias.png">Contratos com pendências</span></a></li>
+                                                                    <li><a href='relatorio-panorama-de-festas.html' title="Panorama de festas"><span><img src="imagens/festas.png">Panorama de festas</span></a></li>
+                                                                    <li><a href='relatorio-de-situacoes-financeiras.html' title="Situação financeira - contratos"><span><img src="imagens/situacao.png">Situação financeira - contratos</span></a></li>  <li><a href='relatorio-de-solicitacoes-externas.html' title="Solicitações Externas"><span><img src="imagens/solicitacoesexternas.png">Solicitações Externas</span></a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class='has-sub'><a href='#'  title="Financeiro"><img src="imagens/financeiro.png"> <span>Financeiro</span></a>
+                                                        <ul>
+                                                            <li class='has-sub'><a href='#'  title="Contas a Pagar"><img src="imagens/porco.png"><span>Contas a Pagar</span></a>
+                                                                <ul>
+                                                                    <li><a href='cadastro-de-contas-a-pagar.html'  title="Cadastro de Contas"><span><img src="imagens/cadastro.png">Cadastro de Contas</span></a></li>
+                                                                    <li><a href='diarios-de-contas.html'  title="Diário de Contas"><span><img src="imagens/relatorio.png">Diário de Contas</span></a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class='has-sub'><a href='#'  title="Contas a Receber"><img src="imagens/areceber.png"><span>Contas a Receber</span></a>
+                                                                <ul>
+                                                                    <li><a href='receitas-avulsas.html'  title="Receitas Avulsas"><span><img src="imagens/avulsos.png">Receitas Avulsas</span></a></li>
+                                                                    <li><a href='relatorio-de-contas-a-receber.html'  title="Relatório de Contas"><span><img src="imagens/relatorio.png">Relatório de Contas</span></a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href='fluxo-de-caixa.html'  title="Fluxo de Caixa"><img src="imagens/fluxocaixa.png"><span>Fluxo de Caixa</span></a> </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class='has-sub'><a href='#'  title="Configuração"><img src="imagens/engrenagem.png"> <span>Configurações</span></a>
+                                                        <ul>
+                                                            <li class='has-sub'><a href='#'  title="Contas a Pagar"><img src="imagens/porco.png"><span>Contas a Pagar</span></a>
+                                                                <ul>
+                                                                    <li><a href='cadastro-de-centro-de-custos.html' title="Cadastro de Centro de Custos"><img src="imagens/centrocusto.png"> <span>Centro de Custos</span></a></li>
+                                                                    <li><a href='cadastro-de-contas-bancarias.html' title="Cadastro de Contas Bancárias"><img src="imagens/financeiros.png"> <span>Contas Bancárias</span></a></li>
+                                                                    <li class='last'><a href='cadastro-de-formas-de-pagamentos.html' title="Cadastro de Fomas de Pagamentos"><img src="imagens/pagamentos.png"> <span>Formas de Pagamentos</span></a></li>
+                                                                    <li class='last'><a href='cadastro-de-naturezas-de-gastos.html' title="Cadastro de Naturezas"><img src="imagens/naturezas.png"> <span>Naturezas</span></a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href='cadastro-de-cargos.html' title="Cadastro de Cargos"><img src="imagens/cargos.png"> <span>Cargos</span></a></li>
+                                                            <li class='last'><a href='cadastro-de-departamentos.html' title="Cadastro de Departamentos"><img src="imagens/deptos.png"> <span>Departamentos</span></a></li>
+                                                            <li class='last'><a href='cadastro-de-feriados.html' title="Cadastro de Feriados"><img src="imagens/feriados.png"> <span>Feriados</span></a></li>
+                                                            <li class='last'><a href='cadastro-de-tipos-de-contatos.html' title="Cadastro de Tipos de Contatos"><img src="imagens/contatos.png"> <span>Tipos de Contatos (Follow-up)</span></a></li>
+                                                            <li class='last'><a href='cadastro-de-itens-opcionais.html' title="Cadastro de itens Opcionais"><img src="imagens/opcionais.png"> <span>Opcionais</span></a></li>
+                                                            <li class='last'><a href='cadastro-de-tipos-de-convidados.html' title="Cadastro de Tipos de Convidados"><img src="imagens/convidados.png"> <span>Tipos de Convidados </span></a></li>
+                                                            <li class='last'><a href='cadastro-de-tipos-de-festas.html' title="Cadastro de Tipos de Festas"><img src="imagens/tiposdefestas.png"> <span>Tipos de Festas</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class='last'><a onclick="SairDoSistema(false)"  title="Sair"><img src="imagens/sair2.png"> <span>Sair</span></a></li>
+                                                    </ul>
+                                                    </div>
+                                                    </div>
+                                                    <!--menu-->  
+
+                                                    <div align="center" style="padding-bottom:30px; width:320px; overflow:hidden; bottom:0px; margin-top:30px; "><img src="imagens/focomenu.png" /> </div>
+                                                    </div>
+                                                    <!--divmenu-->
+
+                                                    <div id="divprincipal" style="height:100%">
+                                                        <div id="cabecalho" >
+                                                            <div id="cabecalho_botao_menu" onclick="oculta_menu(2)"><img src="imagens/menu.png" /></div>
+                                                            <div id="legendaTela" ></div>
+                                                            <div id="cabecalho_botoes_principal" style="float:right">
+                                                                <div id="cabecalho_botao_menu_topo" onclick="SairDoSistema(false)"  ><img src="imagens/sair.png" /></div>
+                                                                <div id="cabecalho_botao_menu_topo"  onclick="mostracaixaconfiguracoes()"   ><img src="imagens/config.png" /></div>
+                                                                <div id="cabecalho_botao_menu_topo_msgm" onclick="NotificacaoDePendencias(true)" class="notif"><img class="notif" id="notificacao" src="imagens/email.png" /></div>
+                                                            </div>
+                                                        </div>
+                                                        <!--cabecalho-->
+                                                        <div style="height:70px;"> </div>
+                                                        <div style=" margin-left:1%; margin-right:1%; width:98%;" align="center">  
+                                                            <div id="divCotacao" class="caixabrancajujuba efeito_delay" style="min-width:400px; width:100%;  overflow:hidden; display:block;">
+
+
+                                                                <div id='relatorio' class="caixabrancajujuba efeito_delay" style="width:100%; min-height:500px; padding:0px;" align="left">
+                                                                    <div  id="divtitulotopo"  class="divtitulo" style=" padding-top:10px; background:#FFF; font-size:14px; margin-bottom:2px; color:#626161; padding-bottom:5px; background-position:right -10px">
+
+                                                                        <div class="caixaComponentes" style="width:250px">                
+                                                                            Data <br />
+                                                                            De <input type="text" id="de" style="width:90px; margin-left:5px"  class="textbox_cinzafoco" />		
+                                                                            Até <input type="text" id="ate" style="width:90px; margin-left:5px"  class="textbox_cinzafoco" />	
+                                                                        </div>
+
+
+                                                                        <div class="caixaComponentes" style="width:250px">                
+                                                                            Cliente <br />
+                                                                            <select id="clientes" class="combo_cinzafoco" style="width:100%; vertical-align:middle" ></select>
+                                                                        </div>
+
+
+                                                                        <div class="caixaComponentes" style="width:200px">                
+                                                                            Local <br />
+                                                                            <select id="local" class="combo_cinzafoco" style="width:100%; vertical-align:middle" ></select>
+                                                                                    <!--onchange="Select.Clear(Selector.$('pacote')); getPacotes(Selector.$('pacote'), 'Selecione um pacote', false, Selector.$('local').value);"-->
+                                                                        </div>
+
+                                                                        <!--<div class="caixaComponentes" style="width:250px">                
+                                                                            Pacote <br />
+                                                                            <select id="pacote" class="combo_cinzafoco" style="width:100%; vertical-align:middle" ></select>
+                                                                        </div>-->
+
+                                                                        <div class="caixaComponentes" style="width:200px">                
+                                                                            Situação <br />
+
+                                                                            <select id="situacao" class="combo_cinzafoco" style="width:100%;" >
+                                                                                <option value="0">Selecione uma situação</option>
+                                                                                <option value="1">Em aberto</option>
+                                                                                <option value="2">Gerou Contrato</option>
+                                                                                <option value="3">Vencida</option>
+                                                                                <option value="4">Cancelada</option>
+                                                                            </select>
+                                                                        </div>
+
+
+
+
+
+
+                                                                        <div onclick="Lista();" class="botaoRedondoJujubaPesquisar"></div>
+
+                                                                    </div>
+                                                                    <div id="tabela"  style="margin:0px;overflow:auto;  min-height:100px; width:100%;"></div>
+                                                                    <div id="contador" align="center" class="rotulototal" style="font-size: 14px; width:100%; margin:0px; text-align:center"></div></div>
+                                                            </div>
+
+
+
+
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <!--divprincipal--> 
+                                                    </div>
+                                                    <!--pagina-->
+                                                    <div id="prompt"></div>
+                                                    <div id="prompt2"></div>
+                                                    <div id="divConfiguacoes" class="divConfiguacoes efeito_delay" style="height:0px;"  onclick="mostracaixaconfiguracoes();"> 
+            <br />
+
+            <div class="divconfitens efeito-opacidade-75-03" onclick="window.location = 'alterar-senha.html'"> <img src="imagens/chave.png" /><br />ALTERAR SENHA</div>
+            <div class="divconfitens efeito-opacidade-75-03"  onclick="suporteTecnico();"> <img src="imagens/setup.png" /><br />SETUP</div>
+
+        </div>
+                                                        <br />

@@ -1,0 +1,392 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <title>Painel | Photoarts</title>  
+        <link rel="stylesheet" type="text/css" href="padrao/css/efeitos.css?1"/>
+        <link rel="stylesheet" type="text/css" href="padrao/css/componentes.css"/>
+        <link rel="stylesheet" type="text/css" href="padrao/css/fontes.css?1"/>
+        <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+        <link rel="stylesheet" href="css/menu.css">
+            <script src="js/jquery-latest.min.js" type="text/javascript"></script>
+            <script src="js/menu.js"></script>
+            <script src="js/Chart.min.js"></script>
+            <script type="text/javascript" src="padrao/json2.js"></script>
+            <script type="text/javascript" src="padrao/utils.js"></script>
+            <script type="text/javascript" src="js/photoarts.js"></script>
+            <script type="text/javascript" src="js/principal.js"></script>
+
+            <link rel="stylesheet" type="text/css" href="css/autocomplete.css"/>
+            <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+            <script type="text/javascript" src="js/jquery.mockjax.js"></script>
+            <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+    </head>
+    <body style="height:100%;"> 
+        <div id="pagina">
+            <div id="divmenu" >
+                <div id="cabecalho_usuario">
+                    <div id="foto_menu"> </div>
+                    <div id="nome_menu"><span id="nome_user" >Usuário não logado</span><br />
+                        <span id="email_user"><a href="index.html">Clique aqui</a></span> </div>
+                    <div id="menu_esquerda_ocultar" onclick="oculta_menu(1)"><img  src="imagens/3pontos.png" /> </div>
+                </div>
+                <div id="menu">
+                    <div id='cssmenu'>
+                        <ul>
+                            <li><a href='principal.html' title="Home" ><img src="imagens/home.png"> <span>Home</span></a></li>
+                            <li class='has-sub'><a href='#' title="Cadastros"><img src="imagens/cadastro.png"> <span>Cadastros</span></a>
+                                <ul>
+                                    <li><a href='cadastro-de-artistas.html' title="Cadastro de Artistas"><img src="imagens/artistas.png"> <span>Artistas</span></a></li>
+                                    <li><a href='cadastro-de-colecionadores.html' title="Cadastro de Colecionadores"><img src="imagens/clientes.png"> <span>Colecionadores</span></a></li>
+
+                                    <li class='last'><a href='cadastro-de-fornecedores.html' title="Cadastro de Fornecedores"><img src="imagens/fornecedores.png"> <span>Fornecedores</span></a></li>
+                                    <li class='last'><a href='cadastro-de-funcionarios.html' title="Cadastro de Funcionários"><img src="imagens/funcionarios.png"> <span>Funcionários</span></a></li>
+
+                                    <li class='last'><a href='cadastro-de-lojas.html' title="Cadastro de Lojas"><img src="imagens/locais.png"> <span>Lojas</span></a></li><li class='last'><a href='cadastro-de-marchands.html' title="Cadastro de Marchands"><img src="imagens/vendedores.png"> <span>Marchands</span></a></li>
+
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#' title="Compras"><img src="imagens/menucompras.png"> <span>Compras</span></a>
+                                <ul>
+                                    <li><a href='ordem-de-compras.html' title="Ordem de Compras"><img src="imagens/menuordemcompra.png"><span>Ordem de Compras</span></a></li>
+                                    <li><a href='ordem-de-compras.html?situacao=todas' title="Relatório de ordem de compras"><img src="imagens/menurelordemcompras.png"><span>Relatório de Ordem de Compras</span></a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class='has-sub'><a href='#' title="Estoque"><img src="imagens/menuestoque.png"> <span>Estoque</span></a>
+                                <ul>
+                                    <li><a href='estoque-de-materiais.html' title="Estoque de Materiais"><img src="imagens/menuestoquemateriais.png"><span>Estoque de Materiais</span></a></li>
+                                    <li><a href='estoque-de-produtos.html' title="Estoque de Produtos"><img src="imagens/menuestoqueprodutos.png"><span>Estoque de Produtos</span></a></li>
+
+                                </ul>
+                            </li><li class='has-sub'><a href='#' title="Vendas"><img src="imagens/venda.png" > <span>Vendas</span></a>
+                                <ul>
+                                    <li class='has-sub'><a href='#' title="Cadastro"><img src="imagens/cadastro.png" ><span>Cadastros</span></a>
+                                        <ul>
+                                            <!--<li><a href='orcamentos-simplificados.html' title="Cadastro de Orçamentos Simplificados"><span><img src="imagens/proposta.png">Orçamentos Simplificados</span></a></li>-->
+<li style="margin-left:35px;"><a href='propostas.html' title="Cadastro de Orçamentos"><span><img src="imagens/proposta.png">Orçamentos</span></a></li>
+                                            <li style="margin-left:35px;"><a href='pedidos.html' title="Cadastro de Pedidos"><span><img src="imagens/os.png">Pedidos</span></a></li><li style="margin-left:35px;"><a href='cadastro-de-vales-presentes-trocas.html' title="Cadastro de Vales Presentes"><span><img src="imagens/presente.png">Vales Presentes</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class='has-sub'><a href='#' title="Relatórios"><img src="imagens/relatorio.png"><span>Relatórios</span></a>
+                                        <ul>
+                                            <li style="margin-left:35px;"><a href='relatorio-de-encomendas.html' title="Relatório de Encomendas"><span><img src="imagens/materiais.png">Encomendas</span></a></li>
+<!--<li><a href='relatorio-de-orcamentos-simplificados.html' title="Relatório de Orçamentos Simplificados"><span><img src="imagens/proposta.png">Orçamentos Simplificados</span></a></li>-->
+<li style="margin-left:35px;"><a href='relatorio-de-propostas.html' title="Relatório de Orçamentos"><span><img src="imagens/proposta.png">Orçamentos</span></a></li>
+                                            <li style="margin-left:35px;"><a href='relatorio-de-pedidos.html'  title="Relatório de Pedidos"><span><img src="imagens/os.png">Pedidos</span></a></li><li style="margin-left:35px;"><a href='relatorio-de-panorama-de-vendas.html'  title="Relatório de Panorama de vendas"><span><img src="imagens/panoramavenda.png">Panorama de Vendas</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#'  title="Financeiro"><img src="imagens/financeiro.png"> <span>Financeiro</span></a>
+                                <ul>
+                                    <li class='has-sub'><a href='#'  title="Contas a Pagar"><img src="imagens/porco.png"><span>Contas à Pagar</span></a>
+                                        <ul>
+                                            <li style="margin-left:35px;"><a href='cadastro-de-contas-a-pagar.html'  title="Cadastro de Contas"><span><img src="imagens/cadastro.png">Cadastro de Contas</span></a></li>
+                                            <li style="margin-left:35px;"><a href='relatorio-de-contas-a-pagar.html'  title="Relatório de Contas à Pagar"><span><img src="imagens/relatorio.png">Relatório de Contas</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class='has-sub'><a href='#'  title="Contas à Receber"><img src="imagens/areceber.png"><span>Contas à Receber</span></a>
+                                        <ul>
+                                            <li style="margin-left:35px;"><a href='receitas-avulsas.html'  title="Receitas Avulsas"><span><img src="imagens/avulsos.png">Receitas Avulsas</span></a></li><li style="margin-left:35px;"><a href='relatorio-de-antecipacoes.html'  title="Relatório de Antecipações"><span><img src="imagens/relatorio.png">Relatório de Antecipações</span></a></li>
+                                            <li style="margin-left:35px;"><a href='relatorio-de-contas-a-receber.html'  title="Relatório de Contas"><span><img src="imagens/relatorio.png">Relatório de Contas</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href='fluxo-de-caixa.html'  title="Fluxo de Caixa"><img src="imagens/fluxocaixa.png"><span>Fluxo de Caixa</span></a> </li><li><a href='repasses-de-artistas.html'  title="Repasses de Artistas"><img src="imagens/artistas.png"><span>Repasses de Artistas</span></a> </li><li><a href='repasses-de-marchands.html'  title="Repasses de Marchands"><img src="imagens/vendedores.png"><span>Repasses de Marchands</span></a> </li><li><a href='repasses-de-marchands-gerentes.html'  title="Repasses de Marchands Gerentes"><img src="imagens/vendedores.png"><span>Repasses de Marchands Ger.</span></a> </li>
+<li><a href='repasses-de-arquitetos.html'  title="Repasses de Arquitetos"><img src="imagens/molduras.png"><span>Repasses de Arquitetos</span></a> </li>
+                                </ul>
+                            </li><li class='has-sub'><a href='#' title="Produção"><img src="imagens/menuproducao.png"> <span>Produção</span></a>
+                                <ul>
+                                    <li><a href='ordem-de-producao.html' title="Ordem de Produção"><img src="imagens/producao.png"><span>Ordem de Produção</span></a></li>
+                                    <li><a href='acompanhar-ops.html' title="Acompanhar OP's"><img src="imagens/acompanharops.png"><span>Acompanhar OP's</span></a></li>
+
+                                    <li class='last'><a href='ordem-de-producao.html?relatorio=true' title="Relatório de OP's"><img src="imagens/relops.png"><span>Relatório de OP's</span></a></li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#' title="Relatórios Gerais"><img src="imagens/menurelordemcompras.png"> <span>Relatórios</span></a>
+                                <ul><li><a href='relatorio-de-aniversariantes.html' title="Relatório de Aniversáriantes"><img src="imagens/festas.png"> <span>Aniversáriantes</span></a></li>
+<li><a href='relatorio-de-rt.html' title="Relatório de RT's"><img src="imagens/acabamento.png"> <span>RT's</span></a></li></ul></li>
+                            <li class='has-sub'><a href='#'  title="Configuração"><img src="imagens/engrenagem.png"> <span>Configurações</span></a>
+                                <ul>
+                                    <li><a href='cadastro-de-acabamentos.html' title="Cadastro de Acabamentos"><img src="imagens/acabamento.png"> <span>Acabamentos</span></a></li>
+                                    <li><a href='cadastro-de-cargos.html' title="Cadastro de Cargos"><img src="imagens/cargos.png"> <span>Cargos</span></a></li><li><a href='cadastro-de-contas.html' title="Cadastro de Contas"><img src="imagens/financeiros.png"> <span>Contas</span></a></li>
+                                    <li><a href='cadastro-de-centro-de-custos.html' title="Cadastro de Centro de Custos"><img src="imagens/centrocusto.png"> <span>Centro de Custos</span></a></li>
+                                    <li class='last'><a href='cadastro-de-departamentos.html' title="Cadastro de Departamentos"><img src="imagens/deptos.png"> <span>Departamentos</span></a></li>
+                                    <li class='last'><a href='cadastro-de-estilos.html' title="Cadastro de Estilos"><img src="imagens/estilo.png"> <span>Estilos</span></a></li>
+                                    <li class='last'><a href='cadastro-de-estrelas.html' title="Cadastro de Estrelas"><img src="imagens/estrela.png"> <span>Estrelas</span></a></li>
+
+                                    <li class='last'><a href='cadastro-de-etapas-de-producao.html' title="Cadastro de Etapas de Produção"><img src="imagens/equipamento.png"> <span>Etapas de Produção</span></a></li>
+                                    <li class='last'><a href='cadastro-de-feriados.html' title="Cadastro de Feriados"><img src="imagens/feriados.png"> <span>Feriados</span></a></li>
+                                    <li class='last'><a href='cadastro-de-formas-de-pagamentos.html' title="Cadastro de Fomas de Pagamentos"><img src="imagens/pagamentos.png"> <span>Formas de Pagamentos</span></a></li>
+                                    <li class='last'><a href='cadastro-de-tamanhos.html' title="Cadastro de Tamanhos"><img src="imagens/logistica.png"> <span>Tamanhos</span></a></li><li class='last'><a href='cadastro-de-produtos.html' title="Cadastro de Produtos"><img src="imagens/logistica.png"> <span>Produtos à venda</span></a></li>
+                                    <li class='last'><a href='cadastro-de-materiais.html' title="Cadastro de Materiais"><img src="imagens/materiais.png"> <span>Materiais</span></a></li> <li class='last'><a href='cadastro-de-molduras.html' title="Cadastro de Molduras"><img src="imagens/molduras.png"> <span>Molduras</span></a></li><li class='last'><a href='cadastro-de-naturezas.html' title="Cadastro de Naturezas"><img src="imagens/naturezas.png"> <span>Naturezas</span></a></li>
+                                    <li class='last'><a href='cadastro-de-status-de-vendas.html' title="Cadastro de Status de Vendas"><img src="imagens/statusvenda.png"> <span>Status de Vendas</span></a></li>
+                                    <li class='last'><a href='cadastro-de-tipos-de-contatos.html' title="Cadastro de Tipos de Contatos"><img src="imagens/contatos.png"> <span>Tipos de Contatos</span></a></li>
+                                    <li class='last'><a href='cadastro-de-tipos-de-transportes.html' title="Cadastro de Tipos de Transporte"><img src="imagens/transporte.png"> <span>Tipos de Transportes</span></a></li>                                    
+                                </ul>
+                            </li>
+                            <li class='last'><a href='index.html' title="Sair"><img src="imagens/sair2.png"> <span>Sair</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--menu-->
+
+                <div align="center" style="padding-bottom:30px; width:320px; overflow:hidden; bottom:0px; margin-top:30px; "><img src="imagens/focomenu.png" /> </div>
+            </div>
+            <!--divmenu-->
+
+            <div id="divprincipal"  >
+                <div id="cabecalho" >
+                    <div id="cabecalho_botao_menu" onclick="oculta_menu(2)"><img src="imagens/menu.png" /></div>
+                    <div id="legendaTela" ></div>
+                    <div id="cabecalho_botoes_principal" style="float:right">
+                        <div id="cabecalho_botao_menu_topo" onclick="window.location = 'index.html'"  ><img src="imagens/sair.png" /></div>
+                        <div id="cabecalho_botao_menu_topo"  onclick="mostracaixaconfiguracoes()"   ><img src="imagens/config.png" /></div>
+                        <div id="cabecalho_botao_menu_topo" onclick="abrecaixaemail()" title="Lembretes"><img src="imagens/email.png" /></div>
+                        <div id="cabecalho_botao_menu_topo" onclick="abrecaixaaniversariantes()" title="Aniversariantes">
+                            <img src="imagens/bolo.png" />
+                        </div>
+                        <div id="cabecalho_botao_menu_topo" onclick="window.location='cadastro-de-colecionadores.html'" title="Cadastro de Colecionadores">
+                            <img src="imagens/clientes.png" />
+                        </div>
+                        <div id="cabecalho_botao_menu_topo" onclick="window.location='propostas.html'" title="Orçamentos">
+                            <img src="imagens/proposta.png" />
+                        </div>
+                        <div id="cabecalho_botao_menu_topo" onclick="window.location='pedidos.html'" title="Pedidos">
+                            <img src="imagens/os.png" />
+                        </div>
+                    </div>
+                </div>
+                <!--cabecalho-->
+
+                <div style="height:65px;"> </div>
+
+
+                <div style="clear:both">  </div>
+                <div align="center" style="text-align:center; width:100%">
+                    <div align="center" style="max-width:1100px; float:none;display:inline-block">
+                        <div align="center">
+
+
+                            <div id="divlinha1">
+
+                                 <div id='divAtalhosPerfil1' class="divlinha2quadro" style="display:none; margin:0px; padding:0px;" >
+
+                                    <div id="linha5quadro1" class="caixabrancajujuba divwidgetprincipal1x1"
+                                     style="background-color:#5E90AF; background-image:url(imagens/cotacao.png); background-position: right; display: none;"   onclick="window.location = 'relatorio-de-pedidos.html'">
+                                        <div  id="linha2quadro1titulo" style="margin-top:-20px;" class="divtitulowidget">Visualizar Pedidos</div>
+                                        <div id="linha2quadro1texto" class="divwidgettexto">Visualizar os status dos pedidos</div>
+                                    </div>
+                                    <div id="linha5quadro2" onclick="window.location = 'propostas.html'"  class="caixabrancajujuba divwidgetprincipal1x1" style="background-color:#E55E3A; background-image:url(imagens/vendas.png); background-position: right"  >
+                                        <div id="linha2quadro2titulo" style="margin-top:-20px;" class="divtitulowidget">Orçamentos</div>
+                                        <div id="linha2quadro2texto" class="divwidgettexto">Visualizar/Editar orçamentos</div>
+                                    </div>
+                                    <div id="linha5quadro3"  class="caixabrancajujuba divwidgetprincipal1x1" style="background-color:#4DAF7B; background-image:url(imagens/contratos2.png);  background-position: right">
+                                        <div  id="linha2quadro3titulo" style="margin-top:-20px;" class="divtitulowidget">Repasses de Artistas</div>
+                                        <div id="linha2quadro3texto"   style="margin-top:-20px;" onclick="window.location = 'repasses-de-artistas.html'" class="divwidgettexto" >Ver/Lançar os repasses dos artistas</div>
+                                    </div>
+                                    <div id="linha5quadro4"   class="caixabrancajujuba divwidgetprincipal1x1" style="background-color:rgb(234, 193, 68); background-image:url(imagens/ordemproducao.png);   background-position: right" onclick="window.location = 'ordem-de-producao.html'">
+                                        <div id="linha2quadro4titulo" style="margin-top:-20px;" class="divtitulowidget">Ordem de Produção</div>
+                                        <div id="linha2quadro4texto"  style="margin-top:-20px;" class="divwidgettexto">Acompanhar ordens de produção</div>
+                                    </div>
+
+                                    <div id="linha5quadro5" onclick="window.location = 'cadastro-de-colecionadores.html'"  class="caixabrancajujuba divwidgetprincipal1x1" style="background-color:#5E90AF; background-image:url(imagens/cliente.png);   background-position: right">
+                                        <div id="linha2quadro4titulo" style="margin-top:-20px;" class="divtitulowidget">Colecionadores</div>
+                                        <div id="linha2quadro4texto"  class="divwidgettexto">Ver/Editar colecionadores </div>
+                                    </div>
+
+                                    <div id="linha5quadro6" onclick="window.location = 'cadastro-de-fornecedores.html'"  class="caixabrancajujuba divwidgetprincipal1x1" style="background-color:#4DAF7B; background-image:url(imagens/caminhao.png); background-position: right; vertical-align:middle; display: none;">
+                                        <div id="linha2quadro4titulo" style="margin-top:-20px;"  class="divtitulowidget">Fornecedores</div>
+                                        <div id="linha2quadro4texto" class="divwidgettexto">Ver/Editar fornecedores</div>
+                                    </div>
+
+                                    <div id="linha5quadro7" class="caixabrancajujuba divwidgetprincipal1x1" style="  background-color:#5E90AF; background-image:url(imagens/calc.png); background-position: right; display: none;" onclick="AdicionarObra(-1);">
+                                    <div  id="linha2quadro4titulo" style="margin-top:-20px;" class="divtitulowidget">Cotação</div>
+                                    <div id="linha2quadro4texto" class="divwidgettexto">Realizar uma cotação</div>
+                                    </div>
+
+                                    <div id="linha5quadro9" onclick="window.location='pedidos.html'" class="caixabrancajujuba divwidgetprincipal1x1" style=" background-color:#4DAF7B;  background-image:url(imagens/pedidos.png);  background-position: right; vertical-align:middle">
+                                    <div  id="linha2quadro4titulo" style="margin-top:-20px;" class="divtitulowidget"> Pedidos</div>
+                                    <div id="linha2quadro4texto" onclick="" class="divwidgettexto">Ver/Editar pedidos</div>
+                                     </div>
+
+                                     <div id="linha5quadro10"   class="caixabrancajujuba divwidgetprincipal1x1" style="  background-color:rgb(234, 193, 68); background-image:url(imagens/estoque.png); background-position: right; vertical-align:middle" onclick="window.location = 'estoque-de-produtos.html'">
+                                    <div id="linha2quadro4titulo" style="margin-top:-20px;" class="divtitulowidget">Estoque de Produtos</div>
+                                    <div id="linha2quadro4texto"  class="divwidgettexto">Verificar estoque</div>
+                                </div>
+                                <div onclick="window.location='repasses-de-marchands.html'" id="linha5quadro11" class="caixabrancajujuba divwidgetprincipal1x1" style="background-color:#E55E3A; background-image:url(imagens/contratos.png); background-position: right; vertical-align:middle; display: none;">
+                                    <div id="linha2quadro4titulo" style="margin-top:-20px;" class="divtitulowidget">Repasse de Marchands</div>
+                                    <div id="linha2quadro4texto" style="margin-top:-20px;" class="divwidgettexto">Ver/Lançar repasses dos marchands</div>
+                                </div>
+                                <div id="linha5quadro13"   class="caixabrancajujuba divwidgetprincipal1x1" style=" background-color:rgb(234, 193, 68); background-image:url(imagens/estoque.png); background-position: right; vertical-align:middle" onclick="window.location = 'ordem-de-producao.html'">
+                                    <div id="linha2quadro4titulo" style="margin-top:-20px;" class="divtitulowidget">OP's</div>
+                                    <div id="linha2quadro4texto" class="divwidgettexto">Buscar OP's  e editar status das obras</div>
+                                </div>
+                                <div onclick="window.location='cadastro-de-vales-presentes-trocas.html'" id="linha5quadro12" class="caixabrancajujuba divwidgetprincipal1x1" style="background-color:#E55E3A; background-image:url(imagens/consultecolecionador.png); background-position: right; vertical-align:middle">
+                                    <div id="linha2quadro4titulo" style="margin-top:-20px;" class="divtitulowidget">Vales Presente/Trocas</div>
+                                    <div id="linha2quadro4texto"   class="divwidgettexto"> Vales Presente/Trocas</div>
+                                </div>
+                                
+
+                            
+                            </div>
+
+                                <div id='divAvisosWidget' class="divlinha2quadro  caixabrancajujuba">
+
+                                    <div class="divtitulo" style="display:iniline-block; background-image:url(imagens/avisos.png) ;background-repeat:no-repeat; background-position:right -10px; padding:11px; " align="left"> Avisos
+                                    </div>
+                                    <div id="tabelaAviso" style="margin:0px; overflow:auto; max-height:80%; border:none;"></div>
+                                    <div id='divlinha2quadro2tabela' style="margin:0px"></div>
+                                </div>
+
+
+
+
+                                <div id='divCalendario' class="divlinha2quadro caixabrancajujuba" align="left">
+                                    <div class="divtitulo" style="background:#E55E3A; padding:4px; background-image:url(imagens/calendariotopo.png) ;background-repeat:no-repeat; background-position: right bottom -20px">
+
+                                        <div style="min-width:250px; height:40px;  display:inline-block; vertical-align:middle">
+                                            <input type="button"  style="font-weight:bold;float:left; margin-left: 5px;  vertical-align:middle " onclick="mesAnterior()" class="botaosimplesvermelhoCalendario" value="<"/> 
+                                            <div id="rotulomes" style="padding-top:11px; width:130px; text-align:center;  padding-left:11px; padding-right:11px; float:left"></div>
+                                            <input type="button"  style="font-weight:bold;float:left;vertical-align:middle " onclick="mesProximo()" class="botaosimplesvermelhoCalendario" value=">"/>
+                                        </div>
+
+
+
+
+                                    </div>
+
+                                    <div id="divtabelacalendario" style="margin-top:3px; margin-bottom:10px; "></div>
+                                    <div id="divtabelacalendariolinha"></div>
+
+                                    <div id="divcalendariolegendas" >
+                                        LEGENDAS: 
+                                        <div style="white-space:nowrap; display:inline-block"><img src="imagens/circulocinza.png" style="vertical-align:middle" /> REALIZADO</div>
+                                        <div style="white-space:nowrap; display:inline-block"><img src="imagens/circuloetapa1.png" style="vertical-align:middle" /> EM PRODUÇÃO </div>
+                                        <div style="white-space:nowrap; display:inline-block"><img src="imagens/circuloetapa2.png" style="vertical-align:middle" /> PREPARADA PARA ENVIO </div>
+                                        <div style="white-space:nowrap; display:inline-block"><img src="imagens/circuloetapa3.png" style="vertical-align:middle" /> DISPONÍVEL PARA RETIRAR </div>
+                                        <div style="white-space:nowrap; display:inline-block"> <img src="imagens/circuloamarelo.png" style="vertical-align:middle" /> EM TRANSPORTE </div>
+                                        <div style="white-space:nowrap; display:inline-block">  <img src="imagens/circuloverde.png" style="vertical-align:middle" /> ENTREGUE </div>
+                                        <div style="white-space:nowrap; display:inline-block">   <img src="imagens/circulovermelho.png" style="vertical-align:middle" /> CANCELADO </div>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <div id='divWidgetPedidos' class="divlinha2quadro  caixabrancajujuba">
+
+                                    <div class="divtitulo" style="display:iniline-block; background-image:url(imagens/contrato.png) ;background-repeat:no-repeat; background-position:right; padding:11px;" align="left"><span id="rotuloPedidos">Pedidos</span>
+                                        <select id="loja" class="combo_cinzafoco" style="width:180px; margin-left:4px;" name="0" onchange="getPedidos(1)"></select>
+                                        <select id="cmbStatusPedido" class="combo_cinzafoco" style=" width:100%; max-width:150px; margin-left:4px;" name="0" onchange="getPedidos(2)"></select>
+                                        
+                                        <select id="cmbPeriodo" class="combo_cinzafoco" style=" width:100%; max-width:250px; margin-left:4px;" name="0" onchange="getPedidos(3)"></select>
+                                    </div>
+                                    <div id="tabelaPedidos" style="margin:0px; overflow:auto;  height:340px;  border:none;"></div>
+                                    <div id='divlinha2quadro2tabela' style="margin:0px"></div>
+                                </div>
+                            </div>
+
+
+                            <!--linha1-->
+                            <div id="linha2" style="display:none">
+
+                                <div id="linha2quadro1" class="caixabrancajujuba divwidgetprincipal" style="background-color:#5E90AF; background-image:url(imagens/cotacao.png); background-position: right"   onclick="window.location = 'relatorio-de-contas-a-receber.html'">
+                                    <div  id="linha2quadro1titulo" class="divtitulowidget">Relatório de Contas a Receber</div>
+                                    <div id="linha2quadro1texto" class="divwidgettexto">Clique aqui para visualizar tudo o que você tem a receber por período</div>
+                                </div>
+                                <div id="linha2quadro2" onclick="window.location = 'cadastro-de-contas-a-pagar.html'"  class="caixabrancajujuba divwidgetprincipal" style="background-color:#E55E3A; background-image:url(imagens/porcovermelho.png); background-position: right"  >
+                                    <div id="linha2quadro2titulo" class="divtitulowidget">Novo Título</div>
+                                    <div id="linha2quadro2texto" class="divwidgettexto">Clique aqui para criar ou editar um título</div>
+                                </div>
+                                <div id="linha2quadro3" onclick="window.location = 'cadastro-de-fornecedores.html'"  class="caixabrancajujuba divwidgetprincipal" style="background-color:#4DAF7B; background-image:url(imagens/caminhao.png);  background-position: right">
+                                    <div  id="linha2quadro3titulo" class="divtitulowidget">Fornecedores</div>
+                                    <div id="linha2quadro3texto"    onclick="window.location = 'cadastro-de-fornecedores.html'" class="divwidgettexto" >Gerencie e edite todos os fornecedores...</div>
+                                </div>
+                                <div id="linha2quadro4" onclick="window.location = 'relatorio-de-contas-a-pagar.html'"  class="caixabrancajujuba divwidgetprincipal" style="background-color:rgb(234, 193, 68); background-image:url(imagens/contasapagar.png);   background-position: right">
+                                    <div id="linha2quadro4titulo" class="divtitulowidget">Relatório de Contas à Pagar</div>
+                                    <div id="linha2quadro4texto" class="divwidgettexto">Clique aqui para visualizar todas as contas vencidas ou a pagar</div>
+                                </div>
+
+
+                            </div>
+                            <!--linha2-->
+
+
+                            <div id="linha3">
+
+
+
+
+                               
+
+                                <!---->
+
+
+                                <div id='divOrdensProducaoWidget' class="divlinha2quadro  caixabrancajujuba">
+
+                                    <div class="divtitulo" style="display:iniline-block; background-image:url(imagens/avisos.png) ;background-repeat:no-repeat; background-position:right -10px; padding:11px; " align="left"> Ordens de Produção
+                                    </div>
+                                    <div id="tabelaOrdens" style="margin:0px; overflow:auto; height:89%;  border:none;"></div>
+                                </div>
+
+
+                                <div id='divTitulosVencidosWidget' class="divlinha2quadro  caixabrancajujuba">
+
+                                    <div class="divtitulo" style="display:iniline-block; background-image:url(imagens/avisos.png) ;background-repeat:no-repeat; background-position:right -10px; padding:11px; " align="left"> Títulos Vencidos / Vencendo
+                                    </div>
+                                    <div id="tabelavencidos" style="margin:0px; overflow:auto; height:89%;  border:none;"></div>
+                                </div>
+
+
+                            </div>
+
+
+                            <div id="linha4" style="display:none">
+
+                                <div id="linha4quadro1" class="caixabrancajujuba divwidgetprincipal" style="background-color:#5E90AF; background-image:url(imagens/cotacao.png); background-position: right"   onclick="window.location = 'relatorio-de-pedidos.html'">
+                                    <div  id="linha2quadro1titulo" class="divtitulowidget">Relatório de Pedidos</div>
+                                    <div id="linha2quadro1texto" class="divwidgettexto">Clique aqui para visualizar todos os pedidos e status por período</div>
+                                </div>
+                                <div id="linha4quadro2" onclick="window.location = 'relatorio-de-panorama-de-vendas.html'"  class="caixabrancajujuba divwidgetprincipal" style="background-color:#E55E3A; background-image:url(imagens/vendas.png); background-position: right"  >
+                                    <div id="linha2quadro2titulo" class="divtitulowidget">Panorama de Vendas</div>
+                                    <div id="linha2quadro2texto" class="divwidgettexto">Clique aqui para visualizar as vendas dos próximos dias</div>
+                                </div>
+                                <div id="linha4quadro3"  class="caixabrancajujuba divwidgetprincipal" style="background-color:#4DAF7B; background-image:url(imagens/lembrete.png);  background-position: right">
+                                    <div  id="linha2quadro3titulo" class="divtitulowidget">Cadastrar Lembrete</div>
+                                    <div id="linha2quadro3texto"    onclick="" class="divwidgettexto" >Disparar mensagens e aviso para os usuários do sistema</div>
+                                </div>
+                                <div id="linha4quadro4" onclick="window.location = 'fluxo-de-caixa.html'"  class="caixabrancajujuba divwidgetprincipal" style="background-color:rgb(234, 193, 68); background-image:url(imagens/contasapagar.png);   background-position: right">
+                                    <div id="linha2quadro4titulo" class="divtitulowidget">Fluxo de Caixa</div>
+                                    <div id="linha2quadro4texto" class="divwidgettexto">Clique aqui para visualizar as entradas e saídas de caixa</div>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--divprincipal--> 
+
+        </div>
+        <!--pagina-->
+
+
+        <div id="divConfiguacoes" class="divConfiguacoes efeito_delay" style="height:0px;"  onclick="mostracaixaconfiguracoes();"> 
+            <br />
+
+            <div class="divconfitens efeito-opacidade-75-03" onclick="window.location = 'alterar-senha.html'"> <img src="imagens/chave.png" /><br />ALTERAR SENHA</div>
+            <div class="divconfitens efeito-opacidade-75-03"  onclick="suporteTecnico();"> <img src="imagens/suporte.png" /><br />SUPORTE TÉCNICO</div>
+
+        </div>
+        <div id="prompt"> </div>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+<html xmlns:o = "urn:schemas-microsoft-com:office:office"
+xmlns:x = "urn:schemas-microsoft-com:office:excel"
+xmlns = "http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv = Content-Type content = "text/html; charset=utf-8">
+<meta name = ProgId content = Excel.Sheet>
+<!--[if gte mso 9]><xml>
+<o:DocumentProperties>
+<o:LastAuthor>Sriram</o:LastAuthor>
+<o:LastSaved>2005-01-02T07:46:23Z</o:LastSaved>
+<o:Version>10.2625</o:Version>
+</o:DocumentProperties>
+<o:OfficeDocumentSettings>
+<o:DownloadComponents/>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->
+<style>
+<!--table
+{mso-displayed-decimal-separator:"\.";
+mso-displayed-thousand-separator:"\,";
+}
+@page
+{margin:1.0in .75in 1.0in .75in;
+mso-header-margin:.5in;
+mso-footer-margin:.5in;
+}
+tr
+{mso-height-source:auto;
+}
+col
+{mso-width-source:auto;
+}
+br
+{mso-data-placement:same-cell;
+}
+.style0
+{mso-number-format:General;
+text-align:general;
+vertical-align:bottom;
+white-space:nowrap;
+mso-rotate:0;
+mso-background-source:auto;
+mso-pattern:auto;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+mso-generic-font-family:auto;
+mso-font-charset:0;
+border:none;
+mso-protection:locked visible;
+mso-style-name:Normal;
+mso-style-id:0;
+}
+td
+{mso-style-parent:style0;
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+mso-ignore:padding;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+mso-generic-font-family:auto;
+mso-font-charset:0;
+mso-number-format:General;
+text-align:general;
+vertical-align:bottom;
+border:none;
+mso-background-source:auto;
+mso-pattern:auto;
+mso-protection:locked visible;
+white-space:nowrap;
+mso-rotate:0;
+}
+.xl24
+{mso-style-parent:style0;
+white-space:normal;
+}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>NOME_PLANILHA</x:Name>
+<x:WorksheetOptions>
+<x:Selected/>
+<x:ProtectContents>False</x:ProtectContents>
+<x:ProtectObjects>False</x:ProtectObjects>
+<x:ProtectScenarios>False</x:ProtectScenarios>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+<x:WindowHeight>10005</x:WindowHeight>
+<x:WindowWidth>10005</x:WindowWidth>
+<x:WindowTopX>120</x:WindowTopX>
+<x:WindowTopY>135</x:WindowTopY>
+<x:ProtectStructure>False</x:ProtectStructure>
+<x:ProtectWindows>False</x:ProtectWindows>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+
+<body link = blue vlink = purple>
+<table x:str border = 0 cellpadding = 0 cellspacing = 0 style = 'border-collapse: collapse;table-layout:fixed;'><tr><td class=xl24 width=64 >N°</td><td class=xl24 width=64 >DATA CADASTRO</td><td class=xl24 width=64 >DATA VALIDADE</td><td class=xl24 width=64 >LOJA</td><td class=xl24 width=64 >COLECIONADOR</td><td class=xl24 width=64 >OBRAS</td><td class=xl24 width=64 >TOTAL</td><td class=xl24 width=64 >MARCHAND</td><td class=xl24 width=64 >STATUS</td></tr><tr><td class=xl24 width=64 >00107</td><td class=xl24 width=64 >04/09/2016 18:54</td><td class=xl24 width=64 >04/10/2016</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >LEONARDO MOYSES</td><td class=xl24 width=64 >ALAN BEAN COM AMOSTRA DE SOLO LUNAR - MÉDIO (40x40)<br>A TERRA NASCE NO HORIZONTE LUNAR - PEQUENO (30x30)<br>O lado mais distante da Lua - PERSONALIZADO (0x0)<br>THE BLUE MARBLE - PEQUENO (30x30)<br>Earth - PERSONALIZADO (0x0)<br>Young - PERSONALIZADO (0x0)<br>STS-128 - PEQUENO (30x40)<br>HOMEM FLUTUANTE - PEQUENO (30x30)<br>Atlantis - PERSONALIZADO (0x0)<br>LANÇAMENTO DA DISCOVERY I - MÉDIO (45x60)<br>Challenger Cargo bay - PERSONALIZADO (0x0)<br>BUZZ ALDRIN - MÉDIO (40x40)<br>MOON - PEQUENO (30x30)<br>Lançamento STS-49 - PERSONALIZADO (0x0)<br>Shuttle Silhoutte - PERSONALIZADO (0x0)</td><td class=xl24 width=64 >2.866,00</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >EM ABERTO</td></tr><tr><td class=xl24 width=64 >00104</td><td class=xl24 width=64 >03/09/2016 21:51</td><td class=xl24 width=64 >03/10/2016</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >MARCEL UETE</td><td class=xl24 width=64 >ATOMIUM  - EXTRA GRANDE (100x150)<br>Série Céus Urbanos: Going West I - GRANDE (60x90)<br>Série Céus Urbanos: Going West II - GRANDE (60x90)<br>Série Céus Urbanos: Going West I - GRANDE (60x90)<br>Série Céus Urbanos: Going West II - GRANDE (60x90)<br>ESFERA METÁLICA II - EXTRA GRANDE (90x90)<br>ATOMIUM  - EXTRA GRANDE (100x150)<br>Série Céus Urbanos: Going West I - GRANDE (60x90)<br>Série Céus Urbanos: Going West II - GRANDE (60x90)<br>Série Céus Urbanos: Going West I - GRANDE (60x90)<br>Série Céus Urbanos: Going West II - GRANDE (60x90)<br>ESFERA METÁLICA II - EXTRA GRANDE (90x90)<br>ATOMIUM  - EXTRA GRANDE (100x150)<br>Série Céus Urbanos: Going West I - GRANDE (60x90)<br>Série Céus Urbanos: Going West II - GRANDE (60x90)<br>ATOMIUM  - EXTRA GRANDE (100x150)</td><td class=xl24 width=64 >19.232,50</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >EM ABERTO</td></tr><tr><td class=xl24 width=64 >00081</td><td class=xl24 width=64 >18/08/2016 15:12</td><td class=xl24 width=64 >17/09/2016</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >MAÍRA PAIM</td><td class=xl24 width=64 >GOTHAM CITY XIX - PEQUENO (30x45)<br>GOTHAM CITY XIX - MÉDIO (40x60)</td><td class=xl24 width=64 >789,00</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >NÃO CONCRETIZADO (VENCIDO)</td></tr><tr><td class=xl24 width=64 >00079</td><td class=xl24 width=64 >13/08/2016 17:00</td><td class=xl24 width=64 >12/09/2016</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >GILBERTO MAGALHÃES</td><td class=xl24 width=64 >Reflexos do Central Park - EXTRA GRANDE (90x135)<br>MEMORIAL 11 DE SETEMBRO - EXTRA GRANDE (90x135)<br>JERSEY EM PAZ - EXTRA GRANDE (90x135)<br>Empire State Building - EXTRA GRANDE (90x135)<br>Reflexões Palafíticas  - COLECIONADOR 90X135 (90x135)<br>Pier em Saltburn - GRANDE (60x90)<br>FLATIRON DISTRICT - EXTRA GRANDE (90x135)<br>Manhattan  - EXTRA GRANDE (90x135)<br>Gotham City XVI - COLECIONADOR 90X135 (90x135)<br>Gotham City VI - COLECIONADOR 90X135 (90x135)<br>Gotham City VIII - COLECIONADOR 90X135 (90x135)<br>Gotham City X - GRANDE (60x90)<br>Buenos Aires - EXTRA GRANDE (90x110)<br>THE PYRAMID I - COLECIONADOR 90X90 (90x90)<br>Over the Top - COLECIONADOR 90X135 (90x135)</td><td class=xl24 width=64 >52.072,00</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >NÃO CONCRETIZADO (VENCIDO)</td></tr><tr><td class=xl24 width=64 >00075</td><td class=xl24 width=64 >13/08/2016 16:00</td><td class=xl24 width=64 >12/09/2016</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >DARIO MASCARO</td><td class=xl24 width=64 >Reflexos do Central Park - EXTRA GRANDE (90x135)<br>Os Reflexos de Manhattan - EXTRA GRANDE (90x135)<br>MEMORIAL 11 DE SETEMBRO - EXTRA GRANDE (90x135)<br>Empire State Building - EXTRA GRANDE (90x135)<br>Anhangabaú e Shopping Light - GRANDE (60x90)<br>COPAN - EXTRA GRANDE (90x135)<br>Reflexos de San Diego - EXTRA GRANDE (90x135)<br>FLATIRON DISTRICT - EXTRA GRANDE (90x135)<br>O ÊXODO DE MANHATTAN - EXTRA GRANDE (90x135)<br>SÃO PAULO AZUL I - GRANDE (60x90)<br>SÃO PAULO AZUL II - GRANDE (60x90)<br>SÃO PAULO AZUL III - GRANDE (60x90)<br>Gotham City XVIII - GRANDE (60x78)<br>Gotham City XVI - COLECIONADOR 90X135 (90x135)<br>Gotham City VI - COLECIONADOR 90X135 (90x135)<br>Gotham City VIII - COLECIONADOR 90X135 (90x135)<br>NEW YORK - EXTRA GRANDE (90x135)<br>TIMES SQUARE - COLECIONADOR 90X107 (0x0)<br>Manhattan  - EXTRA GRANDE (90x135)<br>DINNER AND A VIEW - COLECIONADOR 90X135 (90x135)<br>THE MARVELOUS CITY - COLECIONADOR 90X135 (90x135)<br>Lagoa R. F - GRANDE (60x140)<br>ROXY - GRANDE (60x103)<br>SUBWAY III - C</td><td class=xl24 width=64 >104.140,00</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >NÃO CONCRETIZADO (VENCIDO)</td></tr><tr><td class=xl24 width=64 >00074</td><td class=xl24 width=64 >11/08/2016 20:58</td><td class=xl24 width=64 >10/09/2016</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >FERNANDA BORGES</td><td class=xl24 width=64 >São Paulo Amarelo I - MÉDIO (40x60)<br>SÃO PAULO AZUL I - MÉDIO (40x60)<br>SÃO PAULO AZUL II - MÉDIO (40x60)<br>SÃO PAULO AZUL III - MÉDIO (40x60)<br>SÃO PAULO AZUL IV - MÉDIO (40x60)<br>Gotham City XVII - MÉDIO (40x60)<br>GOTHAM CITY II - MÉDIO (40x60)<br>Gotham City VIII - MÉDIO (40x60)<br>Gotham City X - MÉDIO (40x60)</td><td class=xl24 width=64 >5.825,00</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >NÃO CONCRETIZADO (VENCIDO)</td></tr><tr><td class=xl24 width=64 >00071</td><td class=xl24 width=64 >06/08/2016 17:07</td><td class=xl24 width=64 >05/09/2016</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >REGINA PIVA</td><td class=xl24 width=64 >Salinas de Aveiro Pier Scape - MÉDIO (40x60)<br>POR DO SOL EM IMI QUADDAR - MÉDIO (40x60)<br>Linhas Maresianas I - MÉDIO (40x60)<br>Onda de Saltburn - MÉDIO (40x60)<br>Wrap de Onda - MÉDIO (40x60)<br>HUNTINGTON PIER SUNSET - MÉDIO (40x60)<br>Cores de Carsbad - MÉDIO (40x60)<br>Textura de Onda - MÉDIO (40x60)<br>NASCER DO SOL EM MOOREA  - MÉDIO (40x60)<br>Anoitecer em Moorea  - MÉDIO (40x60)<br>Mandíbulas de Teahupoo - MÉDIO (40x60)<br>PIER TAITIANO I - MÉDIO (40x60)<br>A ONDA AZUL - MÉDIO (40x60)<br>Lanzarote IV - MÉDIO (40x60)<br>Praia do Golfo em Lanzarote - MÉDIO (40x60)<br>CARMEL BY THE SEA  - MÉDIO (40x60)<br>Zanzibar Sunset - MÉDIO (40x60)</td><td class=xl24 width=64 >11.178,00</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >NÃO CONCRETIZADO (VENCIDO)</td></tr><tr><td class=xl24 width=64 >00070</td><td class=xl24 width=64 >05/08/2016 19:26</td><td class=xl24 width=64 >04/09/2016</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >SELMO KEN</td><td class=xl24 width=64 >Salinas de Aveiro Pier Scape - MÉDIO (40x60)<br>POR DO SOL EM IMI QUADDAR - MÉDIO (40x60)<br>Return to Nature - MÉDIO (40x60)<br>HUNTINGTON PIER SUNSET - MÉDIO (40x60)<br>Cores de Carsbad - MÉDIO (40x60)<br>NASCER DO SOL EM MOOREA  - MÉDIO (40x60)<br>Anoitecer em Moorea  - MÉDIO (40x60)<br>PÔR DO SOL NOS BANGALÔS II - MÉDIO (40x60)<br>PÔR DO SOL EM MOOREA - MÉDIO (40x60)<br>Mandíbulas de Teahupoo - MÉDIO (40x60)<br>PIER TAITIANO I - MÉDIO (40x60)<br>A ONDA AZUL - MÉDIO (40x60)<br>Lanzarote IV - MÉDIO (40x60)<br>Praia do Golfo em Lanzarote - MÉDIO (40x60)<br>Linhas Maresianas I - MÉDIO (40x60)<br>CARMEL BY THE SEA  - MÉDIO (40x60)</td><td class=xl24 width=64 >10.598,00</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >NÃO CONCRETIZADO (VENCIDO)</td></tr><tr><td class=xl24 width=64 >00068</td><td class=xl24 width=64 >04/08/2016 17:57</td><td class=xl24 width=64 >03/09/2016</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >CRISTIANE LACERDA </td><td class=xl24 width=64 >GOTHAM CITY XIX - GRANDE (60x90)<br>GOTHAM CITY VII - GRANDE (60x90)</td><td class=xl24 width=64 >3.061,50</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >NÃO CONCRETIZADO (VENCIDO)</td></tr><tr><td class=xl24 width=64 >00067</td><td class=xl24 width=64 >04/08/2016 17:22</td><td class=xl24 width=64 >03/09/2016</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >JULIANY NERY</td><td class=xl24 width=64 >SP MASP - PEQUENO (30x45)<br>SP COPAN - PEQUENO (30x45)<br>SP OCA  - PEQUENO (30x45)</td><td class=xl24 width=64 >1.204,00</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >NÃO CONCRETIZADO (VENCIDO)</td></tr><tr><td class=xl24 width=64 >00066</td><td class=xl24 width=64 >04/08/2016 16:58</td><td class=xl24 width=64 >03/09/2016</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >FABRÍCIO OLIVEIRA</td><td class=xl24 width=64 >São Paulo Amarelo I - MÉDIO (40x60)<br>SÃO PAULO AZUL I - MÉDIO (40x60)<br>SÃO PAULO AZUL II - MÉDIO (40x60)<br>SÃO PAULO AZUL III - MÉDIO (40x60)<br>SÃO PAULO AZUL IV - MÉDIO (40x60)<br>GOTHAM CITY XIX - MÉDIO (40x60)<br>Gotham City XVII - MÉDIO (40x60)<br>Gotham City V - MÉDIO (40x60)<br>GOTHAM CITY VII - MÉDIO (40x60)<br>SÃO PAULO AZUL V - MÉDIO (40x73)<br>SP MASP - MÉDIO (40x60)<br>SP COPAN - MÉDIO (40x60)<br>SP OCA  - MÉDIO (40x60)</td><td class=xl24 width=64 >8.897,50</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >NÃO CONCRETIZADO (VENCIDO)</td></tr><tr><td class=xl24 width=64 >00064</td><td class=xl24 width=64 >26/07/2016 19:16</td><td class=xl24 width=64 >25/08/2016</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >ANDREA REIMBERG</td><td class=xl24 width=64 >São Paulo Amarelo I - GRANDE (60x90)<br>SÃO PAULO AZUL I - GRANDE (60x90)<br>SÃO PAULO AZUL II - GRANDE (60x90)<br>SÃO PAULO AZUL III - GRANDE (60x90)<br>SÃO PAULO AZUL IV - GRANDE (60x90)<br>Anhangabaú e Shopping Light - GRANDE (60x90)<br>PANORAMA NOTURNO DA PONTE ESTAIADA - GRANDE (40x165)<br>SP Consolação - MÉDIO (40x60)<br>COPAN- - MÉDIO (40x60)</td><td class=xl24 width=64 >12.281,50</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >NÃO CONCRETIZADO (VENCIDO)</td></tr><tr><td class=xl24 width=64 >00063</td><td class=xl24 width=64 >26/07/2016 18:32</td><td class=xl24 width=64 >25/08/2016</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >BEATRIZ ROCHA</td><td class=xl24 width=64 >Reflexões Palafíticas  - GRANDE (60x90)<br>Onda de Saltburn - GRANDE (60x90)<br>Pier em Saltburn - GRANDE (60x90)<br>York Minster - GRANDE (60x90)<br>Louvre Pyramid  - GRANDE (60x90)<br>SOBRAS REVISITADAS III - GRANDE (60x70)<br>Estrada Alta - GRANDE (60x90)<br>Caleidoscopio - GRANDE (60x80)<br>Ponte - GRANDE (60x80)<br>Geometria da Luz - GRANDE (60x80)<br>Jogo de Perspectiva - GRANDE (60x80)</td><td class=xl24 width=64 >14.883,50</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >NÃO CONCRETIZADO (VENCIDO)</td></tr><tr><td class=xl24 width=64 >00062</td><td class=xl24 width=64 >26/07/2016 18:09</td><td class=xl24 width=64 >25/08/2016</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >VICTOR GONZAGA</td><td class=xl24 width=64 >PÔR DO SOL NA CIDADE DE JERSEY - GRANDE (60x90)<br>POR DO SOL EM IMI QUADDAR - GRANDE (60x90)<br>HUNTINGTON PIER SUNSET - GRANDE (60x90)<br>ANOITECER EM SÃO PAULO II - MÉDIO (45x60)<br>PÔR DO SOL NOS BANGALÔS II - GRANDE (60x90)<br>OURO PRETO II - GRANDE (60x90)<br>MY NEVERLAND - MÉDIO (40x60)</td><td class=xl24 width=64 >9.187,50</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >NÃO CONCRETIZADO (VENCIDO)</td></tr><tr><td class=xl24 width=64 >00061</td><td class=xl24 width=64 >26/07/2016 18:00</td><td class=xl24 width=64 >25/08/2016</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >CRISTIANA JULIA</td><td class=xl24 width=64 >PÔR DO SOL NA CIDADE DE JERSEY - GRANDE (60x90)<br>SOB O PIER EM CONEY ISLAND - GRANDE (60x90)<br>Salinas de Aveiro Pier Scape - GRANDE (60x90)<br>Linhas Maresianas I - GRANDE (60x90)<br>Oceano Índico Abstrato - GRANDE (60x90)<br>HUNTINGTON PIER SUNSET - GRANDE (60x90)<br>NASCER DO SOL EM MOOREA  - GRANDE (60x90)<br>PESCADOR - GRANDE (60x90)<br>A Little Point - GRANDE (60x90)<br>Série Além da Forma VIII - GRANDE (60x90)<br>TORRE DA CAPELA - GRANDE (60x90)<br>POSTO DE GASOLINA - GRANDE (60x90)</td><td class=xl24 width=64 >18.207,00</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >NÃO CONCRETIZADO (VENCIDO)</td></tr><tr><td class=xl24 width=64 >00060</td><td class=xl24 width=64 >26/07/2016 17:04</td><td class=xl24 width=64 >25/08/2016</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >HUGO LUSTRE</td><td class=xl24 width=64 >Salinas de Aveiro Pier Scape - COLECIONADOR 90X135 (90x135)<br>Return to Nature - EXTRA GRANDE (90x135)<br>Cores de Carsbad - GRANDE (60x90)<br>Cume Yunga - EXTRA GRANDE (90x135)<br>Cloud - COLECIONADOR 90X135 (90x135)<br>PARQUE NACIONAL IV - COLECIONADOR 90X135 (90x135)<br>PARQUE NACIONAL I - EXTRA GRANDE (90x135)<br>BRIDGE TO ISOSCELES PEAK - COLECIONADOR 100X150 (100x150)<br>GOLDEN FOREST  - GRANDE (60x90)<br>FLOWER I - COLECIONADOR 90X135 (90x135)<br>MY MOOD - EXTRA GRANDE (90x135)<br>Lanzarote IV - GRANDE (60x90)<br>Praia do Golfo em Lanzarote - GRANDE (60x90)</td><td class=xl24 width=64 >43.537,50</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >NÃO CONCRETIZADO (VENCIDO)</td></tr><tr><td class=xl24 width=64 >00036</td><td class=xl24 width=64 >22/07/2016 19:41</td><td class=xl24 width=64 >21/08/2016</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >BRUNA CONTENTA</td><td class=xl24 width=64 >REFLEXO EM LADEIRA - GRANDE (60x100)<br>QUINTAL - GRANDE (60x80)<br>CANTEIRO - GRANDE (60x80)<br>ABSTRATO SOBRE GAROTA - MÉDIO (40x120)<br>ABSTRACT I - MÉDIO (60x60)<br>ESCAPE - GRANDE (60x80)<br>PRIMAVERA - JANEIRO  - GRANDE (60x90)<br>ANCESTRY - GRANDE (60x90)<br>REPOSE II - GRANDE (60x90)<br>ABSTRACT III - GRANDE (90x90)<br>POSTO DE GASOLINA - GRANDE (60x90)</td><td class=xl24 width=64 >15.961,50</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >NÃO CONCRETIZADO (VENCIDO)</td></tr><tr><td class=xl24 width=64 >00035</td><td class=xl24 width=64 >22/07/2016 19:02</td><td class=xl24 width=64 >21/08/2016</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >EDUARDO BOCHINI</td><td class=xl24 width=64 >ATACAMA I - GRANDE (60x90)<br>Atacama IV - MÉDIO (40x60)<br>Atacama II - GRANDE (60x120)<br>Tantas Cores, Tanto Mar X - GRANDE (60x90)<br>Tantas Cores, Tanto Mar XXII - GRANDE (60x90)<br>Cores e Texturas IV - GRANDE (60x90)<br>GELO AZUL III - COLECIONADOR 90X180 (90x180)<br>Paisagem Amarela Paine I - COLECIONADOR 90X135 (90x135)<br>Cidade em chamas - EXTRA GRANDE (90x120)<br>PÔR DO SOL NA CIDADE DE JERSEY - EXTRA GRANDE (90x135)<br>Oceano Índico Abstrato - GRANDE (60x90)<br>HUNTINGTON PIER SUNSET - EXTRA GRANDE (90x135)<br>PÔR DO SOL EM MOOREA - EXTRA GRANDE (90x135)<br>PESCADOR - COLECIONADOR 90X135 (90x135)<br>SÉRIE ALÉM DA FORMA I - EXTRA GRANDE (100x150)</td><td class=xl24 width=64 >45.536,00</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >NÃO CONCRETIZADO (VENCIDO)</td></tr><tr><td class=xl24 width=64 >00028</td><td class=xl24 width=64 >12/07/2016 16:48</td><td class=xl24 width=64 >11/08/2016</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >SILVIA PAES LEME</td><td class=xl24 width=64 >BALTIC SEA I - MÉDIO (60x60)<br>BALTIC SEA II - MÉDIO (60x60)<br>BALTIC SEA III - MÉDIO (60x60)<br>PÔR DO SOL NA CIDADE DE JERSEY - GRANDE (60x90)<br>York Minster - GRANDE (60x90)<br>HUNTINGTON PIER SUNSET - GRANDE (60x90)<br>Pier Taitiano II - GRANDE (60x90)<br>PIER TAITIANO I - GRANDE (60x90)<br>Caminho para o sul - GRANDE (60x90)<br>VENICE, SUNSET - GRANDE (60x90)<br>California Lake - GRANDE (60x90)</td><td class=xl24 width=64 >15.268,00</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >NÃO CONCRETIZADO (VENCIDO)</td></tr><tr><td class=xl24 width=64 >00025</td><td class=xl24 width=64 >07/07/2016 14:56</td><td class=xl24 width=64 >06/08/2016</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >FLÁVIA </td><td class=xl24 width=64 >Utensílios de Ait-Ben-Haddou - GRANDE (60x90)<br>SOB O PIER EM CONEY ISLAND - EXTRA GRANDE (90x135)<br>PIER TAITIANO I - EXTRA GRANDE (90x135)</td><td class=xl24 width=64 >10.200,00</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >NÃO CONCRETIZADO (VENCIDO)</td></tr><tr><td class=xl24 width=64 >00024</td><td class=xl24 width=64 >03/07/2016 17:48</td><td class=xl24 width=64 >02/08/2016</td><td class=xl24 width=64 >MARKET PLACE</td><td class=xl24 width=64 >CHARLES CACHOEIRA</td><td class=xl24 width=64 >JUSTERINE E BROOKS - GRANDE (60x90)<br>IMAGIC VIII - GRANDE (60x90)<br>IMAGIC IV - GRANDE (60x90)<br>CENTRO POMPIDOU  - GRANDE (60x90)<br>ELECTRIKA II - GRANDE (60x90)<br>QUINTAL - GRANDE (60x80)<br>MARKET GLOW - GRANDE (60x80)<br>Arte em Nova York - GRANDE (60x90)</td><td class=xl24 width=64 >12.222,00</td><td class=xl24 width=64 >CECILANE LIMA CARNEIRO DERZI</td><td class=xl24 width=64 >NÃO CONCRETIZADO (VENCIDO)</td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 >TOTAL</td><td class=xl24 width=64 >417.148,00</td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr></table></body></html>

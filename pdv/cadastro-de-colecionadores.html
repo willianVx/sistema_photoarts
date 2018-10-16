@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <title>PDV | Cadastro de Colecionadores | Photoarts</title>
+        <link rel="stylesheet" type="text/css" href="../padrao/css/efeitos.css"/>
+        <link rel="stylesheet" type="text/css" href="../padrao/css/componentes.css"/>
+        <link rel="stylesheet" type="text/css" href="../padrao/css/fontes.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/menu.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
+        <script src="../js/jquery-latest.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="../padrao/json2.js"></script>
+        <script type="text/javascript" src="../padrao/utils.js"></script>
+        <script type="text/javascript" src="js/photoarts-pdv.js"></script>
+        <script type="text/javascript" src="js/clientes.js"></script>
+    </head>
+    <body style="height:100%;">
+        <div id="pagina">
+            <div id="divprincipal" style="height:auto" >
+                <div id="cabecalho">
+                    <div id="cabecalho_botao_menu" onclick="window.location = 'principal.html'"><img src="../imagens/galerianome.png" /></div>
+                    <div id="legendaTela">
+                        <div id="nomeGaleria"></div>
+                    </div>
+                    <div id="cabecalho_botoes_principal" style="float:right">
+                        <div id="cabecalho_botao_menu_topo" onclick="window.location = 'index.html'"  ><img src="../imagens/sair.png" /></div>
+                        <div id="cabecalho_botao_menu_topo" onclick="window.location='alterar-senha.html'" title="Alterar Senha"><img src="../imagens/chave.png" style="width:auto; height:25px;"/></div>
+                        <div id="legendaTela" style="float:right; text-align:right; padding-right:10px;">
+                            <div id="nomeUsuario"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--cabecalho-->
+                <div style="clear:both"> </div>
+                <div style="height:65px;"></div>
+                <div style="padding-left:5px; padding-right:10px; margin-right:5px;" align="center"> 
+                    <div id="divContainer" class="quadrosimples efeito_delay3" style=" clear:both; min-width:630px; width:100%;  min-height:250px; display:block; background:#EEEEEE; overflow:hidden" align="left">
+                        <div  id="divtitulotopo" class="quadrosimplestituloEDICAO" style="padding-bottom:0px; margin-bottom:0px">
+                            <input type="text" id="busca" class="textbox_cinzafoco" style="width:400px; vertical-align:middle; margin-top:7px;" placeholder="Busque por código, nome, apelido, telefone ou e-mail" onkeyup="MostraColecionadores(false);" />
+                            <input id="mostrarClientesPremium" onclick="MostraColecionadores(true)" type="checkbox" style="vertical-align:middle"/> <label for="mostrarClientesPremium" id="lblMostrarClientesPremium" style="vertical-align:middle">Colecionadores Premium</label>
+                            <input id="mostrarArquitetos" onclick="MostraColecionadores(true)" type="checkbox" style="vertical-align:middle; margin-left:10px; "/> <label for="mostrarArquitetos" id="lblMostrarArquitetos" style="vertical-align:middle" title="Mostrar apenas arquitetos ">Arquitetos</label>
+                            <input id="mostrartodos" onclick="MostraColecionadores(true)" type="checkbox" style="vertical-align:middle; margin-left:10px;"/> <label for="mostrartodos" id="lblmostrartodos" style="vertical-align:middle">Mostrar Todos</label>
+                            <div id="barraedicao" style="width:auto">
+                                <div id="btSair" class="botaotituloultimoEDICAO" onclick="Sair();"> 
+                                    <img src="../imagens/sair3.png" id="botSair" title="Sair"/>
+                                </div>  
+                                <div id="btNovo" class="botaotituloultimoEDICAO" onclick="Novo(true);">
+                                    <img src="../imagens/novo.png" id="botNovo" title="Novo"/>
+                                </div>  
+                            </div>
+                        </div>
+                        <div style="clear:both"></div>
+                        <div id="divRel" style="width:100%; background-color:#FFF; min-height:250px; height:650px; overflow:auto;"></div>
+                        <div id="divCadastro2" style="padding:0px;" align="center">  
+                            <div class="quadrosimples efeito_delay" style=" clear:both; min-width:300px; margin-left:0px; width:100%;   min-height:238px; min-width:390px;  display:block; background:#EEEEEE" align="left">
+                                <div style="clear:both; "></div>
+                                <div  id="divabas" style="background:#EEEEEE; vertical-align:bottom; margin-top:-10px; margin-bottom:-1px; padding-left:10px; padding-top:10px; min-height:40px">
+                                    <div class="divabas"  id="aba0" onclick="SelecionaAbas(0)">Cadastro</div>  
+                                    <div class="divabas2" id="aba1" onclick="SelecionaAbas(1)">Orçamentos</div>
+                                    <div class="divabas2" id="aba2" onclick="SelecionaAbas(2)">Vendas</div>
+                                    <div class="divabas2" id="aba3" onclick="SelecionaAbas(3)">Financeiro</div>
+                                    <div class="divabas2" id="aba4" onclick="SelecionaAbas(4)">Follow-up</div>
+                                </div>
+                                <div id="div0" style="margin-top:0px; border-top:1px solid;  border-color:#D7D7D7; overflow:hidden" class="divformulario">
+                                    <label style="float:right;"><label style="color:red;">*</label> Campos obrigatórios</label>
+                                    <input style="margin-left:-1px" id="fisica" name="grupo1" type="radio" checked="checked"  onclick="selecionaPessoa();"/><label for="fisica">Física  </label>
+                                    <input id= "juridica" name="grupo1" type="radio" onclick="selecionaPessoa();" /><label for="juridica">Jurídica</label><br />
+                                    <div class="divcontainer" style="max-width: 250px;">
+                                        <label id="rotulocpf">CPF</label>
+                                        <input type="text" style="max-width:250px"  id="cpf" class="textbox_cinzafoco" onblur="VerificarCpfCnpjIgual(codigoAtual, 'clientes', 'cpfCNPJ', 'idCliente');"/>	</div>
+                                    <div class="divcontainer" style="max-width: 150px;">
+                                        <label  id="rotulorg">RG</label> 
+                                        <input type="text" style="max-width:150px"  id="rg" class="textbox_cinzafoco" />	
+                                    </div>
+                                    <div class="divcontainer" style="max-width: 150px;">
+                                        <label  id="rotulodatanasc">Data de Nascimento</label> 
+                                        <input type="text" style="width:100%"  id="dataNasc" class="textbox_cinzafoco" />	
+                                    </div>
+                                    <div id="divSexoMasc" class="divcontainer" style=" width:auto">
+                                        <input checked="checked" id="masc" type="radio" name="sexo"  />	
+                                        <label for="masc">Masculino</label> 
+                                    </div>
+                                    <div id="divSexoFem"  class="divcontainer" style=" width:auto">
+                                        <input id="femin" type="radio" name="sexo"  />	
+                                        <label for="femin">Feminino</label> 
+                                    </div>
+                                    <div class="divcontainer" style=" width:auto">
+                                        <input id="ativo" type="checkbox"  />	
+                                        <label for="ativo">Ativo</label> 
+                                    </div>
+                                    <div class="divcontainer" style=" width:auto">
+                                        <input id="premium" type="checkbox"/>   
+                                        <label for="premium">Premium</label>
+                                    </div>
+                                    <br />
+                                    <div class="divcontainer" style="max-width: 350px;"><label  id="rotulonome">Nome</label> <label style="color:red;">*</label>
+                                        <input type="text" id="nome" style="width:100%"  class="textbox_cinzafoco" /></div>
+                                    <div class="divcontainer" style="max-width: 200px;">
+                                        <label  id="rotuloapelido">Apelido</label><label style="color:red;"></label>
+                                        <input type="text" id="apelido" style="width:100%"  class="textbox_cinzafoco" />	
+                                    </div>    
+                                    <div class="divcontainer" style="max-width:150px;">
+                                        <label>Data Cadastro</label> <label style="color:red;">*</label>
+                                        <input type="text"  id="cadastro" style="width:100%"  class="textbox_cinzafoco" />	
+                                    </div>
+                                    <div class="divcontainer" style="max-width: 200px;">
+                                        <label>Responsável </label>
+                                        <input placeHolder="Ex.: Carlos" id="responsavel" type="text" style="width:100%"  class="textbox_cinzafoco" />	
+                                    </div>
+                                    <div class="divcontainer" style="max-width: 100px;">
+                                        <label>Telefone<label style="color:red;">*</label></label>
+                                        <input placeHolder="(11) 4444-5555" id="telefone" type="text" style="width:100%"  class="textbox_cinzafoco" />	
+                                    </div>
+                                    <div class="divcontainer" style="max-width: 105px;">
+                                        <label>Celular<label style="color:red;">*</label></label>
+                                        <input placeHolder="(11) 94444-5555" id="celular" type="text" style="width:100%"  class="textbox_cinzafoco  " />	
+                                    </div>
+                                    <div class="divcontainer" style="max-width: 200px;">
+                                        <label>Email<label style="color:red;">*</label></label>
+                                        <input placeHolder="Ex.: nome@exemplo.com.br" id="email" type="text" style="width:100%"  class="textbox_cinzafoco" />	
+                                    </div>
+                                    <div class="divcontainer" style=" max-width: 250px;">
+                                        <label>Site</label>
+                                        <input placeHolder="Ex.: www.meusite.com.br" id="site" type="text"  class="textbox_cinzafoco" style="width:100%" />	
+                                    </div>
+                                    
+                                    <div class="divcontainer" style=" max-width: 100px;">
+                                        <input id="arquiteto" type="checkbox" onclick="arquiteto_click()"/> 
+                                        <label for="arquiteto">Arquiteto</label>                                        
+                                        <input disabled="disabled" placeHolder="Ex.: 15,00" id="arquitetoComissao" type="text"  class="textbox_cinzafoco" style="width:80%;" />	
+                                        <label>%</label>
+                                    </div> 
+                                    
+                                    <label style="float:right; margin-top:33px; text-decoration:underline; cursor:pointer;" onclick="PromptColecionadorEndereco(-1);">Adicionar Endereço +</label>
+                                    <div style="width:100%; height:113px; border:1px solid lightgray; overflow:auto;" id="divEnderecos"></div>
+                                    <div class="divcontainer" style=" width:500px; vertical-align: top;">         	
+                                        <label for="ativo">Estilos</label> 
+                                        <select style="width: 250px" id="estilos" class="combo_cinzafoco"></select>
+                                        <input type="button" id="btnAdicionarEstilo" value="Adicionar" onclick="AdicionarEstilo()" class="botaosimplesfoco"/>
+                                        <div id="divEstilos" style="height: 115px; overflow: auto"></div>
+                                    </div>
+                                    <div class="divcontainer" style=" width:512px; vertical-align: top; margin-left: 4px">                                	
+                                        <label for="ativo">Observações</label> 
+                                        <textarea id="obs" class="textbox_cinzafoco" style="width:100%; height:110px"></textarea>
+                                        <span class="fonte_Roboto_titulo_normal" id="ultimaAtualizacaopor" style="color:#999; font-size:12px"></span>
+                                    </div>                            
+                                </div>
+                                <div id="div1" style="margin-top:0px;  border-top:1px solid; border-color:#D7D7D7; overflow:hidden" class="divformulario">
+                                    <div style="text-align:right"> 
+                                        <input type="button" value="Nova Proposta +"  onclick="window.location = 'propostas.html?idcliente=' + codigoAtual + '&codigo=0&novo=true'" class="botaosimplesfoco"/> <br /><br />
+                                    </div>
+                                    <div id="divPropostas" style="height:400px; overflow:auto;"></div>
+                                </div>
+                                <div id="div2" style="margin-top:0px; border-top:1px solid; border-color:#D7D7D7; overflow:hidden" class="divformulario">
+                                    <div style="text-align:right"> 
+                                        <input type="button" value="Nova Venda +"  onclick="window.location = 'pedidos.html?idcliente=' + codigoAtual + '&codigo=0&novo=true'" class="botaosimplesfoco"/> <br /><br />
+                                    </div>
+                                    <div id="divVendas" style="height:400px; overflow:auto;"></div>
+                                </div>
+                                <div id="div3" style="margin-top:0px; border-top:1px solid; border-color:#D7D7D7; overflow:hidden" class="divformulario">
+                                    <div style="float:right;" class="fonte_Roboto_titulo_normal">
+                                        <input type="radio" id="pagos" name="tipoLancamentos" onclick="MostrarFinanceiro();"/>
+                                        Pagos
+                                        <input type="radio" id="emAberto" name="tipoLancamentos" checked="checked" onclick="MostrarFinanceiro();"/>
+                                        Em aberto
+                                        <input type="radio" id="todos" name="tipoLancamentos" onclick="MostrarFinanceiro();"/>
+                                        Todos
+                                    </div>
+                                    <br /><br />
+                                    <div id="divFinanceiro" style="height:400px; overflow:auto;"></div>
+                                </div>
+                                <div id="div4" style="margin-top:0px; border-top:1px solid; border-color:#D7D7D7; overflow:hidden" class="divformulario">
+                                    <div style="text-align:right"> 
+                                        <input type="button" value="Novo Contato +"  onclick="editarFollow(0)" class="botaosimplesfoco"/> <br /><br />
+                                    </div>
+                                    <div id="tabelaFollow" style="height:400px; overflow:auto;"> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--divprincipal--> 
+        <!--pagina-->
+        <div id="prompt"></div>
+        <div id="prompt1"></div>
+        <div id="divConfiguacoes" class="divConfiguacoes efeito_delay" style="height:0px;"  onclick="mostracaixaconfiguracoes();"> 
+            <br />
+            <div class="divconfitens efeito-opacidade-75-03" onclick="window.location = 'alterar-senha.html'"> <img src="../imagens/chave.png" /><br />ALTERAR SENHA</div>
+            <div class="divconfitens efeito-opacidade-75-03"  onclick="suporteTecnico();"> <img src="../imagens/suporte.png" /><br />SUPORTE TÉCNICO</div>
+        </div></body>
+</html>

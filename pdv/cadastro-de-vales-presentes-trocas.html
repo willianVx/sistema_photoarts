@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <title>Cadastro de Vales Presentes/Trocas | PhotoArts</title>
+        <link rel="stylesheet" type="text/css" href="../padrao/css/efeitos.css"/>
+        <link rel="stylesheet" type="text/css" href="../padrao/css/componentes.css"/>
+        <link rel="stylesheet" type="text/css" href="../padrao/css/fontes.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/menu.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
+        <script src="../js/jquery-latest.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="../padrao/json2.js"></script>
+        <script type="text/javascript" src="../padrao/utils.js"></script>
+        <script type="text/javascript" src="js/photoarts-pdv.js"></script>
+        <script type="text/javascript" src="js/cadastro-de-vales-presentes-trocas.js"></script>
+    </head>
+    <body style="height:100%;">
+        <div id="pagina">
+            <div id="divprincipal" style="height:auto" >
+                <div id="cabecalho">
+                    <div id="cabecalho_botao_menu" onclick="window.location='principal.html'">
+                        <img src="../imagens/galerianome.png"/>
+                    </div>
+                    <div id="legendaTela">
+                        <div id="nomeGaleria"></div>
+                    </div>
+                    <div id="cabecalho_botoes_principal" style="float:right">
+                        <div id="cabecalho_botao_menu_topo" onclick="window.location='index.html'"><img src="../imagens/sair.png" /></div>
+                        <div id="cabecalho_botao_menu_topo" onclick="window.location='alterar-senha.html'" title="Alterar Senha"><img src="../imagens/chave.png" style="width:auto; height:25px;"/></div>
+                        <div id="legendaTela" style="float:right; text-align:right; padding-right:10px;">
+                            <div id="nomeUsuario"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--cabecalho-->
+                <div style="height:65px;"></div>
+                <div style="padding-left:5px; margin-right:5px;" align="center">  
+                    <div class="quadrosimples efeito_delay" style="padding:0px; margin:0px; width:98%; display:block;" align="left">
+                    <div id="divtitulotopo" class="quadrosimplestituloEDICAO" style="margin-bottom:0px; padding-bottom:0px;">
+                        <div style="display:inline-block; vertical-align:top; margin-top:5px;">
+                            <input type="radio" id="dataCadastro" name="filtroVale" checked="checked"/>
+                            <label for="dataCadastro">Data Cadastro</label>
+                            <input type="radio" id="dataValidade" name="filtroVale"/>
+                            <label for="dataValidade">Data Validade</label>
+                            <label style="margin-left:10px;">De</label>
+                            <input type="text" id="de" class="textbox_cinzafoco" style="width:85px;"/>
+                            <label>Até</label>
+                            <input type="text" id="ate" class="textbox_cinzafoco" style="width:85px;"/>
+                        </div>
+                        <select id="galeria" style="width:250px; vertical-align:bottom;" class="combo_cinzafoco"></select>
+                        <select id="cliente2" style="width:250px; vertical-align:bottom;" class="combo_cinzafoco"></select>
+                        <select id="situacao" style="width:150px; vertical-align:bottom;" class="combo_cinzafoco">
+                            <option value="0">Filtre por situação</option>
+                            <option value="1">Todas</option>
+                            <option value="2">Utilizados</option>
+                            <option value="3">Não Utilizados</option>
+                        </select>
+                        <input type="text" id="busca" class="textbox_cinzafoco" style="width:125px; vertical-align:bottom;" placeholder="Busque por código"/>
+                        <div class="botaotitulosimples" id="btPesquisarCad" style="float: none; display: inline-block; margin-top:1px; margin-left:5px;" onclick="Mostra();"> <img src="../imagens/pesquisar.png"></div>
+                        <div id="barraedicao" style="width:auto;">
+                            <div id="btSair" class="botaotituloultimoEDICAO" onclick="Sair();"> 
+                                <img src="../imagens/sair3.png" id="botSair" title="Sair"/>
+                            </div>
+                            <div id="btNovo" class="botaotituloultimoEDICAO" onclick="promptCadastro(0);">
+                                <img src="../imagens/novo.png" id="botNovo" title="Novo"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divformulario" id="divTabela" style="overflow: auto;"></div>
+                </div>
+            </div>
+            <!--divprincipal--> 
+        </div>
+        <!--pagina-->
+        <div id="prompt"></div>
+        <div id="divConfiguacoes" class="divConfiguacoes efeito_delay" style="height:0px;"  onclick="mostracaixaconfiguracoes();"> 
+            <br />
+            <div class="divconfitens efeito-opacidade-75-03" onclick="window.location = 'alterar-senha.html'"> <img src="../imagens/chave.png" /><br />ALTERAR SENHA</div>
+            <div class="divconfitens efeito-opacidade-75-03"  onclick="suporteTecnico();"> <img src="../imagens/suporte.png" /><br />SUPORTE TÉCNICO</div>
+
+        </div></body>
+</html>

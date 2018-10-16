@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <title>Pedidos | Photoarts</title>
+        <link rel="stylesheet" type="text/css" href="padrao/css/efeitos.css"/>
+        <link rel="stylesheet" type="text/css" href="padrao/css/componentes.css"/>
+        <link rel="stylesheet" type="text/css" href="padrao/css/fontes.css"/>
+        <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+        <link rel="stylesheet" href="css/menu.css" />
+        <script src="js/jquery-latest.min.js" type="text/javascript"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/Chart.min.js"></script>
+        <script type="text/javascript" src="padrao/json2.js"></script>
+        <script type="text/javascript" src="padrao/utils.js"></script>
+        <script type="text/javascript" src="js/photoarts.js?99"></script>
+        <script type="text/javascript" src="js/pedidos.js?v990"></script>
+        <script type="text/javascript" src="js/tinymce/js/tinymce/tinymce.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/autocomplete.css"/>
+        <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mockjax.js"></script>
+        <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+    </head>
+    <body style="height:100%;">
+        <div id="pagina">
+            <div id="divmenu" >
+                <div id="cabecalho_usuario">
+                    <div id="foto_menu"> </div>
+                    <div id="nome_menu"><span id="nome_user" >Usuário não logado</span><br />
+                        <span id="email_user"><a href="index.html">Clique aqui</a></span> </div>
+                    <div id="menu_esquerda_ocultar" onclick="oculta_menu(1)"><img  src="imagens/3pontos.png" /> </div>
+                </div>
+                <div id="menu"  >
+                    <div id='cssmenu'>
+                        <ul>
+                            <li><a href='principal.html' title="Home" ><img src="imagens/home.png"> <span>Home</span></a></li>
+                            <li class='has-sub'><a href='#' title="Cadastros"><img src="imagens/cadastro.png"> <span>Cadastros</span></a>
+                                <ul>
+                                    <li><a href='cadastro-de-artistas.html' title="Cadastro de Artistas"><img src="imagens/artistas.png"> <span>Artistas</span></a></li>
+                                    <li><a href='cadastro-de-colecionadores.html' title="Cadastro de Colecionadores"><img src="imagens/clientes.png"> <span>Colecionadores</span></a></li>
+
+                                    <li class='last'><a href='cadastro-de-fornecedores.html' title="Cadastro de Fornecedores"><img src="imagens/fornecedores.png"> <span>Fornecedores</span></a></li>
+                                    <li class='last'><a href='cadastro-de-funcionarios.html' title="Cadastro de Funcionários"><img src="imagens/funcionarios.png"> <span>Funcionários</span></a></li>
+
+                                    <li class='last'><a href='cadastro-de-lojas.html' title="Cadastro de Lojas"><img src="imagens/locais.png"> <span>Lojas</span></a></li><li class='last'><a href='cadastro-de-marchands.html' title="Cadastro de Marchands"><img src="imagens/vendedores.png"> <span>Marchands</span></a></li>
+
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#' title="Compras"><img src="imagens/menucompras.png"> <span>Compras</span></a>
+                                <ul>
+                                    <li><a href='ordem-de-compras.html' title="Ordem de Compras"><img src="imagens/menuordemcompra.png"><span>Ordem de Compras</span></a></li>
+                                    <li><a href='ordem-de-compras.html?situacao=todas' title="Relatório de ordem de compras"><img src="imagens/menurelordemcompras.png"><span>Relatório de Ordem de Compras</span></a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class='has-sub'><a href='#' title="Estoque"><img src="imagens/menuestoque.png"> <span>Estoque</span></a>
+                                <ul>
+                                    <li><a href='estoque-de-materiais.html' title="Estoque de Materiais"><img src="imagens/menuestoquemateriais.png"><span>Estoque de Materiais</span></a></li>
+                                    <li><a href='estoque-de-produtos.html' title="Estoque de Produtos"><img src="imagens/menuestoqueprodutos.png"><span>Estoque de Produtos</span></a></li>
+
+                                </ul>
+                            </li><li class='has-sub'><a href='#' title="Vendas"><img src="imagens/venda.png" > <span>Vendas</span></a>
+                                <ul>
+                                    <li class='has-sub'><a href='#' title="Cadastro"><img src="imagens/cadastro.png" ><span>Cadastros</span></a>
+                                        <ul>
+                                            <!--<li><a href='orcamentos-simplificados.html' title="Cadastro de Orçamentos Simplificados"><span><img src="imagens/proposta.png">Orçamentos Simplificados</span></a></li>-->
+                                            <li style="margin-left:35px;"><a href='propostas.html' title="Cadastro de Orçamentos"><span><img src="imagens/proposta.png">Orçamentos</span></a></li>
+                                            <li style="margin-left:35px;"><a href='pedidos.html' title="Cadastro de Pedidos"><span><img src="imagens/os.png">Pedidos</span></a></li><li style="margin-left:35px;"><a href='cadastro-de-vales-presentes-trocas.html' title="Cadastro de Vales Presentes"><span><img src="imagens/presente.png">Vales Presentes</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class='has-sub'><a href='#' title="Relatórios"><img src="imagens/relatorio.png"><span>Relatórios</span></a>
+                                        <ul>
+                                            <li style="margin-left:35px;"><a href='relatorio-de-encomendas.html' title="Relatório de Encomendas"><span><img src="imagens/materiais.png">Encomendas</span></a></li>
+                                            <!--<li><a href='relatorio-de-orcamentos-simplificados.html' title="Relatório de Orçamentos Simplificados"><span><img src="imagens/proposta.png">Orçamentos Simplificados</span></a></li>-->
+                                            <li style="margin-left:35px;"><a href='relatorio-de-propostas.html' title="Relatório de Orçamentos"><span><img src="imagens/proposta.png">Orçamentos</span></a></li>
+                                            <li style="margin-left:35px;"><a href='relatorio-de-pedidos.html'  title="Relatório de Pedidos"><span><img src="imagens/os.png">Pedidos</span></a></li><li style="margin-left:35px;"><a href='relatorio-de-panorama-de-vendas.html'  title="Relatório de Panorama de vendas"><span><img src="imagens/panoramavenda.png">Panorama de Vendas</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#'  title="Financeiro"><img src="imagens/financeiro.png"> <span>Financeiro</span></a>
+                                <ul>
+                                    <li class='has-sub'><a href='#'  title="Contas a Pagar"><img src="imagens/porco.png"><span>Contas à Pagar</span></a>
+                                        <ul>
+                                            <li style="margin-left:35px;"><a href='cadastro-de-contas-a-pagar.html'  title="Cadastro de Contas"><span><img src="imagens/cadastro.png">Cadastro de Contas</span></a></li>
+                                            <li style="margin-left:35px;"><a href='relatorio-de-contas-a-pagar.html'  title="Relatório de Contas à Pagar"><span><img src="imagens/relatorio.png">Relatório de Contas</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class='has-sub'><a href='#'  title="Contas à Receber"><img src="imagens/areceber.png"><span>Contas à Receber</span></a>
+                                        <ul>
+                                            <li style="margin-left:35px;"><a href='receitas-avulsas.html'  title="Receitas Avulsas"><span><img src="imagens/avulsos.png">Receitas Avulsas</span></a></li><li style="margin-left:35px;"><a href='relatorio-de-antecipacoes.html'  title="Relatório de Antecipações"><span><img src="imagens/relatorio.png">Relatório de Antecipações</span></a></li>
+                                            <li style="margin-left:35px;"><a href='relatorio-de-contas-a-receber.html'  title="Relatório de Contas"><span><img src="imagens/relatorio.png">Relatório de Contas</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href='fluxo-de-caixa.html'  title="Fluxo de Caixa"><img src="imagens/fluxocaixa.png"><span>Fluxo de Caixa</span></a> </li><li><a href='repasses-de-artistas.html'  title="Repasses de Artistas"><img src="imagens/artistas.png"><span>Repasses de Artistas</span></a> </li><li><a href='repasses-de-marchands.html'  title="Repasses de Marchands"><img src="imagens/vendedores.png"><span>Repasses de Marchands</span></a> </li><li><a href='repasses-de-marchands-gerentes.html'  title="Repasses de Marchands Gerentes"><img src="imagens/vendedores.png"><span>Repasses de Marchands Ger.</span></a> </li>
+                                    <li><a href='repasses-de-arquitetos.html'  title="Repasses de Arquitetos"><img src="imagens/molduras.png"><span>Repasses de Arquitetos</span></a> </li>
+                                </ul>
+                            </li><li class='has-sub'><a href='#' title="Produção"><img src="imagens/menuproducao.png"> <span>Produção</span></a>
+                                <ul>
+                                    <li><a href='ordem-de-producao.html' title="Ordem de Produção"><img src="imagens/producao.png"><span>Ordem de Produção</span></a></li>
+                                    <li><a href='acompanhar-ops.html' title="Acompanhar OP's"><img src="imagens/acompanharops.png"><span>Acompanhar OP's</span></a></li>
+
+                                    <li class='last'><a href='ordem-de-producao.html?relatorio=true' title="Relatório de OP's"><img src="imagens/relops.png"><span>Relatório de OP's</span></a></li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#' title="Relatórios Gerais"><img src="imagens/menurelordemcompras.png"> <span>Relatórios</span></a>
+                                <ul><li><a href='relatorio-de-aniversariantes.html' title="Relatório de Aniversáriantes"><img src="imagens/festas.png"> <span>Aniversáriantes</span></a></li>
+                                    <li><a href='relatorio-de-rt.html' title="Relatório de RT's"><img src="imagens/acabamento.png"> <span>RT's</span></a></li></ul></li><li class='has-sub'><a href='#'  title="Configuração"><img src="imagens/engrenagem.png"> <span>Configurações</span></a>
+                                <ul>
+                                    <li><a href='cadastro-de-acabamentos.html' title="Cadastro de Acabamentos"><img src="imagens/acabamento.png"> <span>Acabamentos</span></a></li>
+                                    <li><a href='cadastro-de-cargos.html' title="Cadastro de Cargos"><img src="imagens/cargos.png"> <span>Cargos</span></a></li><li><a href='cadastro-de-contas.html' title="Cadastro de Contas"><img src="imagens/financeiros.png"> <span>Contas</span></a></li>
+                                    <li><a href='cadastro-de-centro-de-custos.html' title="Cadastro de Centro de Custos"><img src="imagens/centrocusto.png"> <span>Centro de Custos</span></a></li>
+                                    <li class='last'><a href='cadastro-de-departamentos.html' title="Cadastro de Departamentos"><img src="imagens/deptos.png"> <span>Departamentos</span></a></li>
+                                    <li class='last'><a href='cadastro-de-estilos.html' title="Cadastro de Estilos"><img src="imagens/estilo.png"> <span>Estilos</span></a></li>
+                                    <li class='last'><a href='cadastro-de-estrelas.html' title="Cadastro de Estrelas"><img src="imagens/estrela.png"> <span>Estrelas</span></a></li>
+
+                                    <li class='last'><a href='cadastro-de-etapas-de-producao.html' title="Cadastro de Etapas de Produção"><img src="imagens/equipamento.png"> <span>Etapas de Produção</span></a></li>
+                                    <li class='last'><a href='cadastro-de-feriados.html' title="Cadastro de Feriados"><img src="imagens/feriados.png"> <span>Feriados</span></a></li>
+                                    <li class='last'><a href='cadastro-de-formas-de-pagamentos.html' title="Cadastro de Fomas de Pagamentos"><img src="imagens/pagamentos.png"> <span>Formas de Pagamentos</span></a></li>
+                                    <li class='last'><a href='cadastro-de-tamanhos.html' title="Cadastro de Tamanhos"><img src="imagens/logistica.png"> <span>Tamanhos</span></a></li><li class='last'><a href='cadastro-de-produtos.html' title="Cadastro de Produtos"><img src="imagens/logistica.png"> <span>Produtos à venda</span></a></li>
+                                    <li class='last'><a href='cadastro-de-materiais.html' title="Cadastro de Materiais"><img src="imagens/materiais.png"> <span>Materiais</span></a></li> <li class='last'><a href='cadastro-de-molduras.html' title="Cadastro de Molduras"><img src="imagens/molduras.png"> <span>Molduras</span></a></li><li class='last'><a href='cadastro-de-naturezas.html' title="Cadastro de Naturezas"><img src="imagens/naturezas.png"> <span>Naturezas</span></a></li>
+                                    <li class='last'><a href='cadastro-de-status-de-vendas.html' title="Cadastro de Status de Vendas"><img src="imagens/statusvenda.png"> <span>Status de Vendas</span></a></li>
+                                    <li class='last'><a href='cadastro-de-tipos-de-contatos.html' title="Cadastro de Tipos de Contatos"><img src="imagens/contatos.png"> <span>Tipos de Contatos</span></a></li>
+                                    <li class='last'><a href='cadastro-de-tipos-de-transportes.html' title="Cadastro de Tipos de Transporte"><img src="imagens/transporte.png"> <span>Tipos de Transportes</span></a></li>                                    
+                                </ul>
+                            </li>
+                            <li class='last'><a href='index.html' title="Sair"><img src="imagens/sair2.png"> <span>Sair</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--menu-->
+                <div align="center" style="padding-bottom:30px; width:320px; overflow:hidden; bottom:0px; margin-top:30px; "><img src="imagens/focomenu.png" /> </div>
+            </div>
+            <!--divmenu-->
+            <div id="divprincipal"  style="height:auto" >
+                <div id="cabecalho" >
+                    <div id="cabecalho_botao_menu" onclick="oculta_menu(2)"><img src="imagens/menu.png" /></div>
+                    <div id="legendaTela" ></div>
+                    <div id="cabecalho_botoes_principal" style="float:right">
+                        <div id="cabecalho_botao_menu_topo" onclick="window.location = 'index.html'"  ><img src="imagens/sair.png" /></div>
+                        <div id="cabecalho_botao_menu_topo"  onclick="mostracaixaconfiguracoes()"   ><img src="imagens/config.png" /></div>
+                        <div id="cabecalho_botao_menu_topo" onclick="abrecaixaemail()" title="Lembretes"><img src="imagens/email.png" /></div>
+                        <div id="cabecalho_botao_menu_topo" onclick="abrecaixaaniversariantes()" title="Aniversariantes">
+                            <img src="imagens/bolo.png" />
+                        </div>
+                        <div id="cabecalho_botao_menu_topo" onclick="window.location = 'cadastro-de-colecionadores.html'" title="Cadastro de Colecionadores">
+                            <img src="imagens/clientes.png" />
+                        </div>
+                        <div id="cabecalho_botao_menu_topo" onclick="window.location = 'propostas.html'" title="Orçamentos">
+                            <img src="imagens/proposta.png" />
+                        </div>
+                        <div id="cabecalho_botao_menu_topo" onclick="window.location = 'pedidos.html'" title="Pedidos">
+                            <img src="imagens/os.png" />
+                        </div>
+                    </div>
+                </div>
+                <!--cabecalho-->
+                <div style="height:65px;"> </div>
+                <div style="padding-left:5px; margin-right:5px; padding-right:10px" align="center">
+                    <div id="divContainer" class="quadrosimples efeito_delay" style="clear:both; min-width:670px; width:100%; min-height:238px; display:block;background:#EEEEEE" align="left">
+
+                        <div class="quadrosimplestituloEDICAO" style="margin-bottom:0px; padding-bottom:0px;">
+                            <div id="divDatas" style="display:inline-block; vertical-align:top; margin-top:5px;">
+                                <label>De</label>
+                                <input type="text" id="de" class="textbox_cinzafoco" style="width:85px;"/>
+                                <label>Até</label>
+                                <input type="text" id="ate" class="textbox_cinzafoco" style="width:85px;"/>
+                            </div>
+                            <input type="text" id="busca" class="textbox_cinzafoco" style="width:200px; vertical-align:bottom;" placeholder="Busque por código, cliente ou obra"/>                       
+
+                            <select id="statusTipo" style="width:83px; vertical-align:bottom;" class="combo_cinzafoco" onchange="MostrarPedidos();"> 
+                                <option value="0">Todos</option>
+                                <option value="1">Vendas</option>
+                                <option value="2">Consignações</option>
+                            </select>
+                            <select id="statusLoja" style="width:180px; vertical-align:bottom;" class="combo_cinzafoco" onchange="MostrarPedidos();"> 
+                            </select>
+                            <select id="statusBusca" style="width:170px; vertical-align:bottom;" class="combo_cinzafoco" onchange="MostrarPedidos();"> 
+                            </select>
+                            <select id="statusvendedores" style="width:240px; vertical-align:bottom;" class="combo_cinzafoco" onchange="MostrarPedidos();"></select>
+
+                            <div id="divTodos" style="display:none; vertical-align:top; margin-top:10px;">
+                                <input type="checkbox" id="mostrarTodosRegistros" onclick="MostrarPedidos();" />
+                                <label for="mostrarTodosRegistros">Mostrar Todos</label>
+                            </div>
+
+                            <div class="botaotitulosimples" id="btPesquisarCad" style="float: none; display: inline-block; margin-top:1px; margin-left:5px;" onclick="MostrarPedidos();"> <img src="imagens/pesquisar.png"></div>
+
+                            <div id="barraedicao" style="width:auto;">
+                                <div id="btSair" class="botaotituloultimoEDICAO" onclick="Sair();"> 
+                                    <img src="imagens/sair3.png" id="botSair" title="Sair"/>
+                                </div>
+
+                                <div id="btNovo" class="botaotituloultimoEDICAO" onclick="Novo(true);">
+                                    <img src="imagens/novo.png" id="botNovo" title="Novo"/>
+                                </div>
+
+                                <div id="divLink" style="display:none; vertical-align:middle; float:right; margin-right:10px; width:60px; height:42px; padding-top:14px">
+                                    <a id="linkVoltar">Voltar</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div style="clear:both"></div>
+                        <div id="divRel" style="width:100%; min-height:250px;background-color:#FFF; height:650px; overflow:auto;text-align:center; font-size:16px; font-family:arial,verdana; margin-top:15px;"></div>
+                        <div id="divQtdRegistros" class="divcontainer" style="text-align:center;">
+                            <label id="lblRegistros"></label>
+                        </div>
+                        <div  id="divCadastro2" style="width:100%; min-height:0px; height:0px; overflow:hidden;">
+                            <div id="divabas" style="background:#EEEEEE; margin-top:-5px; margin-bottom:0px; padding-left:10px; padding-top:10px; height:40px">
+                                <div class="divabas"  id="aba0" onclick="SelecionaAbas(0)">Pedido</div>
+                                <div class="divabas2" id="aba1" onclick="SelecionaAbas(1)">Follow-up</div>
+                                <div class="divabas2" id="aba2" onclick="SelecionaAbas(2)">Obras</div>
+                                <div style="width:325px;height:30px; padding-top:5px; color:#333;  float:right; margin-right: 5px; font-size:18px; font-family: RobotoBlack, RobotoCondensed,Verdana, Geneva, sans-serif">
+                                    PEDIDO Nº  <span id="codPedido" style="font-weight: bold">- - -</span>
+                                    <a href="#" id="orcamento" style="font-size: 10px"></a>
+                                </div>
+                            </div>
+                            <div class="divbranca" style="width:100%; margin:0px; padding:0px; overflow:hidden">
+                                <div  id="div0" style="margin-top:-10px; border-top:0px solid; border-color:#D7D7D7; overflow:hidden" class="divformulario">
+                                    <br>
+                                    <div class="divcontainer" style="max-width: 90px;">
+                                        <label>Data Cadastro</label>
+                                        <label style="color:red;">*</label>
+                                        <input id="dataCadastro" type="text" style="width:100%;" class="textbox_cinzafoco" />  
+                                    </div>
+                                    <div class="divcontainer" style="max-width: 350px;">
+                                        <label>Loja</label>
+                                        <label style="color:red;">*</label>
+                                        <select id="loja" style="width:100%;" class="combo_cinzafoco" onchange="getVendedores(Selector.$('vendedor'), 'Selecione um marchand', true, 'MARCHANDS', Selector.$('loja').value); alteracao = true;"></select>
+                                    </div>
+                                    <div class="divcontainer" style="max-width: 105px;">
+                                        <label>Previsão Entrega</label>
+                                        <label style="color:red;">*</label>
+                                        <input id="previsaoEntrega" type="text" style="width:100%; background-color:#F5F5F5" class="textbox_cinzafoco" />   
+                                    </div>
+                                    <div class="divcontainer" style="max-width: 300px; margin-left:4px">
+                                        <label>Status do pedido</label>
+                                        <input readonly="readonly" id="situacao" type="text" style="width:100%; background-color:#CCFFFF; font-size: 14px; font-weight: bold; text-align: center;"  class="textbox_cinzafoco" />
+                                    </div>
+                                    <div class="botaotitulocomum" style="display: inline-block; margin-left: 5px; margin-top: -6px;" id="botStatus" onclick="PromptStatus();" title="Alterar status / Visualizar histórico de status">
+                                        <img src="imagens/historico.png" width="17" height="17" border="0" align="absmiddle" class="efeito-opacidade-75-03" style="margin-right:8px;" />
+                                    </div>                            
+                                    <div class="botaotitulocomum" style="display: inline-block; margin-left: 5px; margin-top: -6px;" id="botCancelarPedido" onclick="" title="Cancelar Pedido">
+                                        <img id="imgCancelar" src="imagens/cancelar.png" width="17" height="17" border="0" align="absmiddle" class="efeito-opacidade-75-03" style="margin-right:8px;" />
+                                    </div>
+                                    <div class="botaotitulocomum" style="display: inline-block; margin-left: 5px; margin-top: -6px;" id="botImprimirPedido" onclick="" title="Imprimir Pedido">
+                                        <img id="imgImprimir" src="imagens/imprimir.png" width="17" height="17" border="0" align="absmiddle" class="efeito-opacidade-75-03" style="margin-right:8px;" />
+                                    </div>
+                                    <div class="botaotitulocomum" style="display: inline-block; margin-left: 5px; margin-top: -6px;" id="botGerarPdfPedido" title="Gerar/Ver Pdf">
+                                        <img id="imgPdfPedido" src="imagens/relatorio.png" width="18" height="18" border="0" align="absmiddle" class="efeito-opacidade-75-03" style="margin-right:8px;"/>
+                                    </div>
+                                    <div class="botaotitulocomum" style="display: inline-block; margin-left: 5px; margin-top: -6px;" id="botEnviarPedidoEmail" title="Enviar Pedido por email">
+                                        <img id="imgPedidoEmail" src="imagens/email2.png" width="18" height="18" border="0" align="absmiddle" class="efeito-opacidade-75-03" style="margin-right:7px;" />
+                                    </div>
+
+                                    <div class="botaotitulocomum" style="display: inline-block; margin-left: 5px; margin-top:-6px;" id="botBaixarEstoque" title="Baixar estoque">
+                                        <img id="imgBaixarEstoque" src="imagens/baixar-estoque.png" border="0" align="absmiddle" class="efeito-opacidade-75-03" style="margin-right:8px; margin-top:10px;"/>
+                                    </div>
+
+                                    <div class="botaotitulocomum" style="display: inline-block; margin-left: 5px; margin-top: -6px;" id="btenviarAviso" title="Enviar Aviso de retirada">
+                                        <img id="btenviarAviso2" src="imagens/email3.png" width="18" height="18" border="0" align="absmiddle" class="efeito-opacidade-75-03" style="margin-right:7px;" />
+                                    </div> 
+                                    <br />
+                                    <div class="divcontainer" style="max-width: 600px;">
+                                        <label>Colecionador</label>
+                                        <label style="color:red;">*</label>
+                                        <br />
+                                        <select id="cliente" style="width:82%" class="combo_cinzafoco" onchange="LoadDadosCliente();
+                                                getEnderecosColecionador(Selector.$('enderecos'), 'Selecione um endereço', false);
+                                                (Selector.$('enderecos').length == 2 ? Selector.$('tipoTransporte').focus() : '');
+                                                alteracao = true;"></select>
+                                        <img id="contratoArquiteto" onclick="PromptContratoArquiteto();" title="Adicionar/Modificar RT" style="vertical-align:middle; margin-left:10px; display:none;" src="imagens/novo.png" class="efeito-opacidade-75-03" />        
+                                        <img id="pesquisarClientes" onclick="PromptPesquisarClientes();" title="Pesquisar clientes" style="vertical-align:middle; margin-left:10px" src="imagens/pesquisar.png" class="efeito-opacidade-75-03" />
+                                        <img id="adicionarCliente" onclick="PromptCadastrarClienteRapido();" title="Cadastrar novo cliente" style="vertical-align:middle; margin-left:6px" src="imagens/cadastro.png" class="efeito-opacidade-75-03" />
+                                    </div>
+                                    <div class="divcontainer" style="max-width: 630px;">
+                                        <label>Endereço de Entrega</label>
+                                        <select id="enderecos" type="text" style="width:93%; background-color:#F5F5F5" class="combo_cinzafoco" onchange="alteracao = true"></select>
+                                        <img id="adicionarEndereco" onclick="PromptColecionadorEndereco(-2);" title="Cadastrar novo endereço" style="vertical-align:middle; margin-left:6px; display:inline-block;" src="imagens/novo.png" class="efeito-opacidade-75-03"/>
+                                    </div>
+                                    <br>
+                                    <div class="divcontainer" style="max-width: 150px;">
+                                        <label>Contato </label>
+                                        <input readonly="readonly" id="contato" type="text" style="width:100%; background-color:#F5F5F5"  class="textbox_cinzafoco" />
+                                    </div> 
+                                    <div class="divcontainer" style="max-width: 150px;">
+                                        <label>Telefone </label>
+                                        <input readonly="readonly" id="telefone" type="text" style="width:100%; background-color:#F5F5F5"  class="textbox_cinzafoco" /> 
+                                    </div> 
+                                    <div class="divcontainer" style="max-width: 195px;">
+                                        <label>E-mail </label>
+                                        <input readonly="readonly" id="email" type="text" style="width:100%; background-color:#F5F5F5"  class="textbox_cinzafoco" />    
+                                    </div>
+                                    <div class="divcontainer" style="max-width: 330px;">
+                                        <label>Marchand</label>
+                                        <label style="color:red;">*</label>
+                                        <select id="vendedor" type="text" style="width:100%; background-color:#F5F5F5" class="combo_cinzafoco" onchange="getPercentualComissaoMarchand();
+                                                getComissaoMarchand();
+                                                alteracao = true"></select>                         
+                                    </div>
+                                    <div class="divcontainer" style="max-width: 280px;">
+                                        <label>Tipo de Entrega</label>
+                                        <label style="color:red;">*</label>
+                                        <select id="tipoTransporte" type="text" style="width:99%; background-color:#F5F5F5" class="combo_cinzafoco" onchange="VerificarFrete(); alteracao = true"></select>
+                                    </div>
+                                    <input id="btCalcularFrete" type="button" value="Calcular Frete" onclick="CalcularPrecoPrazoCorreios('pedidos');" class="botaosimplesfoco" style="display:none"/>
+                                    <div id="divValorFrete" style="display:none; margin-left:10px;">
+                                        <label>Valor Frete: </label>
+                                        <label id="valorFrete" style="font-weight:100;"></label>
+                                        <label style="margin-left:10px;">Prazo de Entrega: </label>
+                                        <label id="prazoEntrega" style="font-weight:100;"></label>
+                                    </div>
+                                    <br />
+                                    <div class="divcontainer" style="max-width: 59%; vertical-align:middle; margin:0px;">
+                                        <label>Obras</label>
+                                        <span class="fonte_Roboto_texto_normal" style="font-size:11px; margin-left:50px;">PE = Pronta Entrega | EOL = Estoque em outras lojas | OP = Ordem de Produção</span>
+                                        <a title="Clique para adicionar uma obra" id="addObra" onclick="AdicionarObra(-1, 0);" style="float:right; margin-right: 10px;">+ Adicionar Obra </a>
+                                        <div class="divcinzasimples" id="divObras" style="width:100%; height: 120px; padding:0px; overflow:auto;"></div>
+                                    </div>
+                                    <div id="divPagamentos" class="divcontainer" style="max-width: 40%; vertical-align:middle; margin:0px; overflow:auto">
+                                        <label>Pagamento</label>
+                                        <a title="Clique para gerar o pagamento" id="addPagamento" onclick="PromptGerarPagamento(0);" style="float:right; margin-right: 10px;">+ Adicionar Pagamento</a>
+                                        <a title="Clique para adicionar um vale presente/troca" id="addVale" onclick="PromptAdicionarVale();" style="float:right; margin-right: 10px;">+ Adicionar Vale Presente/Troca</a>
+                                        <div class="divcinzasimples" id="divPagamento" style="width:100%; height: 120px; padding:0px; overflow:auto"></div>
+                                    </div>
+                                    <br />
+                                    <div id="divValores" style="display: inline-block;">
+                                        <div class="divcontainer" style="max-width: 170px;">
+                                            <label>Valor</label>
+                                            <input readonly="readonly" id="valor" type="text" style="width:100%; background-color:#F5F5F5; text-align: center;"  class="textbox_cinzafoco" />
+                                        </div>
+                                        <div class="divcontainer" style="max-width: 85px;">
+                                            <label>Frete (+) </label>
+                                            <input id="frete" type="text" style="width:100%; text-align: center;"  class="textbox_cinzafoco" onblur="CalcularValorTotal();" onchange="alteracao = true" />
+                                        </div>
+                                        <div class="divcontainer" style="max-width: 85px;">
+                                            <label>Acréscimo (+) </label>
+                                            <input id="acrescimo" type="text" style="width:110%; text-align: center;" class="textbox_cinzafoco" onblur="CalcularValorTotal();" onchange="alteracao = true" />
+                                        </div>
+                                        <div class="divcontainer" style="max-width: 180px; margin-left:10px;">
+                                            <label>Desconto (-) </label><br />
+                                            <input placeHolder="Ex.: 5" id="percDesconto" type="text" style="width:30%; text-align: center;" class="textbox_cinzafoco" onblur="Totaliza(false, false, false, true, false)" onchange="alteracao = true" />
+                                            <label> % ou</label>
+                                            <input placeHolder="Ex.: 100,00" id="valorDesconto" type="text" style="width:46%; text-align: center;" class="textbox_cinzafoco" onblur="Totaliza(false, false, false, false, true)" onchange="alteracao = true" />                                
+                                        </div>
+                                        <div class="divcontainer" style="max-width: 200px;">
+                                            <label>Total (=) </label>
+                                            <input readonly="readonly" id="valorTotal" type="text" style="width:100%; background-color:#F5F5F5; font-size:16px; font-weight: bold; text-align: center;" class="textbox_cinzafoco"/>                                 
+                                        </div>
+                                    </div>
+                                    <div class="divcontainer" style="max-width: 200px;">
+                                        <label>Saldo à Pagar (=) </label>
+                                        <input readonly="readonly" id="valorSaldo" type="text" style="width:100%; background-color:#F5F5F5; font-size:16px; font-weight: bold; text-align: center;" class="textbox_cinzafoco"/>                                 
+                                    </div>
+                                    <div class="divcontainer" style="max-width: 150px; display:none;">
+                                        <label>Comissão Marchand</label>
+                                        <input readonly="readonly" id="comissaoVendedor" type="text" style="width:100%; background-color:#F5F5F5; font-size:16px; font-weight: bold; text-align: center;" class="textbox_cinzafoco"/>
+                                    </div>
+                                    <br />
+                                    <div class="divcontainer" style="max-width: 530px;">
+                                        <label>Observações</label>
+                                        <textarea type="text" id="obs" class="textbox_cinzafoco" style="width:100%; height:77px; overflow: auto;" onchange="alteracao = true"></textarea>
+                                    </div>   
+
+                                    <!-- CONSIGNAÇÃO -->
+                                    <div class="divcontainer" style="max-width: 530px; vertical-align:top; margin-left:8px; ">
+                                        <input type="checkbox" id="consignacao" onclick="DadosConsig();
+                                                alteracao = true"/>
+                                        <label for="consignacao">Consignação</label>
+                                        <br />
+                                        <div id="divConsig" style="visibility:hidden; border: solid 1px #D4D4D4; padding:8px">
+                                            <div class="divcontainer" style="max-width: 100px;">
+                                                <label>Período </label><br />
+                                                <input placeHolder="Ex.: 45" id="consignacaoDias" type="text" style="width:60%; text-align: center;"  class="textbox_cinzafoco" onblur="CalcularDataRetorno();"/>
+                                                <label> dias</label>
+                                            </div>
+
+                                            <div class="divcontainer" style="max-width: 400px;">
+                                                <label>Informações Cheque Calção </label><br />
+                                                <input placeHolder="Ex.: Banco Itaú - Ag.: 1234 - C/C: 12345-6 - Nº 000012" id="consignacaoDados" type="text" style="width:100%; text-align: left;"  class="textbox_cinzafoco"/>
+                                            </div>
+                                        </div>
+                                    </div> 
+
+
+                                </div>
+                                <div id="div1" style="margin-top:0px; border-top:1px solid; border-color:#D7D7D7; overflow:hidden;" class="divformulario">
+                                    <div style="text-align:right"> 
+                                        <input type="button" value="Novo Contato +" onclick="PromptFollowUp(0);" class="botaosimplesfoco"/>
+                                    </div>                            
+                                    <div style="margin-top:8px; height:480px; max-height:480px; overflow: auto;" id="tabelaFollow"> </div>
+                                </div>
+                                <div id="div2" style="margin-top:0px; border-top:1px solid; border-color:#D7D7D7; overflow:hidden;" class="divformulario">
+                                    <div style="text-align:right"> 
+                                        <input type="button" value="Baixar Estoque" onclick="BaixarEstoque(0);" class="botaosimplesfoco" style="margin-right:10px;"/>
+                                        <input type="button" value="Gerar Ordem de Produção" onclick="gerarOrdemProducao();" class="botaosimplesfoco" style="margin-right:10px;"/>
+                                        <input type="button" value="Refazer OP" onclick="PromptObrasRefazer();" class="botaosimplesfoco"/>
+                                    </div>                            
+                                    <div style="margin-top:8px; height:480px; max-height:480px; overflow: auto;" id="tabelaProducao"> </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--divprincipal--> 
+        </div>
+        <!--pagina-->
+        <div id="prompt"></div>
+        <div id="divConfiguacoes" class="divConfiguacoes efeito_delay" style="height:0px;"  onclick="mostracaixaconfiguracoes();"> 
+            <br />
+            <div class="divconfitens efeito-opacidade-75-03" onclick="window.location = 'alterar-senha.html'"> <img src="imagens/chave.png" /><br />ALTERAR SENHA</div>
+            <div class="divconfitens efeito-opacidade-75-03"  onclick="suporteTecnico();"> <img src="imagens/suporte.png" /><br />SUPORTE TÉCNICO</div>
+        </div>
+    </body>
+</html>

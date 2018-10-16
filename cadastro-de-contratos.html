@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <title>Cadastro de Contratos | Jujuba</title>
+        <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="padrao/css/efeitos.css"/>
+        <link rel="stylesheet" type="text/css" href="padrao/css/componentes.css"/>
+        <link rel="stylesheet" type="text/css" href="padrao/css/fontes.css"/>
+        <!--link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/-->
+        <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css"/>
+        <script src="js/jquery-latest.min.js" type="text/javascript"></script>
+        <script src="js/jquery-ui.js" type="text/javascript"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/Chart.min.js"></script>
+        <script type="text/javascript" src="padrao/json2.js"></script>
+        <script type="text/javascript" src="padrao/utils.js"></script>
+        <script type="text/javascript" src="js/jujuba.js"></script>
+        <script type="text/javascript" src="js/cadastro-de-contratos.js"></script>
+    </head>
+    <body style="height:100%;">
+        <div id="pagina">
+            <img src="imagens/marcadagua.png" style="position:absolute; bottom:0; right:0; margin-top:2px; margin-right:20px; z-index:200; display:none" />
+            <div id="divmenu" >
+                <div id="cabecalho_usuario">
+                    <div id="foto_menu"> </div>
+                    <div id="nome_menu"><span id="nome_user" >Usuário não logado</span><br />
+                        <span id="email_user"><a href="index.html">Clique aqui</a></span> </div>
+                    <div id="menu_esquerda_ocultar" onclick="oculta_menu(1)"><img  src="imagens/3pontos.png" /> </div>
+                </div>
+                <div id="menu"  >
+                    <div id='cssmenu'>
+                        <ul>
+                            <li><a href='principal.html' title="Home" ><img src="imagens/home.png" /> <span>Home</span></a></li>
+                            <li class='has-sub'><a href='#' title="Cadastros"><img src="imagens/cadastro.png" /> <span>Cadastros</span></a>
+                                <ul>
+                                    <li class='last'><a href='cadastro-de-clientes.html' title="Cadastro de Clientes"><img src="imagens/clientes.png"><span>Clientes</span></a></li><li id="menu_1" class='last'><a href='cadastro-de-contatos-e-parceiros.html' title="Cadastro de Contatos e Parceiros"><img src="imagens/contatosparceiros.png"><span>Contatos e Parceiros</span></a></li>  <li class='last'><a href='cadastro-de-decoracoes.html' title="Cadastro de Decorações"><img src="imagens/decoracao.png"/><span>Decorações</span></a></li>
+                                    <li class='last'><a href='cadastro-de-fornecedores.html' title="Cadastro de Fornecedores"><img src="imagens/fornecedores.png"/> <span>Fornecedores</span></a></li>
+                                    <li class='last'><a href='cadastro-de-funcionarios.html' title="Cadastro de Funcionários"><img src="imagens/funcionarios.png"/> <span>Funcionários</span></a></li>
+                                    <li class='last'><a href='cadastro-de-grupos.html' title="Cadastro de Grupos de Cardápio"><img src="imagens/cardapios.png"/><span>Grupos - Cardápio</span></a></li>
+                                    <li class='last'><a href='cadastro-de-itens.html' title="Cadastro de Itens de Cardápio"><img src="imagens/cardapiositens.png"/> <span>Itens - Cardápio</span></a></li>
+                                    <li class='last'><a href='cadastro-de-locais.html' title="Cadastro de Locais"><img src="imagens/locais.png"/> <span>Locais</span></a></li>
+                                    <li class='last'><a href='cadastro-de-pacotes.html' title="Cadastro de Pacotes"><img src="imagens/pacotes.png"/> <span>Pacotes</span></a></li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#' title="Vendas"><img src="imagens/venda.png"/> <span>Vendas</span></a>
+                                <ul>
+                                    <li class='has-sub'><a href='#' title="Cadastro"><img src="imagens/cadastro.png"/><span>Cadastros</span></a>
+                                        <ul>
+                                            <li><a href='cadastro-de-contratos.html' title="Cadastro de Contratos"><span><img src="imagens/os.png"/>Contratos</span></a></li>
+                                            <li><a href='cadastro-de-reservas.html' title="Cadastro de Reservas"><span><img src="imagens/proposta.png"/>Reservas</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class='has-sub'><a href='#' title="Relatórios"><img src="imagens/relatorio.png"/><span>Relatórios</span></a>
+                                        <ul>
+                                            <li><a href='relatorio-de-acompanhamento-de-reservas.html' title="Acompanhamento de Reservas"><span><img src="imagens/proposta.png"/>Acompanhamento de Reservas</span></a></li>
+                                            <li><a href='relatorio-de-contratos.html' title="Acompanhamento de contratos"><span><img src="imagens/os.png"/>Acompanhamento de contratos</span></a></li>
+                                            <li><a href='relatorio-de-contratos-com-pendencias.html' title="Contratos com pendências"><span><img src="imagens/pendencias.png"/>Contratos com pendências</span></a></li>
+                                            <li><a href='relatorio-panorama-de-festas.html' title="Panorama de festas"><span><img src="imagens/festas.png"/>Panorama de festas</span></a></li>
+                                            <li><a href='relatorio-de-situacoes-financeiras.html' title="Situação financeira - contratos"><span><img src="imagens/situacao.png"/>Situação financeira - contratos</span></a></li>  <li><a href='relatorio-de-solicitacoes-externas.html' title="Solicitações Externas"><span><img src="imagens/solicitacoesexternas.png">Solicitações Externas</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#'  title="Financeiro"><img src="imagens/financeiro.png"/> <span>Financeiro</span></a>
+                                <ul>
+                                    <li class='has-sub'><a href='#'  title="Contas a Pagar"><img src="imagens/porco.png"/><span>Contas a Pagar</span></a>
+                                        <ul>
+                                            <li><a href='cadastro-de-contas-a-pagar.html'  title="Cadastro de Contas"><span><img src="imagens/cadastro.png"/>Cadastro de Contas</span></a></li>
+                                            <li><a href='diarios-de-contas.html'  title="Diário de Contas"><span><img src="imagens/relatorio.png"/>Diário de Contas</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class='has-sub'><a href='#'  title="Contas a Receber"><img src="imagens/areceber.png"/><span>Contas a Receber</span></a>
+                                        <ul>
+                                            <li><a href='receitas-avulsas.html'  title="Receitas Avulsas"><span><img src="imagens/avulsos.png"/>Receitas Avulsas</span></a></li>
+                                            <li><a href='relatorio-de-contas-a-receber.html'  title="Relatório de Contas"><span><img src="imagens/relatorio.png"/>Relatório de Contas</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href='fluxo-de-caixa.html'  title="Fluxo de Caixa"><img src="imagens/fluxocaixa.png"/><span>Fluxo de Caixa</span></a> </li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#'  title="Configuração"><img src="imagens/engrenagem.png"/> <span>Configurações</span></a>
+                                <ul>
+                                    <li class='has-sub'><a href='#'  title="Contas a Pagar"><img src="imagens/porco.png"/><span>Contas a Pagar</span></a>
+                                        <ul>
+                                            <li><a href='cadastro-de-centro-de-custos.html' title="Cadastro de Centro de Custos"><img src="imagens/centrocusto.png"/> <span>Centro de Custos</span></a></li>
+                                            <li><a href='cadastro-de-contas-bancarias.html' title="Cadastro de Contas Bancárias"><img src="imagens/financeiros.png"/> <span>Contas Bancárias</span></a></li>
+                                            <li class='last'><a href='cadastro-de-formas-de-pagamentos.html' title="Cadastro de Fomas de Pagamentos"><img src="imagens/pagamentos.png"/> <span>Formas de Pagamentos</span></a></li>
+                                            <li class='last'><a href='cadastro-de-naturezas-de-gastos.html' title="Cadastro de Naturezas"><img src="imagens/naturezas.png"/> <span>Naturezas</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href='cadastro-de-cargos.html' title="Cadastro de Cargos"><img src="imagens/cargos.png"/> <span>Cargos</span></a></li>
+                                    <li class='last'><a href='cadastro-de-departamentos.html' title="Cadastro de Departamentos"><img src="imagens/deptos.png"/> <span>Departamentos</span></a></li>
+                                    <li class='last'><a href='cadastro-de-feriados.html' title="Cadastro de Feriados"><img src="imagens/feriados.png"/> <span>Feriados</span></a></li>
+                                    <li class='last'><a href='cadastro-de-tipos-de-contatos.html' title="Cadastro de Tipos de Contatos"><img src="imagens/contatos.png"/> <span>Tipos de Contatos (Follow-up)</span></a></li>
+                                    <li class='last'><a href='cadastro-de-itens-opcionais.html' title="Cadastro de itens Opcionais"><img src="imagens/opcionais.png"/> <span>Opcionais</span></a></li>
+                                    <li class='last'><a href='cadastro-de-tipos-de-convidados.html' title="Cadastro de Tipos de Convidados"><img src="imagens/convidados.png"/> <span>Tipos de Convidados </span></a></li>
+                                    <li class='last'><a href='cadastro-de-tipos-de-festas.html' title="Cadastro de Tipos de Festas"><img src="imagens/tiposdefestas.png"/> <span>Tipos de Festas</span></a></li>
+                                </ul>
+                            </li>
+                            <li class='last'><a onclick="SairDoSistema(false)"  title="Sair"><img src="imagens/sair2.png"/> <span>Sair</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--menu-->
+                <div align="center" style="padding-bottom:30px; width:320px; overflow:hidden; bottom:0px; margin-top:30px; "><img src="imagens/focomenu.png" /> </div>
+            </div>
+            <!--divmenu-->
+            <div id="divprincipal"  style="height:100%; overflow:scroll;  ">
+                <div id="cabecalho" >
+                    <div id="cabecalho_botao_menu" onclick="oculta_menu(2)"><img src="imagens/menu.png" /></div>
+                    <div id="legendaTela" ></div>
+                    <div id="cabecalho_botoes_principal" style="float:right">
+                        <div id="cabecalho_botao_menu_topo" onclick="SairDoSistema(false)"  ><img src="imagens/sair.png" /></div>
+                        <div id="cabecalho_botao_menu_topo"  onclick="mostracaixaconfiguracoes()"   ><img src="imagens/config.png" /></div>
+                        <div id="cabecalho_botao_menu_topo_msgm" onclick="NotificacaoDePendencias(true)" class="notif"><img class="notif" id="notificacao" src="imagens/email.png" /></div>
+                    </div>
+                </div>
+                <!--cabecalho-->
+                <div style="height:75px; width:100%;" align="center"> </div>
+                <div style="width:100%; text-align:center" align="center" > 
+                    <div id='conteudo' class="caixabrancajujuba efeito_delay" style="width:98%;  overflow:hidden; min-height:70px; padding:0px; text-align:center" align="center">
+                        <div id="divRelatorio" style="overflow:hidden">
+                            <div id='relatorio' class="efeito_delay" align="left" style="padding: 0px; width: 100%; min-height: 100px;">
+                                <div id="barraEdicao" class="divtitulo" style=" padding-top:10px; background:#FFF; font-size:14px; margin-bottom:2px; color:#626161; padding-bottom:5px; background-position:right -10px">
+                                    <input type="text" onkeyup='MostrarContratos();' class="textboxJujubaTitulo"  id="busca" placeHolder="Pesquise por cliente, local, pacote, data da festa ou n°" style="max-width:330px;"/>
+                                    <select id="situacao" class="combo_cinzafoco" style="width:230px;" onchange="MostrarContratos();">
+                                        <option value="0">Filtre pela situação do contrato</option>
+                                        <option value="1">Canceladas</option>
+                                        <option value="2">A Realizar</option>
+                                        <option value="3">Festas Realizadas</option>
+                                    </select>
+                                    <select id="situacaoQuitadas" class="combo_cinzafoco" style="width:150px;" onchange="MostrarContratos();">
+                                        <option value="0">Todos</option>
+                                        <option value="1">Quitadas</option>
+                                        <option value="2">Não Quitadas</option>
+                                    </select>
+                                    
+                                    <input type="checkbox" id="mostrarTudo" onclick="MostrarContratos()" />Mostrar Todos
+                                    <div onclick="MostrarContratos();" class="botaoRedondoJujubaPesquisar"></div>
+                                    <div class="botaoRedondoJujuba" onclick="Novo(1);"></div>
+                                </div>
+                                <div id="relatoriotabela" style="margin:0px; text-align:center; overflow:auto;"></div>
+                                <div id="qtdContratos" align="center" class="rotulototal" style="font-size: 14px; width:100%; margin:0px; text-align:center"></div>
+                                <div id="msgContratos" align="center" class="divformulario" style="display:none;">
+                                    <label>Nenhum contrato encontrado </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--divRelatorio-->
+                        <div id="divCadastro" style="overflow:hidden; height:0px; width:100%;  overflow:hidden;"  align="left">
+                            <div style="padding:10px;">
+                                <div style="padding-top:10px;">
+                                    <div class="botaoRedondoJujubaCancelar" onclick="Cancelar()" style="margin-right:10px;"> </div>
+                                    <div class="botaoRedondoJujubaGravar" onclick="GravarAux();"> </div>
+                                </div>
+                                <div style="display:inline-block; margin:10px; vertical-align:top;">
+                                    <label id="avisoCodigoContrato" style="font-size:15px; font-weight:bold; color:black"></label>
+                                    <a id="avisoCodigoCotacao" style="font-size:13px; color:black; "></a> <br/>
+                                    <label id="avisoDataFesta" style="color:red; font-size:12px;"></label>
+                                </div>
+                                <!--abas-->                                
+                                <div id="divabacontainner" style="padding-left:20px; min-height:50px">
+                                    <div class="divabas" id="aba0" onclick="SelecionaAbas(0)">Resumo</div>
+                                    <div class="divabas" id="aba1" onclick="SelecionaAbas(1)">Cadastro / Alteração</div>
+                                    <div class="divabas" id="aba2" onclick="SelecionaAbas(2)">Lista</div>
+                                    <div class="divabas" id="aba3" onclick="SelecionaAbas(3)">Pagamento</div>
+                                    <div class="divabas" id="aba4" onclick="SelecionaAbas(4)">Pendências</div>
+                                    <div class="divabas" id="aba5" onclick="SelecionaAbas(5)">Follow-Up</div>
+                                    <div class="divabas" id="aba6" onclick="SelecionaAbas(6)">Email</div>
+                                    <!--<div style="color:red; display:inline-block; margin-left:10px; font-size:10px; vertical-align:top;">
+                                                                <label id="avisoDataFesta"></label>
+                                                              </div>
+                                                              <div style="display:inline-block; margin-left:10px; vertical-align:top; font-size:15px; font-weight:bold;">
+                                                                <label id="avisoCodigoContrato"></label>
+                                                              </div> -->                                  
+                                </div>
+                                <!--abas--> 
+                                <!--divsAbas-->
+                                <div class="caixabrancajujuba" style="width:100%; margin-left:0px">
+                                    <div style="padding:10px">
+                                        <div id="div0" class="divformulario" style="margin-top:0px; border-top:1px solid; border-color:#D7D7D7; overflow:hidden; width:100%;">
+                                            <div id="divResumo" style="height:580px; overflow:auto; padding:10px;"> 
+
+
+                                                <!--hr style="height:3px; margin:0px; background-color:#3A779D"-->
+
+                                                <div class="container" style="width:100%; min-height:150px;">
+
+
+
+
+
+                                                    <table  border="0" cellspacing="0" cellpadding="1" style="display:inline-block; padding-left:4px;">
+                                                        <tr>
+                                                            <th colspan="4" align="left"><div style="padding:4px;">Resumo da Festa</div></th>
+
+                                                        </tr>
+
+                                                        <tr style="background:#F4F4F4" >
+                                                            <td> <label style="font-weight:100;font-size:13px; font-weight:bold;">Data </label></td>
+                                                            <td> <label id="data_resumo" style="font-weight:100; font-size:13px;"></label></td>
+                                                            <td style="width:95px"><label style="font-weight:100; font-size:13px; font-weight:bold; ">Aniversariante</label></td>
+                                                            <td style="width:190px" ><label id="aniversariante_resumo" style="font-weight:100; font-size:13px;"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:95px">  <label style="font-weight:100;font-size:13px; font-weight:bold;">Horário </label></td>
+                                                            <td style="width:190px"> <label id="horario_resumo" style="font-weight:100; font-size:13px;"></label></td>
+                                                            <td><label style="font-weight:100; font-size:13px;font-weight:bold; ">Pai </label></td>
+                                                            <td> <label id="pai_resumo" style="font-weight:100; font-size:13px;"></label></td>
+                                                        </tr>
+                                                        <tr style="background:#F4F4F4">
+                                                            <td> <label style="font-weight:100; font-size:13px;font-weight:bold; background-image:url(imagens/1periodo.png)">Cliente </label></td>
+                                                            <td>   <label id="cliente_resumo" style="font-weight:100; font-size:13px;"></label>  </td>
+                                                            <td><label style="font-weight:100; font-size:13px;font-weight:bold; ">Mãe </label></td>
+                                                            <td><label id="mae_resumo" style="font-weight:100; font-size:13px;"></label></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td> <label style="font-weight:100;font-size:13px; font-weight:bold; ">Contatos </label></td>
+                                                            <td>  <label id="contatos_resumo" style="font-weight:100; font-size:13px;"></label></td>
+                                                            <td>  <label style="font-weight:100;font-size:13px; font-weight:bold;">Irmãos </label></td>
+                                                            <td> <label id="irmaos_resumo" style="font-weight:100; font-size:13px;"></label></td>
+                                                        </tr >
+                                                        <tr style="background:#F4F4F4">
+                                                            <td> <label style="font-weight:100;font-size:13px; font-weight:bold;">Local </label></td>
+                                                            <td> <label id="local_resumo" style="font-weight:100; font-size:13px;"></label></td>
+                                                            <td><label style="font-weight:100;font-size:13px; font-weight:bold;">Pagantes </label></td>
+                                                            <td> <label id="qtdePagantes_resumo" style="font-weight:100; font-size:13px;"></label></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td> <label style="font-weight:100;font-size:13px; font-weight:bold;" >Pacote </label></td>
+                                                            <td> <label id="pacote_resumo" style="font-weight:100; font-size:13px;"></label></td>
+                                                            <td><label style="font-weight:100;font-size:13px; font-weight:bold;">Não Pagantes </label></td>
+                                                            <td><label id="qtdeNaoPagantes_resumo" style="font-weight:100; font-size:13px;"></label></td>
+                                                        </tr>
+                                                        <tr style="background:#F4F4F4">
+                                                            <td>     <label style="font-weight:100;font-size:13px; font-weight:bold;">Decoração </label></td>
+                                                            <td> <label id="decoracao_resumo" style="font-weight:100; font-size:13px;"></label></td>
+                                                            <td>&nbsp;</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                      
+                                                    </table>
+
+
+
+ <div align="center" style="width:290px;  padding-top:4px;  margin-left:7px; display:inline-block; vertical-align:top">
+                                                        <div align="left" style="font-size:15px; font-weight:bold; text-align:left ">Valores</div>  
+
+                                                        <div style=" background:#FDF3C5; padding:5px; padding-top:11px; padding-right:10px; padding-bottom:17px">
+                                                            <div style="width:130px; background:#FDF3C5;    display:inline-block" align="left">
+
+
+                                                                <label style="font-size:13px;">Valor</label>
+                                                                <br />
+                                                                <label style="font-size:13px;">Adic. Pagantes</label>
+                                                                <br />
+                                                                <label style="font-size:13px;">Opcionais</label>
+                                                                <br />
+                                                                <label style="font-size:13px;">Desconto</label>
+                                                                <br />
+                                                                <label style="font-size:13px;">Acréscimo</label>
+                                                                <br />
+                                                                <div style="width:100%; border-top:1px solid #FDF3C5">
+                                                                    <label style="font-size:13px;">
+                                                                        <label style="font-size:13px;">Total</label>
+                                                                </div>
+                                                                <br />
+                                                                <label style="font-size:13px;">Pago</label>
+                                                                <br />
+                                                                <label style="font-size:13px;">Saldo à Pagar</label>
+                                                            </div>
+                                                            <div style="width:20px;  background:#FDF3C5; display:inline-block">
+                                                                <label style="font-size:13px;"> </label>
+                                                                <br />
+                                                                <label style="font-size:13px;"> </label>
+                                                                <br />
+                                                                <label style="font-size:13px;"> </label>
+                                                                <br />
+                                                                <label style="font-size:13px;"> </label>
+                                                                <br />
+                                                                <label style="font-size:13px;"> </label>
+                                                                <br />
+                                                                <div style="width:100%;  border-top:1px solid #FDF3C5">
+                                                                    <label style="font-size:13px;">R$</label>
+                                                                </div>
+                                                                <br />
+                                                                <label style="font-size:13px;"> </label>
+                                                                <br />
+                                                                <label style="font-size:13px;">R$</label>
+                                                            </div>
+                                                            <div style="width:100px;  background:#FDF3C5; display:inline-block; text-align:right">
+                                                                <label id="valor_resumo" style="font-weight:100; font-size:13px;"></label>
+                                                                <br />
+                                                                <label id="valorAdicionalPagantes_resumo" style="font-weight:100; font-size:13px;"></label>
+                                                                <br />
+                                                                <label id="valorOpcionais_resumo" style="font-weight:100; font-size:13px;"></label>
+                                                                <br />
+                                                                <label id="valorDesconto_resumo" style="font-weight:100; font-size:13px;"></label>
+                                                                <br />
+                                                                <label id="valorAcrescimo_resumo" style="font-weight:100; font-size:13px;"></label>
+                                                                <br />
+                                                                <div style="width:100%; border-top:1px solid #000">
+                                                                    <label id="valorTotal_resumo" style="font-weight:100; font-size:13px; "></label>
+                                                                    <div> <br />
+                                                                        <label id="valorPago_resumo" style="font-weight:100; font-size:13px;"></label>
+                                                                        <br />
+                                                                        <label id="saldoPagar_resumo" style="font-weight:100; font-size:13px;"></label>
+                                                                    </div>
+                                                                </div>
+                                                                <div style="clear:both"> </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div   style="width:49.5%;  display:inline-block;font-size:15px; font-weight:bold; vertical-align:top; display:inline-block"> 
+                                                        <div align="left" style="font-size:15px; font-weight:bold; text-align:left; padding:4px ">Observação</div>
+                                                        <textarea class="textbox_cinza" id="obs_resumo"  disabled="disabled" style="width:100%; height:80px; border:none; background:#F4F4F4; margin-left:0px;"> </textarea>
+                                                    </div>
+                                                    
+                                                     <div   style="width:49%;  display:inline-block;font-size:15px; font-weight:bold; vertical-align:top; display:inline-block"> 
+                                                        <div align="left" style="font-size:15px; font-weight:bold; text-align:left; padding:4px ">Observação Interna</div>
+                                                        <textarea class="textbox_cinza" id="obsinterna_resumo"  disabled="disabled" style="width:100%; height:80px; border:none; background:#F4F4F4; margin-left:0px;"> </textarea>
+                                                    </div>
+
+                                                    <br /><br />
+
+                                                    <div  style="width:50%; display:inline-block;font-size:15px; padding-bottom:4px; font-weight:bold;">Opcionais</div>
+                                                    <div  style="width:49%; display:inline-block;font-size:15px;padding-bottom:4px; font-weight:bold;">Pendências</div>
+                                                    <div id="divGridOpcionaisResumo" style="max-height:300px; vertical-align:top; width:50%; display:inline-block;  background:#F9F9F9; overflow:auto;"></div>
+                                                    <div id="divGridPendenciasResumo" style="max-height:300px; vertical-align:top; width:49%; display:inline-block; background:#F9F9F9; overflow:auto;"></div>
+                                                    <br />
+
+
+                                                </div>
+
+
+                                                <div align="center">
+                                                    <div id="contador" align="center" class="rotulototal" style="font-size: 14px; width:100%; margin:0px; text-align:center"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="div1" class="divformulario rotulotitulos" style="overflow:hidden;">  
+                                            <input type="button" class="botaosimplesfoco" id="botVoltar" value="Voltar" onclick="Voltar();" style="float:right; margin-right:5px; margin-top:1px; display:none;"/>
+                                        
+                                            <br />
+                                            <div class="divcontainer" style="max-width: 400px;">
+                                                <label>Cliente</label>
+                                                <label style="color:red;">*</label>
+                                                <br />
+                                                <select id="cliente" class="combo_cinzafoco" style="width:100%" onchange="VerificarAlterarCliente();
+                                                        getInfoCliente();">
+                                                </select>
+                                            </div>
+                                            <div class="botaotitulocomum" style="padding-left:0px; display:inline-block" id="botImprimir" onclick="VerEditarCliente();" title="Cadastrar novo cliente"> <img src="imagens/cadastro.png" border="0" align="absmiddle" class="efeito-opacidade-75-03" style="margin-right:7px;"/> </div>
+                                            <div class="botaotitulocomum" style="padding-left:0px; display:inline-block" title="Pesquisar cliente" onclick="PromptPesquisarClientes();"> <img src="imagens/pesquisar.png" border="0" align="absmiddle" class="efeito-opacidade-75-03" style="margin-right:7px;"/> </div>
+                                            <div class="divcontainer" style="max-width: 230px;">
+                                                <label>Contatos</label>
+                                                <br />
+                                                <input type="text" style="max-width:100%; background-color:#F5F5F5" id="contatos" class="textbox_cinzafoco" disabled="disabled"/>
+                                            </div>
+                                            <div class="divcontainer" style="max-width: 230px;">
+                                                <label>E-mail</label>
+                                                <br />
+                                                <input type="text" style="max-width:100%; background-color:#F5F5F5" id="email" class="textbox_cinzafoco" disabled=" disabled" />
+                                            </div>
+                                            <br/>
+                                            <div class="divcontainer" style="max-width: 90px;">
+                                                <label>Data Contrato</label>
+                                                <label style="color:red;">*</label>
+                                                <input type="text" id="dataCotacao" style="width:100%" class="textbox_cinzafoco" />
+                                            </div>
+                                            <div class="divcontainer" style="max-width: 200px;">
+                                                <label>Local</label>
+                                                <label style="color:red;">*</label>
+                                                <select id="local" class="combo_cinzafoco" style="width:100%" onchange="Selector.$('avisoDataFesta').innerHTML = '';
+                                                        Select.Clear(Selector.$('pacote'));
+                                                        getPacotes(Selector.$('pacote'), 'Selecione um pacote', false, Selector.$('local').value);
+                                                        VerificaDataCotacao(false);
+                                                        getDecoracoes(Selector.$('decoracao'), 'Selecione uma decoração', false);">
+                                                </select>
+                                            </div>
+                                            <div class="divcontainer" style="max-width: 200px;">
+                                                <label>Pacote</label>
+                                                <label style="color:red;">*</label>
+                                                <select id="pacote" class="combo_cinzafoco" style="width:100%" onchange="getValorPacote();">
+                                                </select>
+                                            </div>
+                                            <div class="botaotitulocomum" style="padding-left:0px; display:inline-block" title="Ver Composição do Pacote" onclick="PromptPacoteComposicao();"> <img src="imagens/pesquisar.png" border="0" align="absmiddle" class="efeito-opacidade-75-03" style="margin-right:7px;"/> </div>
+                                            <div class="divcontainer" style="max-width: 90px;">
+                                                <label>Qtd. Pagantes</label>
+                                                <label style="color:red;">*</label>
+                                                <input id="qtdePagantes" type="number" style="width:100%" class="textbox_cinzafoco" onblur="VerificaQtdPagantes();" onchange="VerificaQtdPagantes();
+                                                        CalcularValorAdicionalPagantes();
+                                                        CalcularValorTotal();"/>
+                                            </div>
+                                            <div class="divcontainer" style="max-width: 100px;">
+                                                <label>Qtd. ñ Pagantes</label>
+                                                <input id="qtdeNaoPagantes" type="number" style="width:100%" class="textbox_cinzafoco"/>
+                                            </div>
+                                            <div class="divcontainer" style="max-width: 85px;">
+                                                <label>Data Festa</label>
+                                                <label style="color:red;">*</label>
+                                                <input id="dataFesta" type="text" style="width:100%" class="textbox_cinzafoco" onkeyup="idadeAniversariante();" onfocus="Selector.$('avisoDataFesta').innerHTML = '';" onblur="VerificaDataCotacao(false);"/>
+                                            </div>
+                                            <div class="divcontainer" style="max-width: 50px;">
+                                                <label>Horário</label>
+                                                <label style="color:red;">*</label>
+                                                <input id="horario1" type="text" style="width:100%" class="textbox_cinzafoco" onfocus="Selector.$('avisoDataFesta').innerHTML = '';" onblur="VerificaDataCotacao(false);
+                                                        CalcularValorAteFesta();"/>
+                                            </div>
+                                            <label>às</label>
+                                            <div class="divcontainer" style="max-width: 50px;">
+                                                <input id="horario2" type="text" style="width:100%" class="textbox_cinzafoco" onfocus="Selector.$('avisoDataFesta').innerHTML = '';" onblur="VerificaDataCotacao(false); getDecoracoesShowingDisponibilidade(Selector.$('decoracao'), 'Selecione uma decoração', true)"/>
+                                            </div>
+                                            <div class="divcontainer" style="max-width: 150px;">
+                                                <label>Decoração</label>
+                                                <!--<select id="decoracao" class="combo_cinzafoco" style="width:100%" onchange="VerificaDecoracaoContrato(Selector.$('decoracao').value, -2);">
+                                                </select>-->
+                                                <select id="decoracao" class="combo_cinzafoco" style="width:100%" onchange="MensagemDecoracao();">
+                                                </select>
+                                            </div>
+                                            <div class="divcontainer" style="max-width: 170px;">
+                                                <label>Tipo</label>
+                                                <label style="color:red;">*</label>
+                                                <select id="tipo" class="combo_cinzafoco" style="width:100%">
+                                                </select>
+                                            </div>
+                               
+                                            
+                                            
+                                            <div id="divSituacao" class="divcontainer" style="max-width: 140px;">
+                                                <label>Situação </label>
+                                                <input id="situacaoCotacao" type="text" style="width:100%; background-color:#F5F5F5; text-align:center; font-weight:bold;" class="textbox_cinzafoco" readonly="readonly"/>
+                                            </div>
+                                            <div class="botaotitulocomum" style="display:none; margin-top:-6px;" id="btGerarPdfContrato" onclick="GerarPdfContrato(codigoAtual);" title="Gerar PDF do Contrato"> <img src="imagens/contrato.png" width:="18" height="18" border="0" align="absmiddle" style="margin-right:10px;"/> </div>
+                                            <div class="botaotitulocomum" style="display:none; margin-top:-6px; margin-left:5px;" id="btEnviarContratoEmail" onclick="EnviarContratoEmail();" title="Enviar o contrato por email para o cliente"> <img id="imgContratoEmail" src="imagens/email.png" width:="18" height="18" border="0" align="absmiddle" style="margin-right:8px; margin-top:10px;"/> </div>
+                                            <div class="botaotitulocomum" style="display:inline-block; margin-left:5px; margin-top:-6px;" id="btCancelarContrato" onclick="CancelarContratoAux(codigoAtual);" title="Cancelar Contrato"> <img src="imagens/cancelar.png" width:="17" height="17" border="0" align="absmiddle" class="efeito-opacidade-75-03" style="margin-right:8px;"/> </div>
+                                            <br />
+                                            
+             <div id="divFesta" class="divcontainer" style="max-width:145px;  vertical-align:top">
+                                                <label>Aniversariante</label>
+                                                <!--<label style="color:red;">*</label>-->
+                                                <input id="festa" type="text" style="width:100%" class="textbox_cinzafoco" placeholder="Nome do aniversariante"/>
+                                            </div>
+                                             <div id="divFesta" class="divcontainer" style="max-width:100px; vertical-align:top">
+                                                <label>Data de Nasc.</label>
+                                                <!--<label style="color:red;">*</label>-->
+                                                <input id="nascimento" onkeyup="idadeAniversariante();" type="text" style="width:100%; margin-bottom:0px;" class="textbox_cinzafoco" placeholder="ex: 18/08/1998"/>
+                                                <span  id="anosafazer" style="font-size:10px; line-height:9px; font-weight:bold"></span>
+                                            </div>
+                                            <div id="divFesta" class="divcontainer" style="max-width:150px; vertical-align:top">
+                                                <label>Mãe</label>
+                                                <!--<label style="color:red;">*</label>-->
+                                                <input id="mae" type="text" style="width:100%" class="textbox_cinzafoco" placeholder="Nome da mãe"/>
+                                            </div>
+                                            <div id="divFesta" class="divcontainer" style="max-width:150px; vertical-align:top">
+                                                <label>Pai</label>
+                                                <!--<label style="color:red;">*</label>-->
+                                                <input id="pai" type="text" style="width:100%" class="textbox_cinzafoco" placeholder="Nome do pai"/>
+                                            </div>
+                                                                                        
+                                             <div id="divFesta" class="divcontainer" style="max-width:384px; vertical-align:top;">
+                                                <label>Irmãos (separar nomes por "," virgula)</label>
+                                                <!--<label style="color:red;">*</label>-->
+                                                <input id="irmaos" type="text" style="width:100%" class="textbox_cinzafoco" placeholder="Informe o nome dos irmãos separados por vírgula"/>
+                                            </div>
+                                            
+                                            
+                                            <br />
+
+                                            <div class="divcontainer" style="max-width: 400px;">
+                                                <label>OPCIONAIS</label>
+                                                <label id="qtdOpcionais"></label>
+                                            </div>
+                                            <input type="button" value="+ Adicionar Opcional" onclick="PromptAdicionarOpcional(0, -1);" class="botaosimplesfoco" style="float:right;"/>
+                                            <br>
+                                                <br>
+                                                    <div style="width:99.6%; height:160px; border:1px solid lightgray; text-align:center; overflow:auto;" id="divOpcionais"></div>
+                                                    <div class="divcontainer" style="max-width: 100px;">
+                                                        <label>Valor</label>
+                                                        <input id="valor" type="text" style="width:100%;" class="textbox_cinzafoco" onblur="CalcularValorTotal();"/>
+                                                    </div>
+                                                    <div class="divcontainer" style="max-width: 115px;">
+                                                        <label>Valor Adic. Pagantes</label>
+                                                        <input id="valorAdicionalPagantes" type="text" style="width:100%; text-align:right;" class="textbox_cinzafoco"/>
+                                                    </div>
+                                                    <div class="divcontainer" style="max-width: 100px;">
+                                                        <label>Valor Opcionais</label>
+                                                        <input id="valorOpcionais" type="text" style="width:100%; background-color:#F5F5F5; text-align:right; font-weigth:bold;" class="textbox_cinzafoco" readonly="readonly" disabled="disabled"/>
+                                                    </div>
+                                                    <div class="divcontainer" style="max-width: 85px;">
+                                                        <label>Perc. Desconto</label>
+                                                        <input id="percentualDesconto" type="text" style="width:100%" class="textbox_cinzafoco" onblur="CalcularValorTotal();"/>
+                                                    </div>
+                                                    <label>% ou</label>
+                                                    <div class="divcontainer" style="max-width: 90px;">
+                                                        <label>Valor Desconto</label>
+                                                        <input id="valorDesconto" type="text" style="width:100%" class="textbox_cinzafoco" onblur="CalcularValorTotal();"/>
+                                                    </div>
+                                                    <div class="divcontainer" style="max-width: 90px;">
+                                                        <label>Valor Acréscimo</label>
+                                                        <input id="valorAcrescimo" type="text" style="width:100%" class="textbox_cinzafoco" onblur="CalcularValorTotal();"/>
+                                                    </div>
+                                                    <div class="divcontainer" style="max-width: 100px;">
+                                                        <label>Valor Total</label>
+                                                        <input id="valorTotal" type="text" style="width:100%; background-color:#F5F5F5; text-align:right; font-weigth:bold;" class="textbox_cinzafoco" readonly="readonly" disabled="disabled"/>
+                                                    </div>
+                                                    <div class="divcontainer" style="max-width: 100px;">
+                                                        <label>Valor Pago</label>
+                                                        <input id="valorPago" type="text" style="width:100%; background-color:#F5F5F5; text-align:right; font-weigth:bold;" class="textbox_cinzafoco" readonly="readonly" disabled="disabled"/>
+                                                    </div>
+                                                    <div class="divcontainer" style="max-width: 100px;">
+                                                        <label>Saldo à Pagar</label>
+                                                        <input id="saldoPagar" type="text" style="width:100%; background-color:#F5F5F5; text-align:right; font-weigth:bold;" class="textbox_cinzafoco" readonly="readonly" disabled="disabled"/>
+                                                    </div>
+                                                    <br>
+                                                        <!--<div class="divcontainer" style="max-width: 1000px;">
+                                                          <label>Motivo Acréscimo</label>
+                                                          <textarea id="motivoAcrescimo" class="textbox_cinzafoco" style="width:100%; height:35px; "></textarea>
+                                                        </div>
+                                                        <br>-->
+                                                        <div class="divcontainer" style="max-width: 49%;">
+                                                            <label>Observação (Contrato)</label>
+                                                            <textarea placeHolder="Observação que sairá no contrato" id="obs" class="textbox_cinzafoco" style="width:100%; height:100px;"></textarea>
+                                                        </div>
+
+                                                        <div class="divcontainer" style="max-width: 48%; margin-left:6px">
+                                                            <label>Observação (Interna)</label>
+                                                            <textarea placeHolder="Observação para controle interno" id="obsInterna" class="textbox_cinzafoco" style="width:100%; height:100px;"></textarea>
+                                                        </div>
+                                                        </div>
+
+                                                        <div id="div2" class="divformulario" style="margin-top:0px; border-top:1px solid; border-color:#D7D7D7; overflow:hidden; width:100%;">
+                                                            <div id="divLista" style="height:520px; overflow:auto;"> 
+                                                                <!--<div class="botaoRedondoJujuba" onclick="PromptListaConvidados(0);"></div>-->
+                                                                <div class="divcontainer" style="max-width: 140px; margin-left:10px;">
+                                                                    <label>Adultos Pagantes</label>
+                                                                    <input id="qtdeAdultosPagantes" type="text" style="width:100%; font-weigth:bold;" class="textbox_cinzafoco"/>
+                                                                </div>
+                                                                <div class="divcontainer" style="max-width: 140px;">
+                                                                    <label>Crianças Pagantes</label>
+                                                                    <input id="qtdeCriancasPagantes" type="text" style="width:100%; font-weigth:bold;" class="textbox_cinzafoco"/>
+                                                                </div>
+                                                                <div class="divcontainer" style="max-width: 140px;">
+                                                                    <label>Adultos Não Pagantes</label>
+                                                                    <input id="qtdeAdultosNaoPagantes" type="text" style="width:100%; font-weigth:bold;" class="textbox_cinzafoco"/>
+                                                                </div>
+                                                                <div class="divcontainer" style="max-width: 140px;">
+                                                                    <label>Crianças Não Pagantes</label>
+                                                                    <input id="qtdeCriancasNaoPagantes" type="text" style="width:100%; font-weigth:bold;" class="textbox_cinzafoco"/>
+                                                                </div>
+                                                                <div style="height: 55px; display:inline-block; float:right;">
+                                                                    <input type="button" value="+ Adicionar Convidado" onclick="PromptListaConvidados(0);" class="botaosimplesfoco" style="float:right; margin-right:5px;"/>
+                                                                </div>
+                                                            </div>
+                                                            <div style="width:780px; margin:0 auto;">
+                                                                <div id="qtdConvidados" align="center" class="divformulario" style="font-size: 14px; display:inline-block"></div>
+                                                                <div id="qtdConvidadosPagantes" align="center" class="divformulario" style="font-size: 14px; display:inline-block"></div>
+                                                                <div id="qtdConvidadosNaoPagantes" align="center" class="divformulario" style="font-size: 14px; display:inline-block"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="div3" class="divformulario" style="margin-top:0px; border-top:1px solid; border-color:#D7D7D7; overflow:hidden; width:100%;">
+                                                            <div id="divPagamento" style="text-align: center; height:525px; overflow:auto;">
+                                                                <div style="height: 55px;">
+                                                                    <div style="float:left; vertical-align: middle;">
+                                                                        <!--<div class="botaoRedondoJujuba" onclick="PromptFollowUp(0);"></div>-->
+                                                                        <div class="divcontainer" style="max-width: 120px; margin-left:10px;">
+                                                                            <label>Valor Total</label>
+                                                                            <input id="valorTotal2" type="text" style="width:100%; background-color:#F5F5F5; text-align:right; font-weigth:bold;" class="textbox_cinzafoco" readonly="readonly" disabled="disabled"/>
+                                                                        </div>
+                                                                        <div class="divcontainer" style="max-width: 120px;">
+                                                                            <label>Valor Pago</label>
+                                                                            <input id="valorPago2" type="text" style="width:100%; background-color:#F5F5F5; text-align:right; font-weigth:bold;" class="textbox_cinzafoco" readonly="readonly" disabled="disabled"/>
+                                                                        </div>
+                                                                        <div class="divcontainer" style="max-width: 120px;">
+                                                                            <label>Saldo à Pagar</label>
+                                                                            <input id="saldoPagar2" type="text" style="width:100%; background-color:#F5F5F5; text-align:right; font-weigth:bold;" class="textbox_cinzafoco" readonly="readonly" disabled="disabled"/>
+                                                                        </div>
+                                                                    </div>
+                                                                    <input type="button" value="+ Adicionar Parcela" onclick="PromptParcela(0, false, -1);" class="botaosimplesfoco" style=" float:right; margin-right:10px;"/>
+                                                                    <input type="button" value="+ Gerar Parcelas" onclick="PromptGerarParcelas();" class="botaosimplesfoco" style="  float:right; margin-right:5px;"/>
+                                                                    
+                                                                     <input type="button" value="Gerar Recibo com Total Pago" onclick="emitirComprovantePagamentos();" class="botaosimplesfoco" style="  float:right; margin-right:5px;"/>
+                                                                </div>
+                                                            </div>
+                                                            <div id="qtdParcelas" align="center" class="divformulario" style="font-size: 14px;"></div>
+                                                        </div>
+                                                        <div id="div4" class="divformulario" style="margin-top:0px; border-top:1px solid; border-color:#D7D7D7; overflow:hidden; width:100%;">
+                                                            <div id="divPendencias" style="text-align: center; height:520px; overflow:auto;">
+                                                            </div>
+                                                            <div id="pendenciasContador" align="center" class="divformulario" style="font-size: 14px;"></div>
+                                                        </div>
+                                                        <div id="div5" class="divformulario" style="margin-top:0px; border-top:1px solid; border-color:#D7D7D7; overflow:hidden; width:100%;">
+                                                            <div id="divFollowUp" style="text-align: center; height:525px; overflow:auto;"> 
+                                                                <!--<div class="botaoRedondoJujuba" onclick="PromptFollowUp(0);"></div>-->
+                                                                <div style="height: 55px;">
+                                                                    <input type="button" value="+ Adicionar Follow Up" onclick="PromptFollowUp(0);" class="botaosimplesfoco" style="float:right; margin-right:5px;"/>
+                                                                </div>
+                                                            </div>
+                                                            <div id="qtdFollowUp" align="center" class="divformulario" style="font-size: 14px;"></div>
+                                                        </div>
+
+                                                        <div id="div6" class="divformulario" style="margin-top:0px; border-top:1px solid; border-color:#D7D7D7; overflow:hidden; width:100%;">
+                                                            <div style="height: 55px;">
+                                                                <input type="button" id="botaopesquisaremails" value="Pesquisar por emails novos" onclick="pesquisarEmail();" class="botaosimplesfoco" style=" margin-right:5px;"/>
+                                                            </div>
+
+                                                            <div id="divEmails" style="text-align: center; height:490px; overflow:auto;"> 
+                                                                <!--<div class="botaoRedondoJujuba" onclick="PromptFollowUp(0);"></div>-->
+                                                            </div>
+                                                            <div id="qtdEmails" align="center" class="divformulario" style="font-size: 14px;"></div>
+                                                        </div>
+
+                                                        </div>
+                                                        <!--divCadastro--> 
+                                                        </div>
+                                                        </div>
+                                                        </div>  
+                                                        <!--divprincipal--> 
+                                                        </div>
+                                                        <!--pagina-->
+                                                        <div id="prompt"></div>
+                                                        <div id="prompt2"></div>
+                                                        <div  id="divConfiguacoes" class="divConfiguacoes efeito_delay" style="height:0px;"  onclick="mostracaixaconfiguracoes();"> <br />
+                                                            <div class="divconfitens efeito-opacidade-75-03" onclick="window.location = 'alterar-senha.html'"> <img src="imagens/chave.png" /><br />ALTERAR SENHA</div>
+                                                            <div class="divconfitens efeito-opacidade-75-03"  onclick="suporteTecnico();"> <img src="imagens/setup.png" /><br />SETUP</div>
+                                                        </div>
+                                                        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+                                                        </body>
+                                                        </html>

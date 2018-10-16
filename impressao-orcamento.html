@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Photoarts Gallery - Impressão Orçamento</title>
+        <link rel="stylesheet" type="text/css" href="css/impressao-proposta.css"/>
+        <script type="text/javascript" src="padrao/json2.js"></script>
+        <script type="text/javascript" src="padrao/utils.js"></script>        
+        <script type="text/javascript" src="js/photoarts.js"></script>
+        <script type="text/javascript" src="js/impressao-orcamento.js"></script>
+    </head>
+    <body>
+        <div id="quadro1" class="bordaprincipal">
+            <div id="linha1">
+                <div id="cabecalho" >Orçamento</div>
+                <div id="cabecalho2" >Nº Orçamento: <span id="numero"></span><br />
+                    <span id="tipo"></span> </div>
+            </div>
+            <!--linha1-->
+            <div id="linha2" style="background:#6FAEE3; padding:4px; margin-bottom:10px;"> </div>
+            <div class="divDados">
+                <div  class="enderecoA" style="width:auto">Cliente: </div>
+                <div class="enderecoB" id="cliente"></div>
+                <div  class="enderecoA" style="width:auto">Telefone:</div>
+                <div class="enderecoB" id="telefone"></div>
+                <div  class="enderecoA" style="width:auto">E-mail:</div>
+                <div class="enderecoB" id="email"></div>
+                <div  class="enderecoA" style="width:auto">Marchand:</div>
+                <div class="enderecoB" style="width:auto" id="responsavel"></div>
+                <br />
+                <div  class="enderecoA" style="width:auto">Tipo Entrega:</div>
+                <div class="enderecoB" style="width:auto" id="tipoentrega"></div>
+            </div>
+            <div class="divDados">
+                <div  class="enderecoA" style="width:auto">Emissão:</div>
+                <div class="enderecoB" id="dataemissao"></div>
+                <br />
+                <!--<div  class="enderecoA" style="width:auto; text-align:left;">Validade:</div>-->
+                <div class="enderecoB" id="validade"></div>
+                <img id="logoTopo" style="width:150px; height:140px; float:right; margin-top:-53px;"  /> </div>
+            <div id="linha3" style="margin-top:15px;" ></div>
+            <div id="linhatotal" style="border:solid 2px #6FAEE3; background:#6FAEE3; padding:5px; padding-top:3px; padding-bottom:3px; padding-left:3px; margin-top:5px;">
+                <h1 style="display:inline-block; margin:0px; padding:0px; font-size:16px; font-weight:bold; vertical-align:middle">Obras</h1>
+            </div>
+            <div id="tabela" style="border:solid 2px #6FAEE3;  border-top:none; min-height:240px; height:auto; padding:0px; padding-top:3px; padding-bottom:3px;" > </div>
+            <div style="min-height:10px;"> </div>
+            <div align="right">    
+                <div class="umterco" style="width:20%;">Valor R$ <span id="valor"  >0,00</span></div>     
+                <div class="umterco" style="width:20%;">Frete R$ <span id="frete"  >0,00</span></div>
+                <div class="umterco" style="width:25%;">Desc. R$ <span id="desconto"  >0,00</span></div>
+                <div id="divTotal" class="umterco" style="border:solid 2px #6FAEE3; width:25%;">Total R$ <span id="total"  >0,00</span></div>   
+            </div>
+            <div style="min-height:10px;"> </div>
+            <div id="textoObs" style="border:solid 2px #6FAEE3;  height:auto; padding:5px; padding-top:3px; padding-bottom:3px;" >
+                Observações:<br /><br />
+                <span id="obs"></span>
+            </div>
+            <br>
+            <div id="textoTermo" style="border:solid 2px #6FAEE3;  height:100px; padding:5px; padding-top:3px; padding-bottom:3px;" >
+                Termos:<br /><br />
+                A <span id="nomeProd">Photoarts</span> se compromete a entregar a obra de arte encomendada dentro de um prazo máximo de 10 dias corridos a partir da data da compra. O comprador será informado sobre as etapas do processo de produção da obra até o momento da entrega.
+                <br /><br />
+                As despesas de entrega (incluindo seguro e transporte) serão pagas pelo comprador, via correios, transportadora ou taxi, com valor a ser informado na hora da remessa. Não nos comprometemos com qualquer atraso referente ao prazo da transportadora
+            </div>
+            <div style="min-height:10px;"> </div>
+            <div id="linhatotal2" style="border:solid 2px #6FAEE3; background:#6FAEE3; padding:5px; padding-top:3px; padding-bottom:3px; padding-left:3px; margin-top:5px;">
+                <h1 style="display:inline-block; margin:0px; padding:0px; font-size:16px; font-weight:bold; vertical-align:middle">Endereço de Entrega</h1>
+            </div>
+            <div id="end" style="border:solid 2px #6FAEE3;  border-top:none; height:auto; padding:5px; padding-top:3px; padding-bottom:3px;" > 
+                <div class="divDados" style="height:auto">
+                    <div  class="enderecoA" style="width:auto">Endereço: </div>
+                    <div class="enderecoB" id="endereco"></div><br />
+                    <div  class="enderecoA" style="width:auto">Bairro:</div>
+                    <div class="enderecoB" id="bairro"></div><br />
+                    <div  class="enderecoA" style="width:auto">CEP:</div>
+                    <div class="enderecoB" id="cep"></div>
+                </div>
+                <div class="divDados" style="height:auto">
+                    <div  class="enderecoA" style="width:auto">Nº:</div>
+                    <div class="enderecoB" id="numeroRes" style="width:30px"></div>
+                    <div  class="enderecoA" style="width:auto">Complemento:</div>
+                    <div class="enderecoB" id="complemento" style="width:auto"></div>
+                    <br />
+                    <div  class="enderecoA" style="width:auto">Cidade:</div>
+                    <div class="enderecoB" id="cidade" style="width:150px"></div>
+                    <div  class="enderecoA" style="width:auto">Estado:</div>
+                    <div class="enderecoB" id="estado" style="width:auto"></div>
+                </div>
+            </div>
+            <div style="min-height:10px;"> </div>
+            <span id="diaatual"  class="data"></span>
+            <div style="min-height:50px;"> </div>
+            <div  class="data" id="galeriaAssinatura" style="width:300px; border-top:2px solid #000; vertical-align:top; display:inline-block; text-align:center">Photoarts Gallery</div>   
+            <div id="nomeClienteAssinatura"  class="data"   style="width:300px; border-top:2px solid #000; vertical-align:top; float:right; display:inline-block; text-align:center">Cliente</div>   
+            <div style="min-height:10px;"> </div>
+            <div id="divRodape" style="margin-top:30px;">
+                <span id="cnpj">Photoarts Online Gallery - CNPJ: 00.934.702/0001-42</span>
+                <br />
+                <b id="site">www.photoarts.com.br</b>
+                <br />
+            </div>
+        </div>
+    </body>
+</html>
